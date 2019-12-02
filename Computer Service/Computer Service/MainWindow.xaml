@@ -1,0 +1,29 @@
+﻿<Controls:MetroWindow  x:Class="Computer_Service.MainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                                       xmlns:local="clr-namespace:Computer_Service"
+    
+        Title="MainWindow" Height="682" Width="1235" ResizeMode="CanResizeWithGrip">
+    <Window.Background>
+
+        <SolidColorBrush Color="#647382"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <TextBox x:Name="username" HorizontalAlignment="Right" Height="40" Margin="0,181,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontSize="24" TabIndex="1"/>
+        <Button Content="Войти" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="164" Click="Button_Click" FontSize="24" Height="54" TabIndex="3"/>
+        <DataGrid MinWidth="50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  x:Name="pricelistdgr" Height="Auto" Width="Auto" Margin="10,10,334,0"  FontSize="16"/>
+        <Image HorizontalAlignment="Right" Height="169" Margin="0,10,10,0" VerticalAlignment="Top" Width="148" Source="Resources/250logoblack.png"/>
+        <Label x:Name="login"  Content="Логин" HorizontalAlignment="Right" Margin="0,139,252,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,0" FontSize="24"/>
+        <Label x:Name="pas"  Content="Пароль" HorizontalAlignment="Right" Margin="0,227,237,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,0" FontSize="24"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Right" Margin="0,269,10,0" VerticalAlignment="Top" Height="40" Width="319" FontSize="24" TabIndex="2"/>
+        <Button  x:Name="color" HorizontalAlignment="Left" Margin="913,609,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="White" Click="Button_Click_1" RenderTransformOrigin="0.75,0.458" BorderBrush="{x:Null}"/>
+
+    </Grid>
+</Controls:MetroWindow>

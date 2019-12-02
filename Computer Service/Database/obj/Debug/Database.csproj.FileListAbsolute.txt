@@ -1,0 +1,13 @@
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\Database.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Debug\Database.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Debug\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\Database.dll.config
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\EntityFramework.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\EntityFramework.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Debug\Database.csproj.CopyComplete
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Debug\Database.csprojAssemblyReference.cache
