@@ -17,7 +17,7 @@ namespace Database.EntityModels
 
         public int master { get; set; }
 
-        public int? computer { get; set; }
+        public int computer { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? date_of_acceptance { get; set; }

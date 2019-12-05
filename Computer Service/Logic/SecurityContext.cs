@@ -8,10 +8,8 @@ namespace Logic
 {
     public class securitycontext
     {
-        public static int id_client;
-        public static int Masters;
-        public static int Computers;
-        public static int Order;
+        public static int id_order;
+        public static int CurrentOrder;
 
     }
 }

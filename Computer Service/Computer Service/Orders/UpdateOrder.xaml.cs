@@ -1,6 +1,5 @@
 ﻿using Database.EntityModels;
 using Logic;
-using Logic.LogicModels;
 using MahApps.Metro.Controls;
 using System;
 using System.Collections.Generic;
@@ -32,41 +31,62 @@ namespace Computer_Service
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            try
-            {
+                Orders orders = Logic.LogicOrders.GetCurrentOrder();
+                idtxt.Text = orders.id_order.ToString();
                 client.ItemsSource = LogicClient.GetNameClient();
                 master.ItemsSource = LogicMaster.GetNameMaster();
                 pc.ItemsSource = LogicComputers.GetMark();
                 status.ItemsSource = LogicStatus.GetStatus();
-
-               Orders o = LogicOrders.GetOrders();
-
-                //accept.SelectedDate =
-                //Manufacturer.Text = transport.Manufacturer;
-                //Model.Text = transport.Model;
-                //YearTransport.Text = transport.YearTransport;
-                //NumberEngine.Text = transport.NumberEngine;
-                //ModelEngine.Text = transport.ModelEngine;
-                //YearEngine.Text = transport.YearEngine;
-                //PowerEngineK.Text = transport.PowerEngineKVT;
-                //PowerEngineH.Text = transport.PowerEngineH;
-                //MaxLoad.Text = transport.MaxLoad.ToString();
-                //Color.Text = transport.Color;
-                //VIN.Text = transport.VIN;
-                //Description.Text = transport.Description;
-                //CategoryTransport.SelectedIndex = transport.CategoryTransport - 1;
-                //TypeOfDrive.SelectedIndex = transport.TypeOfDrive - 1;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                DateTime? date1 = orders.date_of_acceptance;
+                DateTime? date2 = orders.date_of_return;
+                accept.SelectedDate = orders.date_of_acceptance;
+                @return.SelectedDate = orders.date_of_return;
+                price.Text = orders.repair_price.Value.ToString();
+                description.Text = orders.description;
+                //price.Text = orders.id_order.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Model1 db = new Model1();
+           int a = Convert.ToInt32(idtxt.Text);
+            var orderr = db.Orders
+                .Where(c => c.id_order == a)
+                .FirstOrDefault();
 
+            // Внести изменения
+            orderr.order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text));
+            orderr.client = Convert.ToInt32(LogicClient.GetIdClient(client.Text));
+            orderr.master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text));
+            orderr.computer = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text));
+
+
+            orderr.date_of_acceptance = accept.DisplayDate;
+            orderr.date_of_return = @return.DisplayDate;
+            orderr.repair_price = Convert.ToInt32(price.Text);
+            orderr.description = description.Text;
+
+            // Сохранить изменения
+         db.SaveChanges();
+
+            //Orders order = new Orders
+            //{
+
+            //    order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text)),
+            //    client = Convert.ToInt32(LogicClient.GetIdClient(client.Text)),
+            //    master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text)),
+            //    computer = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text)),
+
+
+            //    date_of_acceptance = accept.DisplayDate,
+            //    date_of_return = @return.DisplayDate,
+            //    repair_price = Convert.ToInt32(price.Text),
+            //    description = description.Text
+            //};
+            //db.Orders.Add(order);
+            //db.SaveChanges();
+            MessageBox.Show("Заказ изменён!");
+            Close();
         }
     }
 }

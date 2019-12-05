@@ -8,7 +8,8 @@
 
         <SolidColorBrush Color="#647382"/>
     </Window.Background>
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
+
         <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164"/>
         <Label Content="Мастер" HorizontalAlignment="Left" Margin="10,184,0,0" VerticalAlignment="Top" FontSize="24" Height="57" Width="96"/>
         <Label Content="Дата принятия" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="180"/>
@@ -29,5 +30,7 @@
         <ComboBox   x:Name="master" HorizontalAlignment="Left" Margin="185,184,0,0" VerticalAlignment="Top" Width="311" Height="56" FontSize="18"/>
         <ComboBox  x:Name="pc" HorizontalAlignment="Left" Margin="185,245,0,0" VerticalAlignment="Top" Width="311" Height="54" FontSize="18"/>
         <Label Content="Клиент" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" />
+        <Label Content="ID заказа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164"/>
+        <TextBox x:Name="idtxt" HorizontalAlignment="Left" Height="47" Margin="185,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" FontSize="24"/>
     </Grid>
 </Controls:MetroWindow>

@@ -30,8 +30,9 @@ namespace Database.EntityModels
 
             modelBuilder.Entity<Computers>()
                 .HasMany(e => e.Orders)
-                .WithOptional(e => e.Computers)
-                .HasForeignKey(e => e.computer);
+                .WithRequired(e => e.Computers)
+                .HasForeignKey(e => e.computer)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Masters>()
                 .HasMany(e => e.Orders)

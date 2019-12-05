@@ -8,10 +8,10 @@
 
         <SolidColorBrush Color="#647382"/>
     </Window.Background>
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Label Content="Всего заказов" HorizontalAlignment="Left" Margin="5,51,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top"/>
-        <Label Content="Текущих заказов:" HorizontalAlignment="Left" Margin="5,82,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="now"  Content="Текущих заказов:" HorizontalAlignment="Left" Margin="5,82,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="115,82,0,0" VerticalAlignment="Top"/>
         
         

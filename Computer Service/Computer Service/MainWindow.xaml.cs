@@ -19,20 +19,46 @@ namespace Computer_Service
         {
             InitializeComponent();
             refreshdata();
-           
+            username.Visibility = Visibility.Hidden;
+            password.Visibility = Visibility.Hidden;
+            login1.Visibility = Visibility.Hidden;
+            clientsss.Visibility = Visibility.Visible;
+
+            username_Copy.Visibility = Visibility.Hidden;
+            password_Copy.Visibility = Visibility.Hidden;
+            login2.Visibility = Visibility.Hidden;
+            mastersss.Visibility = Visibility.Visible;
         }
 
-       
+
        void refreshdata()
         {
             Model1 db = new Model1();
-           var data = from list in db.PriceList
-                                         select new
-                                         {
-                                             Услуга = list.service,
-                                             Ценаот = list.price_from,
-                                             Ценадо = list.price_up
-                                         };
+            //var data = from Order in db.Orders
+            //           join Status in db.Status on Order.order_status equals Status.id_status
+            //           join Client in db.Clients on Order.client equals Client.id_user
+            //           join Master in db.Masters on Order.master equals Master.id_master
+            //           join Computers in db.Computers on Order.computer equals Computers.id_comp
+            //           select new
+            //           {
+            //               Id = Order.id_order,
+            //               Status = Status.status1,
+            //               Client = Client.first_name + Client.last_name,
+            //               PC = Computers.mark + Computers.model,
+            //               Master = Master.first_name + Master.last_name + Master.middle_name,
+            //               DateAccept = Order.date_of_acceptance,
+            //               DateRepair = Order.date_of_return,
+            //               Price = Order.repair_price,
+            //               Descpription = Order.description
+
+            //           };
+            var data = from list in db.PriceList
+                       select new
+                       {
+                           Услуга = list.service,
+                           Ценаот = list.price_from,
+                           Ценадо = list.price_up
+                       };
 
             pricelistdgr.ItemsSource = data.ToList();
         }
@@ -60,19 +86,46 @@ namespace Computer_Service
             {
                 this.Background = new SolidColorBrush(Colors.White);
                 color.Background = new SolidColorBrush(Color.FromRgb(64, 73, 82));
-                login.Foreground = new SolidColorBrush(Colors.Black);
-                pas.Foreground = new SolidColorBrush(Colors.Black);
                 y = false;
             }
             else
             {
                 this.Background = new SolidColorBrush(Color.FromRgb(64, 73, 82));
                 color.Background = new SolidColorBrush(Colors.White);
-                login.Foreground = new SolidColorBrush(Colors.White);
-                pas.Foreground = new SolidColorBrush(Colors.White);
                 y = true;
             }
-          
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            username.Visibility = Visibility.Hidden;
+            password.Visibility = Visibility.Hidden;
+            login1.Visibility = Visibility.Hidden;
+            clientsss.Visibility = Visibility.Hidden;
+
+            username_Copy.Visibility = Visibility.Visible;
+            password_Copy.Visibility = Visibility.Visible;
+            login2.Visibility = Visibility.Visible;
+            mastersss.Visibility = Visibility.Visible;
+        }
+
+        private void mastersss_Click(object sender, RoutedEventArgs e)
+        {
+            username.Visibility = Visibility.Visible;
+            password.Visibility = Visibility.Visible;
+            login1.Visibility = Visibility.Visible;
+            clientsss.Visibility = Visibility.Visible;
+
+            username_Copy.Visibility = Visibility.Hidden;
+            password_Copy.Visibility = Visibility.Hidden;
+            login2.Visibility = Visibility.Hidden;
+            mastersss.Visibility = Visibility.Hidden;
         }
     }
 }
