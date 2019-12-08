@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Computer_Service.Resources">
+
+    <Style x:Key="StyleWindow" TargetType="{x:Type Window}">
+        <Setter Property = "Background" Value="#647382" />
+    </Style>
+
+
+
+        <Menu  x:Key="MyMenu">
+            <MenuItem Header="Switch" >
+                <MenuItem Header="Create Queue" />
+                <MenuItem Header="Create Topic" />
+            </MenuItem>
+        </Menu>
+
+
+
+    <!--<Style TargetType = "Window" >
+            <Setter Property="Background" Value="#FFDFF0FA" />
+        </Style>
+
+        <Style x:Key="StyleWindow" TargetType="{x:Type Window}">
+            <Setter Property = "Background" Value="#FFDFF0FA" />
+        <Setter Property = "ResizeMode" Value="NoResize"/>
+        </Style>
+
+        <Style TargetType = "Button" >
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+
+        <Style TargetType = "Label" >
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style TargetType = "TextBlock" >
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style TargetType = "TextBox" >
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style TargetType = "ComboBox" >
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style TargetType = "DatePicker" >
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+
+        <Style TargetType = "Menu" >
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style TargetType = "MenuItem" >
+            <Setter Property="FontSize" Value="14"/>
+        </Style>-->
+
+</ResourceDictionary>

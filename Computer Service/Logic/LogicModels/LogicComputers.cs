@@ -16,7 +16,7 @@ namespace Logic
             List<string> MarkList = new List<string>();
             foreach (var mark in ListQuery)
             {
-                MarkList.Add(mark.mark + " " + mark.model.ToString());
+                MarkList.Add(mark.brand + " " + mark.model.ToString());
             }
             return MarkList;
         }
@@ -28,7 +28,7 @@ namespace Logic
             NameArray = mark.Split(' ');
             mark = NameArray[0];
 
-            return db.Computers.Where(m => m.mark == mark).FirstOrDefault().id_comp;
+            return db.Computers.Where(m => m.brand == mark).FirstOrDefault().id_comp;
         }
     }
 }

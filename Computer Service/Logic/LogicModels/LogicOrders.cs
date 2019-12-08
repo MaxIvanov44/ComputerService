@@ -50,7 +50,7 @@ namespace Logic
                            Id = Order.id_order,
                            Status = Status.status1,
                            Client = Client.first_name + Client.last_name,
-                           PC = Computers.mark + Computers.model,
+                           PC = Computers.brand + Computers.model,
                            Master = Master.first_name + Master.last_name + Master.middle_name,
                            DateAccept = Order.date_of_acceptance,
                            DateRepair = Order.date_of_return,
@@ -64,7 +64,7 @@ namespace Logic
                 dtord.Rows.Add(dt.id_order, dt.order_status, dt.client, dt.computer, dt.master, dt.date_of_acceptance, dt.date_of_return, dt.repair_price, dt.description);
             }
             return dtord;
-           
+
         }
     }
 }

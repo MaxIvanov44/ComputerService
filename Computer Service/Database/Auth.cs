@@ -10,8 +10,34 @@ namespace Database
 {
     public class Auth
     {
-        
-        public static bool authoriz(string username, string password)
+
+        public static bool authM(string username, string password)
+        {
+            Model1 db = new Model1();
+            try
+            {
+                foreach (var users in db.Masters)
+                {
+                    if (users.password == password && users.username == username)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return false;
+        }
+
+
+        public static bool authC(string username, string password)
         {
             Model1 db = new Model1();
             try
@@ -35,6 +61,6 @@ namespace Database
             }
             return false;
         }
-          
+
     }
 }

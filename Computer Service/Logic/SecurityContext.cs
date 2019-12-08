@@ -12,4 +12,10 @@ namespace Logic
         public static int CurrentOrder;
 
     }
+    public class securitycontext1
+    {
+        public static int id_user;
+        public static int CurrentID;
+
+    }
 }

@@ -73,11 +73,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Clients\AddClient.xaml">
+    <Page Include="AuthClient\ClientMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Clients\ClientView.xaml">
+    <Page Include="AuthMaster\Clients\AddClient.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthMaster\Clients\ClientView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthMaster\Computer\AddComputer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthMaster\Computer\ComputerView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -89,58 +101,71 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Clients\AddClient.xaml.cs">
+    <Compile Include="AuthClient\ClientMain.xaml.cs">
+      <DependentUpon>ClientMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthMaster\Clients\AddClient.xaml.cs">
       <DependentUpon>AddClient.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Clients\ClientView.xaml.cs">
+    <Compile Include="AuthMaster\Clients\ClientView.xaml.cs">
       <DependentUpon>ClientView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthMaster\Computer\AddComputer.xaml.cs">
+      <DependentUpon>AddComputer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthMaster\Computer\ComputerView.xaml.cs">
+      <DependentUpon>ComputerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Master\AddMaster.xaml">
+    <Page Include="AuthMaster\Master\AddMaster.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Master\MasterView.xaml">
+    <Page Include="AuthMaster\Master\MasterView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Master\MasterMain.xaml">
+    <Page Include="AuthMaster\Master\MasterMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Orders\UpdateOrder.xaml">
+    <Page Include="AuthMaster\Orders\UpdateOrder.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Orders\AddOrder.xaml">
+    <Page Include="AuthMaster\Orders\AddOrder.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Orders\ViewOrder.xaml">
+    <Page Include="AuthMaster\Orders\ViewOrder.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\XAMLClasses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Master\AddMaster.xaml.cs">
+    <Compile Include="AuthMaster\Master\AddMaster.xaml.cs">
       <DependentUpon>AddMaster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Master\MasterView.xaml.cs">
+    <Compile Include="AuthMaster\Master\MasterView.xaml.cs">
       <DependentUpon>MasterView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Master\MasterMain.xaml.cs">
+    <Compile Include="AuthMaster\Master\MasterMain.xaml.cs">
       <DependentUpon>MasterMain.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Orders\UpdateOrder.xaml.cs">
+    <Compile Include="AuthMaster\Orders\UpdateOrder.xaml.cs">
       <DependentUpon>UpdateOrder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Orders\AddOrder.xaml.cs">
+    <Compile Include="AuthMaster\Orders\AddOrder.xaml.cs">
       <DependentUpon>AddOrder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Orders\ViewOrder.xaml.cs">
+    <Compile Include="AuthMaster\Orders\ViewOrder.xaml.cs">
       <DependentUpon>ViewOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -185,8 +210,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AuthMaster\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

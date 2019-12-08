@@ -1,0 +1,27 @@
+﻿<Controls:MetroWindow x:Class="Computer_Service.AddClient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Computer_Service"
+        Title="AddClient" Height="345.103" Width="381">
+    <Window.Background>
+
+        <SolidColorBrush Color="#647382"/>
+    </Window.Background>
+    <Grid>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" FontSize="20" Width="92"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" FontSize="20" Width="92"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" FontSize="20" Width="92"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" FontSize="20" Width="92"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" FontSize="20" Width="92"/>
+        <TextBox  x:Name="login" HorizontalAlignment="Left" Height="20" Margin="107,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="253" FontSize="20"/>
+        <TextBox  x:Name="password" HorizontalAlignment="Left" Height="23" Margin="107,48,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="253" FontSize="20"/>
+        <TextBox  x:Name="name" HorizontalAlignment="Left" Height="23" Margin="107,88,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="253" FontSize="20"/>
+        <TextBox  x:Name="family" HorizontalAlignment="Left" Height="23" Margin="107,132,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="253" FontSize="20"/>
+        <TextBox  x:Name="phone" HorizontalAlignment="Left" Height="23" Margin="140,172,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" FontSize="20"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click" FontSize="20" Height="46"/>
+        <Label Content="+7" HorizontalAlignment="Left" Margin="100,167,0,0" VerticalAlignment="Top" FontSize="20" Width="35"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" FontSize="20" Width="92"/>
+        <TextBox  x:Name="email" HorizontalAlignment="Left" Height="23" Margin="107,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="253" FontSize="20"/>
+    </Grid>
+</Controls:MetroWindow>
