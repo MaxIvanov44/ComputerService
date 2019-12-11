@@ -73,6 +73,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AuthClient\Orders\ViewNowOrders.xaml.cs">
+      <DependentUpon>ViewNowOrders.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Resources\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AuthClient\ClientMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthClient\Orders\ViewNowOrders.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

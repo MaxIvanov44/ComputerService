@@ -36,4 +36,10 @@ namespace Logic
         public static int CurrentPC;
 
     }
+    public class SaveCLID
+    {
+        public static int CLID;
+
+
+    }
 }

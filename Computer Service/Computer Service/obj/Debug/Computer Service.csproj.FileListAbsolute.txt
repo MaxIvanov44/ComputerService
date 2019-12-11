@@ -67,3 +67,5 @@ C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\De
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\UpdateMaster.baml
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Debug\Resources\About.g.cs
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Debug\Resources\About.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Debug\AuthClient\Orders\ViewNowOrders.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Debug\AuthClient\Orders\ViewNowOrders.baml

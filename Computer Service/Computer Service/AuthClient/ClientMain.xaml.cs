@@ -1,4 +1,5 @@
-﻿using Database.EntityModels;
+﻿using Computer_Service.Resources;
+using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
 using System;
@@ -26,6 +27,8 @@ namespace Computer_Service
         public ClientMain()
         {
             InitializeComponent();
+
+
         }
 
 
@@ -36,23 +39,69 @@ namespace Computer_Service
 
 
 
-        private void DataGrid_Loaded(object sender, RoutedEventArgs e)
+
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            ViewNowOrders vno = new ViewNowOrders();
+            vno.Show();
+            Close();
+        }
+
+
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+            About a = new About();
+            a.ShowDialog();
+        }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            Close();
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+
             try
             {
+
+                Clients cl = LGS.GetCurrentID();
+
+                id.Content = cl.id_user;
+                SaveCLID.CLID = cl.id_user;
+
                 Model1 db = new Model1();
 
-               Clients cl = LGS.GetCurrentID();
-                var a = cl.id_user;
-                var data = from r in db.Orders.Where(idc => idc.client == a) select r;
-                view.ItemsSource = data.ToList();
-                id.Content = cl.id_user;
+                var count = (from t in db.Orders
+                             where t.client == SaveCLID.CLID
+                             select t).Count();
+                var inprocess = (from t in db.Orders
+                                 where t.client == SaveCLID.CLID && t.order_status == 2
+                                 select t).Count();
+                var readyy = (from t in db.Orders
+                                 where t.client == SaveCLID.CLID && t.order_status == 4
+                                 select t).Count();
+                var okk = (from t in db.Orders
+                                 where t.client == SaveCLID.CLID && t.order_status == 5
+                                 select t).Count();
+                all.Content = count;
+                now.Content = inprocess;
+                ready.Content = readyy;
+                ok.Content = okk;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
     }
 }

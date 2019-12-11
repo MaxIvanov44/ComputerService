@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\App.xaml
-19-516121148
+20-128602523
 
-22537943070
+23138074501
 21-303029170
-AuthAdmin\AdminMain.xaml;AuthClient\ClientMain.xaml;AuthManager\ManagerMain.xaml;AuthMaster\Clients\AddClient.xaml;AuthMaster\Clients\ClientView.xaml;AuthMaster\Clients\UpdateClient.xaml;AuthMaster\Computer\AddComputer.xaml;AuthMaster\Computer\ComputerView.xaml;AuthMaster\Master\UpdateMaster.xaml;MainWindow.xaml;AuthMaster\Master\AddMaster.xaml;AuthMaster\Master\MasterView.xaml;AuthMaster\Master\MasterMain.xaml;AuthMaster\Orders\UpdateOrder.xaml;AuthMaster\Orders\AddOrder.xaml;AuthMaster\Orders\ViewOrder.xaml;Page1.xaml;Resources\About.xaml;Resources\XAMLClasses.xaml;
+AuthAdmin\AdminMain.xaml;AuthClient\ClientMain.xaml;AuthClient\Orders\ViewNowOrders.xaml;AuthManager\ManagerMain.xaml;AuthMaster\Clients\AddClient.xaml;AuthMaster\Clients\ClientView.xaml;AuthMaster\Clients\UpdateClient.xaml;AuthMaster\Computer\AddComputer.xaml;AuthMaster\Computer\ComputerView.xaml;AuthMaster\Master\UpdateMaster.xaml;MainWindow.xaml;AuthMaster\Master\AddMaster.xaml;AuthMaster\Master\MasterView.xaml;AuthMaster\Master\MasterMain.xaml;AuthMaster\Orders\UpdateOrder.xaml;AuthMaster\Orders\AddOrder.xaml;AuthMaster\Orders\ViewOrder.xaml;Page1.xaml;Resources\About.xaml;Resources\XAMLClasses.xaml;
 
-True
+False
 
