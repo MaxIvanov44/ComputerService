@@ -32,5 +32,6 @@
         <Label Content="Клиент" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" />
         <Label Content="ID заказа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164"/>
         <TextBox x:Name="idtxt" HorizontalAlignment="Left" Height="47" Margin="185,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" FontSize="24"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="518,528,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click_1" FontSize="18" Height="43"/>
     </Grid>
 </Controls:MetroWindow>

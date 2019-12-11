@@ -1,0 +1,59 @@
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Computer Service.exe.config
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Computer Service.exe
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Computer Service.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\ControlzEx.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Database.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\EntityFramework.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Logic.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\MahApps.Metro.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\System.Windows.Interactivity.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Database.dll.config
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Logic.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\Logic.dll.config
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\ControlzEx.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\EntityFramework.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\MahApps.Metro.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\MahApps.Metro.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.csprojAssemblyReference.cache
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthClient\ClientMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Clients\AddClient.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Clients\ClientView.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\AddComputer.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\ComputerView.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\MainWindow.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Master\AddMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Master\MasterView.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Master\MasterMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\UpdateOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\AddOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\ViewOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\App.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service_MarkupCompile.cache
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service_MarkupCompile.lref
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\App.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthClient\ClientMain.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Clients\AddClient.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Clients\ClientView.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\AddComputer.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\ComputerView.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\MainWindow.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Master\AddMaster.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Master\MasterView.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Master\MasterMain.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\UpdateOrder.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\AddOrder.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\ViewOrder.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Resources\XAMLClasses.baml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.g.resources
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer_Service.Properties.Resources.resources
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.csproj.GenerateResource.cache
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.csproj.CopyComplete
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.exe
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Page1.g.cs
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Page1.baml

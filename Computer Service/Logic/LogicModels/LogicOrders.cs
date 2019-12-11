@@ -10,16 +10,20 @@ namespace Logic
 {
     public class LogicOrders
     {
+
+        public static string c;
+        public static string m;
+        public static string pc;
         public static void CurrentOrder(int id) //current transport
         {
             Model1 db = new Model1();
-            securitycontext.CurrentOrder = id;
+            GETORDERID.CurrentOrder = id;
             //securitycontext.CurrentOrder = db.Orders.Where(tr => tr.id_order == id).FirstOrDefault().id_order;
         }
         public static Orders GetCurrentOrder() // get current trasport
         {
             Model1 db = new Model1();
-            return db.Orders.Find(securitycontext.CurrentOrder);
+            return db.Orders.Find(GETORDERID.CurrentOrder);
            // return db.Orders.Where(tr => tr.id_order == securitycontext.CurrentOrder).FirstOrDefault();
         }
 

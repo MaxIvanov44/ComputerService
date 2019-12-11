@@ -1,6 +1,7 @@
 ﻿using Database.EntityModels;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,19 +17,75 @@ namespace Logic
             List<string> MarkList = new List<string>();
             foreach (var mark in ListQuery)
             {
-                MarkList.Add(mark.brand + " " + mark.model.ToString());
+                MarkList.Add(mark.id_comp + " " + mark.name + " " + mark.brand + " " + mark.model.ToString());
             }
             return MarkList;
         }
 
-        public static int GetIdMark(string mark)
+        public static int GetIdMark(string ID)
+        {
+
+
+
+            Model1 db = new Model1();
+            string[] NameArray = new string[1];
+            NameArray = ID.Split(' ');
+           ID = NameArray[0];
+            int IDD = Convert.ToInt32(ID);
+
+            return db.Computers.Where(m => m.id_comp == IDD).FirstOrDefault().id_comp;
+        }
+
+
+        public static void CurrentPC(int id)
         {
             Model1 db = new Model1();
-            string[] NameArray = new string[2];
-            NameArray = mark.Split(' ');
-            mark = NameArray[0];
+            GETPCID.CurrentPC = id;
 
-            return db.Computers.Where(m => m.brand == mark).FirstOrDefault().id_comp;
+        }
+        public static Computers GetCurrentPC()
+        {
+            Model1 db = new Model1();
+            return db.Computers.Find(GETPCID.CurrentPC);
+
+        }
+
+        public static DataTable GetAllPC()
+        {
+
+
+
+            Model1 db = new Model1();
+
+            DataTable dtord = new DataTable();
+            dtord.Columns.Add("ID");
+
+            dtord.Columns.Add("Наименование");
+            dtord.Columns.Add("Брэнд");
+            dtord.Columns.Add("Марка");
+            dtord.Columns.Add("Проблема");
+            dtord.Columns.Add("Описание");
+            var data = from PC in db.Computers
+                       select new
+                       {
+                           ID = PC.id_comp,
+                           Name = PC.name,
+                           br = PC.brand,
+                           mark = PC.model,
+                           problem = PC.problem,
+                           des = PC.description
+
+
+
+
+                       };
+
+            foreach (var dt in db.Computers)
+            {
+                dtord.Rows.Add(dt.id_comp, dt.name, dt.brand, dt.model, dt.problem, dt.description);
+            }
+            return dtord;
+
         }
     }
 }

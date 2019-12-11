@@ -55,5 +55,12 @@ namespace Computer_Service
 
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MasterView mv = new MasterView();
+            mv.Show();
+            Close();
+        }
     }
 }

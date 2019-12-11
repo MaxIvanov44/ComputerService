@@ -12,6 +12,7 @@ namespace Database.EntityModels
         {
         }
 
+        public virtual DbSet<Admin> Admin { get; set; }
         public virtual DbSet<Clients> Clients { get; set; }
         public virtual DbSet<Computers> Computers { get; set; }
         public virtual DbSet<Managers> Managers { get; set; }

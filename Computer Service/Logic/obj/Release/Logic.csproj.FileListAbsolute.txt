@@ -1,0 +1,16 @@
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\Logic.dll.config
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\Logic.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\Logic.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\Database.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\EntityFramework.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\Database.dll.config
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\EntityFramework.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.csprojAssemblyReference.cache
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.csproj.CopyComplete
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.dll
+C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.pdb

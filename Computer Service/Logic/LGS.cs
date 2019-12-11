@@ -13,14 +13,14 @@ namespace Logic
         {
             Model1 db = new Model1();
             //securitycontext.CurrentOrder = id;
-            securitycontext1.CurrentID = db.Clients.Where(tr => tr.username == log && tr.password == pas).FirstOrDefault().id_user;
+            GetIdClient.CurrentID = db.Clients.Where(tr => tr.username == log && tr.password == pas).FirstOrDefault().id_user;
         }
         public static Clients GetCurrentID() // get current trasport
         {
             Model1 db = new Model1();
 
             //return db.Orders.Find(securitycontext.CurrentOrder);
-            return db.Clients.Find(securitycontext1.CurrentID);
+            return db.Clients.Find(GetIdClient.CurrentID);
             //return db.Clients.Where(tr => tr.id_user == securitycontext.CurrentOrder).FirstOrDefault();
         }
 

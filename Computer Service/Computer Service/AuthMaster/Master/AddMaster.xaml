@@ -27,5 +27,6 @@
         <Label Content="+7" HorizontalAlignment="Left" Margin="99,289,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label Content="E-mail" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBox  x:Name="email" HorizontalAlignment="Left" Height="27" Margin="80,341,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="423" FontSize="20"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="386,373,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_1" FontSize="18" Height="51"/>
     </Grid>
 </Controls:MetroWindow>

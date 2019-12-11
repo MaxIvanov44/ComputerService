@@ -16,17 +16,17 @@
 
 
 
-        <TextBox  Controls:TextBoxHelper.Watermark="Мастер: Введите логин"  x:Name="username" HorizontalAlignment="Right" Height="40" Margin="0,179,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontSize="24" TabIndex="1" />
-        <Button x:Name="login1"  Content="Войти: Мастер" HorizontalAlignment="Right" Margin="0,0,10,63" VerticalAlignment="Bottom" Width="267" Click="Button_Click" FontSize="24" Height="48" TabIndex="3"/>
+        <TextBox  Controls:TextBoxHelper.Watermark="Сотрудник: Введите логин"  x:Name="username" HorizontalAlignment="Right" Height="40" Margin="0,179,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontSize="24" TabIndex="1" />
+        <Button x:Name="login1"  Content="Войти" HorizontalAlignment="Right" Margin="0,0,10,63" VerticalAlignment="Bottom" Width="267" Click="Button_Click" FontSize="24" Height="48" TabIndex="3"/>
         <DataGrid MinWidth="50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  x:Name="pricelistdgr" Height="Auto" Width="Auto" Margin="10,10,334,0"  FontSize="16"/>
-        <Image HorizontalAlignment="Right" Height="169" Margin="0,10,10,0" VerticalAlignment="Top" Width="148" Source="Resources/250logoblack.png"/>
-        <PasswordBox Controls:TextBoxHelper.Watermark="Мастер: Введите пароль" x:Name="password" HorizontalAlignment="Right" Margin="0,224,10,0" VerticalAlignment="Top" Height="40" Width="319" FontSize="24" TabIndex="2"/>
+        <Image HorizontalAlignment="Right" Height="164" Margin="0,10,10,0" VerticalAlignment="Top" Width="157" Source="Resources/250logoblack.png"/>
+        <PasswordBox Controls:TextBoxHelper.Watermark="Сотрудник: Введите пароль" x:Name="password" HorizontalAlignment="Right" Margin="0,224,10,0" VerticalAlignment="Top" Height="40" Width="319" FontSize="24" TabIndex="2"/>
         <Button  x:Name="color" HorizontalAlignment="Left" Margin="913,609,0,0" VerticalAlignment="Top" Width="32" Height="32" Background="White" Click="Button_Click_1" RenderTransformOrigin="0.75,0.458" BorderBrush="{x:Null}"/>
         <TextBox  Controls:TextBoxHelper.Watermark="Клиент: Введите логин"  x:Name="username_Copy" HorizontalAlignment="Right" Height="40" Margin="0,269,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" FontSize="24" TabIndex="1" />
         <TextBox Controls:TextBoxHelper.Watermark="Клиент: Введите пароль" x:Name="password_Copy" HorizontalAlignment="Right" Margin="0,314,10,0" VerticalAlignment="Top" Height="40" Width="319" FontSize="24" TabIndex="2"/>
-        <Button x:Name="clientsss" Content="Вход клиента" HorizontalAlignment="Right" Margin="0,0,192,607" VerticalAlignment="Bottom" Width="137" Click="Button_Click_3" FontSize="16" Height="34" TabIndex="3"/>
+        <Button x:Name="clientsss" Content="Вход клиента" HorizontalAlignment="Right" Margin="0,0,172,607" VerticalAlignment="Bottom" Width="157" Click="Button_Click_3" FontSize="14" Height="34" TabIndex="3"/>
         <Button  x:Name="login2" Content="Войти: Клиент" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="267" Click="Button_Click_2" FontSize="24" Height="48" TabIndex="3"/>
-        <Button x:Name="mastersss" Content="Вход мастера" HorizontalAlignment="Right" Margin="0,0,192,573" VerticalAlignment="Bottom" Width="137" Click="mastersss_Click" FontSize="16" Height="34" TabIndex="3"/>
+        <Button x:Name="mastersss" Content="Вход сотрудника" HorizontalAlignment="Right" Margin="0,0,172,568" VerticalAlignment="Bottom" Width="157" Click="mastersss_Click" FontSize="14" Height="34" TabIndex="3"/>
 
     </Grid>
 </Controls:MetroWindow>

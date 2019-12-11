@@ -8,11 +8,11 @@
 
         <SolidColorBrush Color="#647382"/>
     </Window.Background>
-    <Grid Loaded="Grid_Loaded">
-        <Label Content="Всего заказов" HorizontalAlignment="Left" Margin="-1,10,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="109,10,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="now"  Content="Текущих заказов:" HorizontalAlignment="Left" Margin="-1,42,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="109,42,0,0" VerticalAlignment="Top"/>
+    <Grid>
+        <Label Content="Всего заказов" HorizontalAlignment="Left" Margin="-1,33,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="109,33,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="now"  Content="Текущих заказов:" HorizontalAlignment="Left" Margin="-1,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="109,65,0,0" VerticalAlignment="Top"/>
 
 
         <!--<Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
@@ -34,7 +34,20 @@
             <MenuItem Header="TEST" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
         </Menu>-->
         <DataGrid x:Name="view" HorizontalAlignment="Left" Height="204" Margin="10,140,0,0" VerticalAlignment="Top" Width="772" Loaded="DataGrid_Loaded"/>
-        <Label x:Name="id"  Content="айди" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="id"  Content="айди" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top"/>
+        <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
+            <MenuItem Header="Меню" Background="#FF2D333A">
+                <MenuItem Header="Просмотр текущих заказов"  />
+                <MenuItem Header="Просмотр прошедших заказов" />
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="О программе" Background="#FF2D333A" >
+                <MenuItem Header="О авторе" />
+                <Separator />
+                <MenuItem Header="Github" Click="MenuItem_Click_1"/>
+            </MenuItem>
+            <MenuItem Header="Выход из системы" Background="#FF2D333A" />
+        </Menu>
 
     </Grid>
 </Controls:MetroWindow>

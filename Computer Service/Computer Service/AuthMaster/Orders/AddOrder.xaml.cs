@@ -62,30 +62,36 @@ namespace Computer_Service
 
         private void Label_Loaded(object sender, RoutedEventArgs e)
         {
-            client.ItemsSource = LogicClient.GetNameClient();
-          master.ItemsSource = LogicMaster.GetNameMaster();
-           pc.ItemsSource = LogicComputers.GetMark();
-           status.ItemsSource = LogicStatus.GetStatus();
+            //  client.ItemsSource = LogicClient.GetNameClient();
+            //master.ItemsSource = LogicMaster.GetNameMaster();
+            // pc.ItemsSource = LogicComputers.GetMark();
+            status.ItemsSource = LogicStatus.GetStatus();
+
+            client.Text = LogicOrders.c;
+            master.Text = LogicOrders.m;
+            pc.Text = LogicOrders.pc;
 
         }
 
         private void viewClient_Click(object sender, RoutedEventArgs e)
         {
             ClientView cv = new ClientView();
-            cv.ShowDialog();
+            cv.Show();
+            Close();
         }
 
         private void viewMaster_Click(object sender, RoutedEventArgs e)
         {
             MasterView mv = new MasterView();
-            mv.ShowDialog();
-
+            mv.Show();
+            Close();
         }
 
         private void viewCOMP_Click(object sender, RoutedEventArgs e)
         {
             ComputerView cv1 = new ComputerView();
-            cv1.ShowDialog();
+            cv1.Show();
+            Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -93,6 +99,16 @@ namespace Computer_Service
             MasterMain mm = new MasterMain();
             mm.Show();
             Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            accept.SelectedDate = DateTime.Now;
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            @return.SelectedDate = DateTime.Now;
         }
 
 

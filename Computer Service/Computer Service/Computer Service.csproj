@@ -73,7 +73,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Resources\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AuthAdmin\AdminMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="AuthClient\ClientMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthManager\ManagerMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -85,11 +96,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="AuthMaster\Clients\UpdateClient.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="AuthMaster\Computer\AddComputer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AuthMaster\Computer\ComputerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthMaster\Master\UpdateMaster.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -101,8 +120,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AuthAdmin\AdminMain.xaml.cs">
+      <DependentUpon>AdminMain.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthClient\ClientMain.xaml.cs">
       <DependentUpon>ClientMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthManager\ManagerMain.xaml.cs">
+      <DependentUpon>ManagerMain.xaml</DependentUpon>
     </Compile>
     <Compile Include="AuthMaster\Clients\AddClient.xaml.cs">
       <DependentUpon>AddClient.xaml</DependentUpon>
@@ -110,11 +135,17 @@
     <Compile Include="AuthMaster\Clients\ClientView.xaml.cs">
       <DependentUpon>ClientView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AuthMaster\Clients\UpdateClient.xaml.cs">
+      <DependentUpon>UpdateClient.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthMaster\Computer\AddComputer.xaml.cs">
       <DependentUpon>AddComputer.xaml</DependentUpon>
     </Compile>
     <Compile Include="AuthMaster\Computer\ComputerView.xaml.cs">
       <DependentUpon>ComputerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthMaster\Master\UpdateMaster.xaml.cs">
+      <DependentUpon>UpdateMaster.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -144,6 +175,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\XAMLClasses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -167,6 +206,9 @@
     </Compile>
     <Compile Include="AuthMaster\Orders\ViewOrder.xaml.cs">
       <DependentUpon>ViewOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

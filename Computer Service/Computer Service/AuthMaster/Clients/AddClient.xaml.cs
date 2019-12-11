@@ -44,6 +44,8 @@ namespace Computer_Service
                 db.Clients.Add(client);
                 db.SaveChanges();
                 MessageBox.Show("Клиент добавлен!");
+                ClientView cv = new ClientView();
+                cv.Show();
                 Close();
             }
             catch (Exception ex)
@@ -52,6 +54,13 @@ namespace Computer_Service
             }
 
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ClientView cv = new ClientView();
+            cv.Show();
+            Close();
         }
     }
 }

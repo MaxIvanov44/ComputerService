@@ -88,5 +88,12 @@ namespace Computer_Service
             MessageBox.Show("Заказ изменён!");
             Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ViewOrder vo = new ViewOrder();
+            vo.Show();
+            Close();
+        }
     }
 }

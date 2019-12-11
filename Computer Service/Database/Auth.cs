@@ -16,17 +16,53 @@ namespace Database
             Model1 db = new Model1();
             try
             {
-                foreach (var users in db.Masters)
+                var admin = db.Masters.Where(a => a.username == username && a.password == password);
+                if (admin.Count() == 1)
                 {
-                    if (users.password == password && users.username == username)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return true;
                 }
+                else return false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return false;
+        }
+
+        public static bool authMan(string username, string password)
+        {
+            Model1 db = new Model1();
+            try
+            {
+                var admin = db.Managers.Where(a => a.username == username && a.password == password);
+                if (admin.Count() == 1)
+                {
+                    return true;
+                }
+                else return false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return false;
+        }
+
+        public static bool authA(string username, string password)
+        {
+            Model1 db = new Model1();
+            try
+            {
+                var admin = db.Admin.Where(a => a.username == username && a.password == password);
+                if (admin.Count() == 1)
+                {
+                    return true;
+                }
+                else return false;
+
 
             }
             catch (Exception ex)
@@ -42,17 +78,14 @@ namespace Database
             Model1 db = new Model1();
             try
             {
-                foreach (var users in db.Clients)
+                var client = db.Clients.Where(cl => cl.username == username && cl.password == password);
+                if (client.Count() == 1)
                 {
-                    if (users.password == password && users.username == username)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return true;
                 }
+                else return false;
+
+
 
             }
             catch (Exception ex)

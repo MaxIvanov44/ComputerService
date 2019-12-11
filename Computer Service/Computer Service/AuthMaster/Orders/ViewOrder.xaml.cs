@@ -33,7 +33,8 @@ namespace Computer_Service
             Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
                 ));
             UpdateOrder upd = new UpdateOrder();
-            upd.ShowDialog();
+            upd.Show();
+            Close();
 
         }
         DataTable dtord = new DataTable();
@@ -49,7 +50,8 @@ namespace Computer_Service
             Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
                ));
             UpdateOrder upd = new UpdateOrder();
-            upd.ShowDialog();
+            upd.Show();
+            Close();
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
