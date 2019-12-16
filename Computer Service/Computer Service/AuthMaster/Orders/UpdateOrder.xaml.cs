@@ -20,10 +20,11 @@ namespace Computer_Service
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             Orders orders = Logic.LogicOrders.GetCurrentOrder();
+
             idtxt.Text = orders.id_order.ToString();
-            client.ItemsSource = LogicClient.GetNameClient();
-            master.ItemsSource = LogicMaster.GetNameMaster();
-            pc.ItemsSource = LogicComputers.GetMark();
+            client.ItemsSource = LogicClient.GetNameClientO(orders.client);
+            //master.Text = LogicMaster.GetNameMaster();
+            //pc.Text = LogicComputers.GetMark();
             status.ItemsSource = LogicStatus.GetStatus();
             DateTime? date1 = orders.date_of_acceptance;
             DateTime? date2 = orders.date_of_return;
@@ -31,7 +32,6 @@ namespace Computer_Service
             @return.SelectedDate = orders.date_of_return;
             price.Text = orders.repair_price.Value.ToString();
             description.Text = orders.description;
-            //price.Text = orders.id_order.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -42,7 +42,6 @@ namespace Computer_Service
                 .Where(c => c.id_order == a)
                 .FirstOrDefault();
 
-            // Внести изменения
             orderr.order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text));
             orderr.client = Convert.ToInt32(LogicClient.GetIdClient(client.Text));
             orderr.master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text));
@@ -53,23 +52,8 @@ namespace Computer_Service
             orderr.repair_price = Convert.ToInt32(price.Text);
             orderr.description = description.Text;
 
-            // Сохранить изменения
             db.SaveChanges();
 
-            //Orders order = new Orders
-            //{
-            //    order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text)),
-            //    client = Convert.ToInt32(LogicClient.GetIdClient(client.Text)),
-            //    master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text)),
-            //    computer = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text)),
-
-            //    date_of_acceptance = accept.DisplayDate,
-            //    date_of_return = @return.DisplayDate,
-            //    repair_price = Convert.ToInt32(price.Text),
-            //    description = description.Text
-            //};
-            //db.Orders.Add(order);
-            //db.SaveChanges();
             MessageBox.Show("Заказ изменён!");
             Close();
         }

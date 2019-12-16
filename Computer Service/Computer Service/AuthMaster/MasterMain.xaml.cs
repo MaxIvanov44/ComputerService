@@ -68,11 +68,6 @@ namespace Computer_Service
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             Model1 db = new Model1();
-            //var data = from r in db.Orders.SqlQuery("SELECT        dbo.Orders.*, dbo.Clients.username, dbo.Clients.password, dbo.Clients.id_user" +
-            //           "FROM            dbo.Clients INNER JOIN" +
-            //           "                        dbo.Orders ON dbo.Clients.id_user = dbo.Orders.client" +
-            //           "WHERE(dbo.Clients.id_user = 2)");
-            //var data1 = from r in db.Orders.
         }
 
         private void MenuItem_Click_6(object sender, RoutedEventArgs e)

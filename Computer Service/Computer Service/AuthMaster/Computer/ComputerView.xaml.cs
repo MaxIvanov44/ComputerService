@@ -1,7 +1,9 @@
-﻿using Logic;
+﻿using Database.EntityModels;
+using Logic;
 using MahApps.Metro.Controls;
 using System;
 using System.Data;
+using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
@@ -61,7 +63,24 @@ namespace Computer_Service
 
         private void btndelete_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            var del = Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString());
+            int delete = Convert.ToInt32(del);
+            btndelete.Content = del.ToString();
+            if (MessageBox.Show("Точно хотите удалить технику?", "ВНИМАНИЕ", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                MessageBox.Show("Операция отменена");
+            }
+            else
+            {
+                Model1 db = new Model1();
+                
+                Computers cl = db.Computers
+                    .Where(d => d.id_comp == delete)
+                    .FirstOrDefault();
+                db.Computers.Remove(cl);
+                db.SaveChanges();
+                MessageBox.Show("Удаление техники " + "\"" + cl.name + " " + cl.brand + " " + cl.model + " с ID = " + cl.id_comp + " \"" + " произведено!");
+            }
         }
 
         private DataTable dtord = new DataTable();
@@ -96,6 +115,13 @@ namespace Computer_Service
         {
             dtord = Logic.LogicComputers.GetAllPC();
             viewdgr.ItemsSource = dtord.DefaultView;
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            MasterMain mm = new MasterMain();
+            mm.Show();
+            Close();
         }
     }
 }

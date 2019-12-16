@@ -19,6 +19,17 @@ namespace Logic
             }
             return NameList;
         }
+        public static List<string> GetNameClientO(int id)
+        {
+            Model1 db = new Model1();
+            var ListQuery = db.Orders.Where(t=>t.client == id);
+            List<string> NameList = new List<string>();
+            foreach (var name in ListQuery)
+            {
+                NameList.Add(name.client.ToString());
+            }
+            return NameList;
+        }
 
         public static int GetIdClient(string ID)
         {

@@ -35,14 +35,18 @@ namespace Computer_Service
         {
             Model1 db = new Model1();
             int a = Convert.ToInt32(idtxt.Text);
-            var cls = db.Clients
-                .Where(c => c.id_user == a)
+            var cls = db.Masters
+                .Where(c => c.id_master == a)
                 .FirstOrDefault();
 
             cls.username = username.Text;
             cls.password = password.Text;
             cls.last_name = last.Text;
             cls.first_name = first.Text;
+            cls.middle_name = middle.Text;
+            cls.address = addr.Text;
+            
+
             cls.phone = phone.Text;
             cls.email = email.Text;
 

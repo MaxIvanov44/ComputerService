@@ -1,6 +1,9 @@
 namespace Database.EntityModels
 {
+    using System;
     using System.Data.Entity;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Linq;
 
     public partial class Model1 : DbContext
     {
@@ -17,6 +20,8 @@ namespace Database.EntityModels
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<PriceList> PriceList { get; set; }
         public virtual DbSet<Status> Status { get; set; }
+        public virtual DbSet<StatusManager> StatusManager { get; set; }
+        public virtual DbSet<StatusMaster> StatusMaster { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -1,4 +1,5 @@
 ﻿using Database.EntityModels;
+using System;
 using System.Data;
 using System.Linq;
 
@@ -9,6 +10,10 @@ namespace Logic
         public static string c;
         public static string m;
         public static string pc;
+        public static string st;
+
+        public static string pr;
+        public static string des;
 
         public static void CurrentOrder(int id)
         {
@@ -98,5 +103,31 @@ namespace Logic
             }
             return dtord;
         }
+
+        public static void GetClientOrder(int id)
+        {
+            Model1 db = new Model1();
+
+            MMM.mmm = id;
+
+
+        }
+
+        public static IQueryable GetClientOrder1()
+        {
+            Model1 db = new Model1();
+
+            var data = from Order in db.Orders
+                       join Client in db.Clients on Order.client equals Client.id_user
+                       where Order.client == MMM.mmm
+                       select new
+                       {
+                           client = Order.client
+                       };
+            
+            return data;
+        }
+
+
     }
 }

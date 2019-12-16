@@ -104,11 +104,9 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\MainWindow.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\AddMaster.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\MasterView.g.cs
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\MasterMain.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\UpdateOrder.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\AddOrder.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\ViewOrder.g.cs
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Page1.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\About.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\App.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Computer Service_MarkupCompile.cache
@@ -127,11 +125,9 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\MainWindow.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\AddMaster.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\MasterView.baml
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Master\MasterMain.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\UpdateOrder.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\AddOrder.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\ViewOrder.baml
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Page1.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\About.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\XAMLClasses.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Computer Service.g.resources
@@ -142,3 +138,5 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Computer Service.pdb
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Computer\UpdateComputer.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Computer\UpdateComputer.baml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\MasterMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\MasterMain.baml

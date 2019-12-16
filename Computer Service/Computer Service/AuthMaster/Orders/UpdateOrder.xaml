@@ -3,7 +3,7 @@
                                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Computer_Service"
-        Title="UpdateOrder" Height="612.5" Width="675">
+        Title="UpdateOrder" Height="684.5" Width="586.5">
     <Window.Background>
 
         <SolidColorBrush Color="#647382" />
@@ -16,22 +16,22 @@
         <Label Content="Дата возврата" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="175" />
         <Label Content="Цена ремонта" HorizontalAlignment="Left" Margin="10,422,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="175" />
         <Label Content="Описание" HorizontalAlignment="Left" Margin="10,482,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="126" />
-        <TextBox  x:Name="price" HorizontalAlignment="Left" Height="42" Margin="141,482,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="Auto" FontSize="24" />
-        <TextBox  x:Name="description" HorizontalAlignment="Left" Height="40" Margin="185,422,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="Auto" FontSize="24" />
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,528,0,0" VerticalAlignment="Top" Width="175" Click="Button_Click" FontSize="24" Height="53" />
+        <TextBox  x:Name="description" HorizontalAlignment="Left" Height="82" Margin="141,482,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="421" FontSize="24" />
+        <TextBox  x:Name="price" HorizontalAlignment="Left" Height="40" Margin="193,422,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="369" FontSize="24" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,590,0,0" VerticalAlignment="Top" Width="175" Click="Button_Click" FontSize="24" Height="53" />
 
-        <ComboBox  x:Name="status"  HorizontalAlignment="Right" Margin="0,66,171,0" VerticalAlignment="Top" Width="311" FontSize="24" />
+        <ComboBox  x:Name="status"  HorizontalAlignment="Right" Margin="0,66,16,0" VerticalAlignment="Top" Width="369" FontSize="24" />
 
-        <DatePicker  x:Name="accept"  HorizontalAlignment="Left" Margin="201,311,0,0" VerticalAlignment="Top" FontSize="18" Width="295" />
-        <DatePicker  x:Name="return"  HorizontalAlignment="Left" Margin="201,367,0,0" VerticalAlignment="Top" FontSize="18" Width="295" />
+        <DatePicker  x:Name="accept"  HorizontalAlignment="Left" Margin="212,311,0,0" VerticalAlignment="Top" FontSize="18" Width="350" />
+        <DatePicker  x:Name="return"  HorizontalAlignment="Left" Margin="212,367,0,0" VerticalAlignment="Top" FontSize="18" Width="350" />
         <Label Content="ПК
                " HorizontalAlignment="Left" Margin="10,246,0,0" VerticalAlignment="Top" FontSize="24" Height="58" Width="96" />
-        <ComboBox  x:Name="client"  HorizontalAlignment="Left" Margin="185,123,0,0" VerticalAlignment="Top" Width="311" Height="56" FontSize="18" />
-        <ComboBox   x:Name="master" HorizontalAlignment="Left" Margin="185,184,0,0" VerticalAlignment="Top" Width="311" Height="56" FontSize="18" />
-        <ComboBox  x:Name="pc" HorizontalAlignment="Left" Margin="185,245,0,0" VerticalAlignment="Top" Width="311" Height="54" FontSize="18" />
         <Label Content="Клиент" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" />
         <Label Content="ID заказа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" />
-        <TextBox x:Name="idtxt" HorizontalAlignment="Left" Height="47" Margin="185,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" FontSize="24" />
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="518,528,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click_1" FontSize="18" Height="43" />
+        <TextBox IsEnabled="False" x:Name="idtxt" HorizontalAlignment="Left" Height="47" Margin="193,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="428,600,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click_1" FontSize="18" Height="43" />
+        <TextBox  x:Name="master" HorizontalAlignment="Left" Height="47" Margin="193,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <TextBox  x:Name="pc" HorizontalAlignment="Left" Height="47" Margin="193,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <ComboBox x:Name="client" HorizontalAlignment="Left" Margin="193,123,0,0" VerticalAlignment="Top" Width="369" Height="56"/>
     </Grid>
 </Controls:MetroWindow>

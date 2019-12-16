@@ -34,4 +34,10 @@
     {
         public static int CLID;
     }
+
+
+    public class MMM
+    {
+        public static int mmm;
+    }
 }

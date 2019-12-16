@@ -63,6 +63,8 @@
     <Compile Include="EntityModels\Orders.cs" />
     <Compile Include="EntityModels\PriceList.cs" />
     <Compile Include="EntityModels\Status.cs" />
+    <Compile Include="EntityModels\StatusManager.cs" />
+    <Compile Include="EntityModels\StatusMaster.cs" />
     <Compile Include="EntityModels\sysdiagrams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

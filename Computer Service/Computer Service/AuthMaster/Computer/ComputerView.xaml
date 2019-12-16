@@ -16,7 +16,7 @@
         <Button x:Name="btncreate"  Content="Создать" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top" Width="75" Click="btncreate_Click" />
         <Button x:Name="btnupdate" Content="Изменить" HorizontalAlignment="Left" Margin="712,382,0,0" VerticalAlignment="Top" Width="75" Click="btnupdate_Click" />
         <Button x:Name="btndelete" Content="Удалить" HorizontalAlignment="Left" Margin="792,382,0,0" VerticalAlignment="Top" Width="75" Click="btndelete_Click" />
-        <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="906,382,0,0" VerticalAlignment="Top" Width="75" Click="btndelete_Click" />
+        <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="906,382,0,0" VerticalAlignment="Top" Width="75" Click="back_Click" />
         <Button x:Name="sel"  Content="Выбрать технику" HorizontalAlignment="Left" Margin="104,382,0,0" VerticalAlignment="Top" Width="120" Click="btnselect_Click" />
     </Grid>
 </Controls:MetroWindow>
