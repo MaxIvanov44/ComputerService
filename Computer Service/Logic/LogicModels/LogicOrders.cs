@@ -1,37 +1,29 @@
 ﻿using Database.EntityModels;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logic
 {
     public class LogicOrders
     {
-
         public static string c;
         public static string m;
         public static string pc;
+
         public static void CurrentOrder(int id)
         {
             Model1 db = new Model1();
             GETORDERID.CurrentOrder = id;
-
         }
+
         public static Orders GetCurrentOrder()
         {
             Model1 db = new Model1();
             return db.Orders.Find(GETORDERID.CurrentOrder);
-
         }
 
         public static DataTable GetAllOrders()
         {
-
-
-
             Model1 db = new Model1();
 
             DataTable dtord = new DataTable();
@@ -60,7 +52,6 @@ namespace Logic
                            DateRepair = Order.date_of_return,
                            Price = Order.repair_price,
                            Descpription = Order.description
-
                        };
 
             foreach (var dt in db.Orders)
@@ -68,15 +59,10 @@ namespace Logic
                 dtord.Rows.Add(dt.id_order, dt.order_status, dt.client, dt.computer, dt.master, dt.date_of_acceptance, dt.date_of_return, dt.repair_price, dt.description);
             }
             return dtord;
-
         }
-
 
         public static DataTable AllClientOrders(int id)
         {
-
-
-
             Model1 db = new Model1();
 
             DataTable dtord = new DataTable();
@@ -104,7 +90,6 @@ namespace Logic
                            DateRepair = Order.date_of_return,
                            Price = Order.repair_price,
                            Descpription = Order.description
-
                        };
 
             foreach (var dt in db.Orders)
@@ -112,7 +97,6 @@ namespace Logic
                 dtord.Rows.Add(dt.id_order, dt.order_status, dt.computer, dt.master, dt.date_of_acceptance, dt.date_of_return, dt.repair_price, dt.description);
             }
             return dtord;
-
         }
     }
 }

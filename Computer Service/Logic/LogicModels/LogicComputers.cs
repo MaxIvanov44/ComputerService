@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logic
 {
@@ -24,37 +22,29 @@ namespace Logic
 
         public static int GetIdMark(string ID)
         {
-
-
-
             Model1 db = new Model1();
             string[] NameArray = new string[1];
             NameArray = ID.Split(' ');
-           ID = NameArray[0];
+            ID = NameArray[0];
             int IDD = Convert.ToInt32(ID);
 
             return db.Computers.Where(m => m.id_comp == IDD).FirstOrDefault().id_comp;
         }
 
-
         public static void CurrentPC(int id)
         {
             Model1 db = new Model1();
             GETPCID.CurrentPC = id;
-
         }
+
         public static Computers GetCurrentPC()
         {
             Model1 db = new Model1();
             return db.Computers.Find(GETPCID.CurrentPC);
-
         }
 
         public static DataTable GetAllPC()
         {
-
-
-
             Model1 db = new Model1();
 
             DataTable dtord = new DataTable();
@@ -74,10 +64,6 @@ namespace Logic
                            mark = PC.model,
                            problem = PC.problem,
                            des = PC.description
-
-
-
-
                        };
 
             foreach (var dt in db.Computers)
@@ -85,7 +71,6 @@ namespace Logic
                 dtord.Rows.Add(dt.id_comp, dt.name, dt.brand, dt.model, dt.problem, dt.description);
             }
             return dtord;
-
         }
     }
 }

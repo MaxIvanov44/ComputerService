@@ -2,46 +2,25 @@
 using Logic;
 using MahApps.Metro.Controls;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Computer_Service
 {
     /// <summary>
     /// Логика взаимодействия для MasterMain.xaml
     /// </summary>
-    public partial class ClientView: MetroWindow
+    public partial class ClientView : MetroWindow
     {
         public ClientView()
         {
             InitializeComponent();
-            //refreshdata();
         }
-        void refreshdata()
-        {
-            Model1 db = new Model1();
-            var data = from list in db.Clients select list;
-                       //select new
-                       //{
-                       //    Услуга = list.service,
-                       //    Ценаот = list.price_from,
-                       //    Ценадо = list.price_up
-                       //};
 
-            viewdgr.ItemsSource = data.ToList();
-        }
-        DataTable dtord = new DataTable();
+        private DataTable dtord = new DataTable();
+
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             try
@@ -65,13 +44,12 @@ namespace Computer_Service
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
+
         private void viewdgr_Loaded(object sender, RoutedEventArgs e)
         {
             dtord = Logic.LogicClient.GetAllClients();
             viewdgr.ItemsSource = dtord.DefaultView;
-
         }
 
         private void btnselect_Click(object sender, RoutedEventArgs e)
@@ -97,10 +75,6 @@ namespace Computer_Service
             {
                 MessageBox.Show(ex.Message);
             }
-
-
-
-
         }
 
         private void btnupdate_Click(object sender, RoutedEventArgs e)
@@ -110,7 +84,6 @@ namespace Computer_Service
             UpdateClient upd = new UpdateClient();
             upd.Show();
             Close();
-
         }
 
         private void btncreate_Click(object sender, RoutedEventArgs e)
@@ -137,18 +110,8 @@ namespace Computer_Service
                     .FirstOrDefault();
                 db.Clients.Remove(cl);
                 db.SaveChanges();
-                MessageBox.Show("Удаление пользователя " + "\"" + cl.first_name + " " + cl.last_name + "  с ID = " + cl.id_user + " \"" +" произведено!" );
+                MessageBox.Show("Удаление пользователя " + "\"" + cl.first_name + " " + cl.last_name + "  с ID = " + cl.id_user + " \"" + " произведено!");
             }
-
-
-
-            //SampleContext context = new SampleContext();
-            //Order order = context.Orders
-            //    .Where(o => o.OrderId == 8)
-            //    .FirstOrDefault();
-
-            //context.Orders.Remove(order);
-            //context.SaveChanges();
         }
 
         private void back_Click(object sender, RoutedEventArgs e)

@@ -1,23 +1,4 @@
 ﻿
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\App.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthAdmin\AdminMain.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthClient\ClientMain.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthClient\Orders\ViewNowOrders.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthManager\ManagerMain.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Clients\AddClient.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Clients\ClientView.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Clients\UpdateClient.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Computer\AddComputer.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Computer\ComputerView.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Master\UpdateMaster.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\MainWindow.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Master\AddMaster.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Master\MasterView.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Master\MasterMain.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Orders\UpdateOrder.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Orders\AddOrder.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\AuthMaster\Orders\ViewOrder.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\Page1.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\Resources\About.xaml;;
-FC:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\Resources\XAMLClasses.xaml;;
+
+FC:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\AuthMaster\Computer\UpdateComputer.xaml;;
 

@@ -6,27 +6,27 @@
         Title="AddMaster" Height="465.333" Width="520">
     <Window.Background>
 
-        <SolidColorBrush Color="#647382"/>
+        <SolidColorBrush Color="#647382" />
     </Window.Background>
     <Grid>
-        <Label Content="Логин" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Пароль" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Имя" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Отчество" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Адрес" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox  x:Name="login" HorizontalAlignment="Left" Height="27" Margin="81,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="422" FontSize="20"/>
-        <TextBox  x:Name="password" HorizontalAlignment="Left" Height="27" Margin="94,54,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="409" FontSize="20"/>
-        <TextBox  x:Name="name" HorizontalAlignment="Left" Height="27" Margin="64,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="439" FontSize="20"/>
-        <TextBox  x:Name="family" HorizontalAlignment="Left" Height="27" Margin="108,141,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="395" FontSize="20"/>
-        <TextBox  x:Name="patronymic" HorizontalAlignment="Left" Height="27" Margin="110,185,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="393" FontSize="20"/>
-        <TextBox  x:Name="address" HorizontalAlignment="Left" Height="56" Margin="80,228,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="423" FontSize="20"/>
-        <TextBox  x:Name="phone" HorizontalAlignment="Left" Height="27" Margin="138,299,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="194" FontSize="20"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click" FontSize="20" Height="51"/>
-        <Label Content="+7" HorizontalAlignment="Left" Margin="99,289,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="E-mail" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox  x:Name="email" HorizontalAlignment="Left" Height="27" Margin="80,341,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="423" FontSize="20"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="386,373,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_1" FontSize="18" Height="51"/>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="Отчество" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" FontSize="20" />
+        <TextBox  x:Name="login" HorizontalAlignment="Left" Height="37" Margin="94,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="410" FontSize="20" />
+        <TextBox  x:Name="password" HorizontalAlignment="Left" Height="38" Margin="94,54,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="410" FontSize="20" />
+        <TextBox  x:Name="name" HorizontalAlignment="Left" Height="39" Margin="64,97,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="440" FontSize="20" />
+        <TextBox  x:Name="family" HorizontalAlignment="Left" Height="39" Margin="108,141,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="396" FontSize="20" />
+        <TextBox  x:Name="patronymic" HorizontalAlignment="Left" Height="38" Margin="108,185,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="396" FontSize="20" />
+        <TextBox  x:Name="address" HorizontalAlignment="Left" Height="56" Margin="80,228,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="424" FontSize="20" />
+        <TextBox  x:Name="phone" HorizontalAlignment="Left" Height="37" Margin="138,289,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="366" FontSize="20" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click" FontSize="20" Height="51" />
+        <Label Content="+7" HorizontalAlignment="Left" Margin="99,289,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontSize="20" />
+        <TextBox  x:Name="email" HorizontalAlignment="Left" Height="37" Margin="81,331,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="423" FontSize="20" />
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="386,373,0,0" VerticalAlignment="Top" Width="118" Click="Button_Click_1" FontSize="18" Height="51" />
     </Grid>
 </Controls:MetroWindow>

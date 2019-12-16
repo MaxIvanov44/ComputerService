@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logic
 {
@@ -33,25 +31,20 @@ namespace Logic
             return db.Clients.Where(n => n.id_user == IDD).FirstOrDefault().id_user;
         }
 
-
         public static void CurrentClient(int id)
         {
             Model1 db = new Model1();
             GETCLIENTID.CurrentClient = id;
-
         }
+
         public static Clients GetCurrentClient()
         {
             Model1 db = new Model1();
             return db.Clients.Find(GETCLIENTID.CurrentClient);
-
         }
 
         public static DataTable GetAllClients()
         {
-
-
-
             Model1 db = new Model1();
 
             DataTable dtord = new DataTable();
@@ -65,16 +58,13 @@ namespace Logic
             var data = from Clients in db.Clients
                        select new
                        {
-                          ID = Clients.id_user,
+                           ID = Clients.id_user,
 
-                          F = Clients.last_name,
-                          I = Clients.first_name ,
-                          Phone = Clients.phone,
-                          email = Clients.email,
-                          block = Clients.block
-
-
-
+                           F = Clients.last_name,
+                           I = Clients.first_name,
+                           Phone = Clients.phone,
+                           email = Clients.email,
+                           block = Clients.block
                        };
 
             foreach (var dt in db.Clients)
@@ -82,7 +72,6 @@ namespace Logic
                 dtord.Rows.Add(dt.id_user, dt.first_name, dt.last_name, dt.phone, dt.email, dt.block);
             }
             return dtord;
-
         }
     }
 }

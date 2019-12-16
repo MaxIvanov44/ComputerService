@@ -76,6 +76,9 @@
     <Compile Include="AuthClient\Orders\ViewNowOrders.xaml.cs">
       <DependentUpon>ViewNowOrders.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AuthMaster\Computer\UpdateComputer.xaml.cs">
+      <DependentUpon>UpdateComputer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Resources\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AuthMaster\Computer\ComputerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthMaster\Computer\UpdateComputer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

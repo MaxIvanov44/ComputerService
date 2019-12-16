@@ -1,16 +1,12 @@
 ﻿using Database.EntityModels;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace Database
 {
     public class Auth
     {
-
         public static bool authM(string username, string password)
         {
             Model1 db = new Model1();
@@ -22,7 +18,6 @@ namespace Database
                     return true;
                 }
                 else return false;
-
             }
             catch (Exception ex)
             {
@@ -42,7 +37,6 @@ namespace Database
                     return true;
                 }
                 else return false;
-
             }
             catch (Exception ex)
             {
@@ -62,8 +56,6 @@ namespace Database
                     return true;
                 }
                 else return false;
-
-
             }
             catch (Exception ex)
             {
@@ -71,7 +63,6 @@ namespace Database
             }
             return false;
         }
-
 
         public static bool authC(string username, string password)
         {
@@ -84,9 +75,6 @@ namespace Database
                     return true;
                 }
                 else return false;
-
-
-
             }
             catch (Exception ex)
             {
@@ -94,6 +82,5 @@ namespace Database
             }
             return false;
         }
-
     }
 }

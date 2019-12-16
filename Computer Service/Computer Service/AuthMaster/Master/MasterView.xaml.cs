@@ -2,35 +2,25 @@
 using Logic;
 using MahApps.Metro.Controls;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Computer_Service
 {
     /// <summary>
     /// Логика взаимодействия для MasterMain.xaml
     /// </summary>
-    public partial class MasterView: MetroWindow
+    public partial class MasterView : MetroWindow
     {
         public MasterView()
         {
             InitializeComponent();
-
         }
 
+        private DataTable dtord = new DataTable();
 
-        DataTable dtord = new DataTable();
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             try
@@ -54,15 +44,13 @@ namespace Computer_Service
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
+
         private void viewdgr_Loaded(object sender, RoutedEventArgs e)
         {
             dtord = Logic.LogicMaster.GetAllMasters();
             viewdgr.ItemsSource = dtord.DefaultView;
-
         }
-
 
         private void btnselect_Click(object sender, RoutedEventArgs e)
         {
@@ -125,6 +113,7 @@ namespace Computer_Service
                 MessageBox.Show("Удаление мастера " + "\"" + cl.first_name + " " + cl.last_name + "  с ID = " + cl.id_master + " \"" + " произведено!");
             }
         }
+
         private void back_Click(object sender, RoutedEventArgs e)
         {
             MasterMain mm = new MasterMain();

@@ -1,9 +1,5 @@
 ﻿using Database.EntityModels;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Logic
 {
@@ -15,6 +11,7 @@ namespace Logic
             //securitycontext.CurrentOrder = id;
             GetIdClient.CurrentID = db.Clients.Where(tr => tr.username == log && tr.password == pas).FirstOrDefault().id_user;
         }
+
         public static Clients GetCurrentID() // get current trasport
         {
             Model1 db = new Model1();
@@ -23,8 +20,5 @@ namespace Logic
             return db.Clients.Find(GetIdClient.CurrentID);
             //return db.Clients.Where(tr => tr.id_user == securitycontext.CurrentOrder).FirstOrDefault();
         }
-
-
-
     }
 }

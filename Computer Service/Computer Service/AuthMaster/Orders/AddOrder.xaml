@@ -6,37 +6,37 @@
         Title="AddOrder" Height="612.5" Width="648.667">
     <Window.Background>
 
-        <SolidColorBrush Color="#647382"/>
+        <SolidColorBrush Color="#647382" />
     </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164"/>
-        <Label Content="Мастер" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" FontSize="24" Height="57" Width="96"/>
-        <Label Content="Дата принятия" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="180"/>
-        <Label Content="Дата возврата" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="175"/>
-        <Label Content="Цена ремонта" HorizontalAlignment="Left" Margin="11,377,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="175"/>
-        <Label Content="Описание" HorizontalAlignment="Left" Margin="11,438,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="126"/>
-        <TextBox  x:Name="price" HorizontalAlignment="Left" Height="74" Margin="201,438,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="416" FontSize="20"/>
-        <TextBox  x:Name="description" HorizontalAlignment="Left" Height="40" Margin="201,377,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,525,0,0" VerticalAlignment="Top" Width="164" Click="Button_Click" FontSize="24" Height="46"/>
+        <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" />
+        <Label Content="Мастер" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" FontSize="24" Height="57" Width="96" />
+        <Label Content="Дата принятия" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="180" />
+        <Label Content="Дата возврата" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="175" />
+        <Label Content="Цена ремонта" HorizontalAlignment="Left" Margin="11,377,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="175" />
+        <Label Content="Описание" HorizontalAlignment="Left" Margin="11,438,0,0" VerticalAlignment="Top" FontSize="24" Height="42" Width="126" />
+        <TextBox  x:Name="price" HorizontalAlignment="Left" Height="74" Margin="201,438,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="416" FontSize="20" />
+        <TextBox  x:Name="description" HorizontalAlignment="Left" Height="40" Margin="201,377,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24" />
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,525,0,0" VerticalAlignment="Top" Width="164" Click="Button_Click" FontSize="24" Height="46" />
 
         <ComboBox  x:Name="status"  HorizontalAlignment="Right" Margin="0,22,145,0" VerticalAlignment="Top" Width="317" FontSize="24" />
 
-        <DatePicker  x:Name="accept"  HorizontalAlignment="Left" Margin="201,267,0,0" VerticalAlignment="Top" FontSize="18" Width="295"/>
-        <DatePicker  x:Name="return"  HorizontalAlignment="Left" Margin="201,323,0,0" VerticalAlignment="Top" FontSize="18" Width="295"/>
+        <DatePicker  x:Name="accept"  HorizontalAlignment="Left" Margin="201,267,0,0" VerticalAlignment="Top" FontSize="18" Width="295" />
+        <DatePicker  x:Name="return"  HorizontalAlignment="Left" Margin="201,323,0,0" VerticalAlignment="Top" FontSize="18" Width="295" />
         <Label Content="ПК
-               " HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" FontSize="24" Height="58" Width="96"/>
-        <Label Content="Клиент" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" Loaded="Label_Loaded"/>
+               " HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" FontSize="24" Height="58" Width="96" />
+        <Label Content="Клиент" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" Loaded="Label_Loaded" />
         <Button  x:Name="viewCOMP"  Content="Просмотр техники" HorizontalAlignment="Left" Margin="506,202,0,0" VerticalAlignment="Top" Width="125" Height="36" FontWeight="Normal" FontSize="10" Click="viewCOMP_Click" />
-        <Button Content="Now" HorizontalAlignment="Left" Margin="506,267,0,0" VerticalAlignment="Top" Width="53" Height="32" FontWeight="Normal" FontSize="10" Click="Button_Click_2"/>
-        <Button Content="Now" HorizontalAlignment="Left" Margin="506,323,0,0" VerticalAlignment="Top" Width="53" Height="32" FontWeight="Normal" FontSize="10" Click="Button_Click_3"/>
-        <Button   x:Name="viewMaster"    Content="Просмотр мастеров" HorizontalAlignment="Left" Margin="506,140,0,0" VerticalAlignment="Top" Width="125" Height="36" FontWeight="Normal" FontSize="10" Click="viewMaster_Click"/>
-        <Button  x:Name="viewClient" Content="Просмотр клиентов" HorizontalAlignment="Left" Margin="506,79,0,0" VerticalAlignment="Top" Width="125" Height="36" FontWeight="Normal" FontSize="10" Click="viewClient_Click"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="566,538,0,0" VerticalAlignment="Top" Width="65" Click="Button_Click_1" FontSize="10" Height="33"/>
-        <TextBox x:Name="client" HorizontalAlignment="Left" Height="40" Margin="179,79,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24"/>
-        <TextBox  x:Name="master" HorizontalAlignment="Left" Height="40" Margin="179,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24"/>
-        <TextBox   x:Name="pc" HorizontalAlignment="Left" Height="40" Margin="179,202,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24"/>
+        <Button Content="Now" HorizontalAlignment="Left" Margin="506,267,0,0" VerticalAlignment="Top" Width="53" Height="32" FontWeight="Normal" FontSize="10" Click="Button_Click_2" />
+        <Button Content="Now" HorizontalAlignment="Left" Margin="506,323,0,0" VerticalAlignment="Top" Width="53" Height="32" FontWeight="Normal" FontSize="10" Click="Button_Click_3" />
+        <Button   x:Name="viewMaster"    Content="Просмотр мастеров" HorizontalAlignment="Left" Margin="506,140,0,0" VerticalAlignment="Top" Width="125" Height="36" FontWeight="Normal" FontSize="10" Click="viewMaster_Click" />
+        <Button  x:Name="viewClient" Content="Просмотр клиентов" HorizontalAlignment="Left" Margin="506,79,0,0" VerticalAlignment="Top" Width="125" Height="36" FontWeight="Normal" FontSize="10" Click="viewClient_Click" />
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="566,538,0,0" VerticalAlignment="Top" Width="65" Click="Button_Click_1" FontSize="10" Height="33" />
+        <TextBox x:Name="client" HorizontalAlignment="Left" Height="40" Margin="179,79,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24" />
+        <TextBox  x:Name="master" HorizontalAlignment="Left" Height="40" Margin="179,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24" />
+        <TextBox   x:Name="pc" HorizontalAlignment="Left" Height="40" Margin="179,202,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="295" FontSize="24" />
     </Grid>
 </Controls:MetroWindow>

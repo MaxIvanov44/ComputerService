@@ -1,19 +1,7 @@
 ﻿using Database.EntityModels;
 using MahApps.Metro.Controls;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Computer_Service
 {
@@ -43,14 +31,21 @@ namespace Computer_Service
                 db.Computers.Add(cmp);
                 db.SaveChanges();
                 MessageBox.Show("Техника добавлена!");
+                ComputerView cv = new ComputerView();
+                cv.Show();
                 Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
 
-
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ComputerView cv = new ComputerView();
+            cv.Show();
+            Close();
         }
     }
 }

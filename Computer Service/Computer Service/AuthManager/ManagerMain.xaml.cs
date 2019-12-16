@@ -1,19 +1,7 @@
 ﻿using Database.EntityModels;
 using MahApps.Metro.Controls;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Computer_Service
 {
@@ -31,10 +19,7 @@ namespace Computer_Service
         {
             MasterView mv = new MasterView();
             mv.ShowDialog();
-
         }
-
-
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
@@ -42,15 +27,9 @@ namespace Computer_Service
             cv.ShowDialog();
         }
 
-
-
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-
-
             Process.Start("https://github.com/MaxIvanov44");
-
-
         }
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
@@ -62,7 +41,6 @@ namespace Computer_Service
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)

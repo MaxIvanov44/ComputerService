@@ -6,18 +6,17 @@
         Title="ClientMain" Height="450" Width="800">
     <Window.Background>
 
-        <SolidColorBrush Color="#647382"/>
+        <SolidColorBrush Color="#647382" />
     </Window.Background>
     <Grid Loaded="Grid_Loaded">
-        <Label Content="Всего заказов" HorizontalAlignment="Left" Margin="-1,34,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="138,34,0,0" VerticalAlignment="Top"/>
-        <Label   Content="Текущих заказов:" HorizontalAlignment="Left" Margin="-1,66,0,0" VerticalAlignment="Top"/>
-        <Label  x:Name="now" Content="Label" HorizontalAlignment="Left" Margin="138,66,0,0" VerticalAlignment="Top"/>
-
+        <Label Content="Всего заказов" HorizontalAlignment="Left" Margin="-1,34,0,0" VerticalAlignment="Top" />
+        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="138,34,0,0" VerticalAlignment="Top" />
+        <Label   Content="Текущих заказов:" HorizontalAlignment="Left" Margin="-1,66,0,0" VerticalAlignment="Top" />
+        <Label  x:Name="now" Content="Label" HorizontalAlignment="Left" Margin="138,66,0,0" VerticalAlignment="Top" />
 
         <!--<Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
             <MenuItem Header="Меню" Background="#FF2D333A">
-                <MenuItem Header="Заказы" >
+                <MenuItem Header="Заказы">
                     <MenuItem Header="Создать заказ" Click="MenuItem_Click_3"></MenuItem>
                 <MenuItem Header="Изменить заказ" Click="MenuItem_Click_5" ></MenuItem>
                 </MenuItem>
@@ -26,31 +25,30 @@
             </MenuItem>
             <MenuItem Header="Мастера" Background="#FF2D333A" Click="MenuItem_Click" ></MenuItem>
             <MenuItem Header="Клиенты" Background="#FF2D333A" Click="MenuItem_Click_2" ></MenuItem>
-            <MenuItem Header="О программе" Background="#FF2D333A" >
+            <MenuItem Header="О программе" Background="#FF2D333A">
                 <MenuItem Header="О авторе" ></MenuItem>
                 <Separator />
                 <MenuItem Header="Github" Click="MenuItem_Click_1"></MenuItem>
             </MenuItem>
             <MenuItem Header="TEST" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
         </Menu>-->
-        <Label x:Name="id"  Content="..." HorizontalAlignment="Left" Margin="67,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.722,1.5"/>
-        <Label  Content="Ваш ИД" HorizontalAlignment="Left" Margin="-1,212,0,0" VerticalAlignment="Top" Height="93"/>
+        <Label x:Name="id"  Content="..." HorizontalAlignment="Left" Margin="67,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.722,1.5" />
+        <Label  Content="Ваш ИД" HorizontalAlignment="Left" Margin="-1,212,0,0" VerticalAlignment="Top" Height="93" />
         <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
             <MenuItem Header="Меню" Background="#FF2D333A">
-                <MenuItem Header="Просмотр заказов" Click="MenuItem_Click"  />
-                <MenuItem Header="Exit" Click="MenuItem_Click_3"/>
+                <MenuItem Header="Просмотр заказов" Click="MenuItem_Click" />
+                <MenuItem Header="Exit" Click="MenuItem_Click_3" />
             </MenuItem>
-            <MenuItem Header="О программе" Background="#FF2D333A" >
+            <MenuItem Header="О программе" Background="#FF2D333A">
                 <MenuItem Header="О авторе" Click="MenuItem_Click_4" />
                 <Separator />
-                <MenuItem Header="Github" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Github" Click="MenuItem_Click_1" />
             </MenuItem>
             <MenuItem Header="Выход из системы" Background="#FF2D333A" Click="MenuItem_Click_5" />
         </Menu>
-        <Label   Content="Готовых заказов:" HorizontalAlignment="Left" Margin="-1,97,0,0" VerticalAlignment="Top"/>
-        <Label  x:Name="ready" Content="Label" HorizontalAlignment="Left" Margin="138,97,0,0" VerticalAlignment="Top"/>
-        <Label   Content="Завершённых заказов:" HorizontalAlignment="Left" Margin="-1,128,0,0" VerticalAlignment="Top"/>
-        <Label  x:Name="ok" Content="Label" HorizontalAlignment="Left" Margin="138,128,0,0" VerticalAlignment="Top"/>
-
+        <Label   Content="Готовых заказов:" HorizontalAlignment="Left" Margin="-1,97,0,0" VerticalAlignment="Top" />
+        <Label  x:Name="ready" Content="Label" HorizontalAlignment="Left" Margin="138,97,0,0" VerticalAlignment="Top" />
+        <Label   Content="Завершённых заказов:" HorizontalAlignment="Left" Margin="-1,128,0,0" VerticalAlignment="Top" />
+        <Label  x:Name="ok" Content="Label" HorizontalAlignment="Left" Margin="138,128,0,0" VerticalAlignment="Top" />
     </Grid>
 </Controls:MetroWindow>

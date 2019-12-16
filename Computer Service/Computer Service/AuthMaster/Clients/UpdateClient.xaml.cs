@@ -1,21 +1,8 @@
 ﻿using Database.EntityModels;
-using Logic;
 using MahApps.Metro.Controls;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
 
 namespace Computer_Service
 {
@@ -33,9 +20,7 @@ namespace Computer_Service
         {
             Clients cl = Logic.LogicClient.GetCurrentClient();
 
-
-
-                idtxt.Text = cl.id_user.ToString();
+            idtxt.Text = cl.id_user.ToString();
             username.Text = cl.username;
             password.Text = cl.password;
             first.Text = cl.first_name;
@@ -49,11 +34,10 @@ namespace Computer_Service
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Model1 db = new Model1();
-           int a = Convert.ToInt32(idtxt.Text);
+            int a = Convert.ToInt32(idtxt.Text);
             var cls = db.Clients
                 .Where(c => c.id_user == a)
                 .FirstOrDefault();
-
 
             cls.username = username.Text;
             cls.password = password.Text;
@@ -63,7 +47,7 @@ namespace Computer_Service
             cls.email = email.Text;
             if (chk.IsChecked == true) cls.block = 1;
             else cls.block = 0;
-         db.SaveChanges();
+            db.SaveChanges();
 
             MessageBox.Show("Данные о клиенте изменены!");
             ClientView cv = new ClientView();

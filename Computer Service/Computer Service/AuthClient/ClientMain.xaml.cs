@@ -3,19 +3,9 @@ using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Computer_Service
 {
@@ -27,19 +17,12 @@ namespace Computer_Service
         public ClientMain()
         {
             InitializeComponent();
-
-
         }
-
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             Process.Start("https://github.com/MaxIvanov44/ComputerService");
         }
-
-
-
-
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
@@ -47,8 +30,6 @@ namespace Computer_Service
             vno.Show();
             Close();
         }
-
-
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
@@ -70,10 +51,8 @@ namespace Computer_Service
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-
             try
             {
-
                 Clients cl = LGS.GetCurrentID();
 
                 id.Content = cl.id_user;
@@ -88,11 +67,11 @@ namespace Computer_Service
                                  where t.client == SaveCLID.CLID && t.order_status == 2
                                  select t).Count();
                 var readyy = (from t in db.Orders
-                                 where t.client == SaveCLID.CLID && t.order_status == 4
-                                 select t).Count();
+                              where t.client == SaveCLID.CLID && t.order_status == 4
+                              select t).Count();
                 var okk = (from t in db.Orders
-                                 where t.client == SaveCLID.CLID && t.order_status == 5
-                                 select t).Count();
+                           where t.client == SaveCLID.CLID && t.order_status == 5
+                           select t).Count();
                 all.Content = count;
                 now.Content = inprocess;
                 ready.Content = readyy;

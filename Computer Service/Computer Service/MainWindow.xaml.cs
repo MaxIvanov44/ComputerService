@@ -2,8 +2,6 @@
 using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows;
@@ -18,7 +16,6 @@ namespace Computer_Service
     {
         public MainWindow()
         {
-
             InitializeComponent();
             refreshdata();
             username.Visibility = Visibility.Hidden;
@@ -30,11 +27,9 @@ namespace Computer_Service
             password_Copy.Visibility = Visibility.Hidden;
             login2.Visibility = Visibility.Hidden;
             mastersss.Visibility = Visibility.Visible;
-
         }
 
-
-       void refreshdata()
+        private void refreshdata()
         {
             Model1 db = new Model1();
             //var data = from Order in db.Orders
@@ -65,45 +60,36 @@ namespace Computer_Service
 
             pricelistdgr.ItemsSource = data.ToList();
         }
-        
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-
-                if (Auth.authM(username.Text, password.Password) == true)
-                {
-                    MasterMain ms = new MasterMain();
-                    this.Close();
-                    ms.Show();
-                }
-
-
-                else if (Auth.authA(username.Text, password.Password) == true)
-                {
-                    MasterMain ms = new MasterMain();
-                    this.Close();
-                    ms.Show();
-                }
-
-
-               else if (Auth.authMan(username.Text, password.Password) == true)
-                {
-                    ManagerMain ms = new ManagerMain();
-                    this.Close();
-                    ms.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Логин или пароль неверны!");
-                }
+            if (Auth.authM(username.Text, password.Password) == true)
+            {
+                MasterMain ms = new MasterMain();
+                this.Close();
+                ms.Show();
             }
-
-
+            else if (Auth.authA(username.Text, password.Password) == true)
+            {
+                MasterMain ms = new MasterMain();
+                this.Close();
+                ms.Show();
+            }
+            else if (Auth.authMan(username.Text, password.Password) == true)
+            {
+                ManagerMain ms = new ManagerMain();
+                this.Close();
+                ms.Show();
+            }
+            else
+            {
+                MessageBox.Show("Логин или пароль неверны!");
+            }
+        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             //LGS.CurrentID(username_Copy.Text, password_Copy.Text);
-
 
             //ClientMain ms = new ClientMain();
             //this.Close();
@@ -111,9 +97,7 @@ namespace Computer_Service
 
             if (Auth.authC(username_Copy.Text, password_Copy.Text) == true)
             {
-
                 LGS.CurrentID(username_Copy.Text.Trim(), password_Copy.Text.Trim());
-
 
                 ClientMain ms = new ClientMain();
                 this.Close();
@@ -125,7 +109,8 @@ namespace Computer_Service
             }
         }
 
-        bool y = true;
+        private bool y = true;
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (y == true)
@@ -141,8 +126,6 @@ namespace Computer_Service
                 y = true;
             }
         }
-
-
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
