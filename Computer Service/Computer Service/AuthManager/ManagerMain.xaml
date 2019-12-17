@@ -8,29 +8,19 @@
 
         <SolidColorBrush Color="#647382" />
     </Window.Background>
-    <Grid Loaded="Grid_Loaded">
-        <Label Content="Всего заказов" HorizontalAlignment="Left" Margin="5,51,0,0" VerticalAlignment="Top" />
-        <Label x:Name="all" Content="Label" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" />
-        <Label x:Name="now"  Content="Текущих заказов:" HorizontalAlignment="Left" Margin="5,82,0,0" VerticalAlignment="Top" />
-        <Label Content="Label" HorizontalAlignment="Left" Margin="115,82,0,0" VerticalAlignment="Top" />
+    <Grid Loaded="Grid_Loaded" Height="419" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
 
         <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
-            <MenuItem Header="Меню" Background="#FF2D333A">
-                <MenuItem Header="Заказы">
-                    <MenuItem Header="Создать заказ" Click="MenuItem_Click_3"></MenuItem>
-                    <MenuItem Header="Изменить заказ" Click="MenuItem_Click_5" ></MenuItem>
-                </MenuItem>
-                <Separator />
-                <MenuItem Header="Exit" ></MenuItem>
-            </MenuItem>
+            <MenuItem Header="Создать заказ" Background="#FF2D333A" Click="MenuItem_Click_3"></MenuItem>
+            <MenuItem Header="Изменить заказ"  Background="#FF2D333A" Click="MenuItem_Click_5" ></MenuItem>
+
             <MenuItem Header="Мастера" Background="#FF2D333A" Click="MenuItem_Click" ></MenuItem>
             <MenuItem Header="Клиенты" Background="#FF2D333A" Click="MenuItem_Click_2" ></MenuItem>
-            <MenuItem Header="О программе" Background="#FF2D333A">
-                <MenuItem Header="О авторе" ></MenuItem>
-                <Separator />
-                <MenuItem Header="Github" Click="MenuItem_Click_1"></MenuItem>
-            </MenuItem>
-            <MenuItem Header="TEST" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
+            <MenuItem Header="Выход из аккаунта" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
+            <MenuItem Header="Выход из программы"  Click="MenuItem_Click_6" ></MenuItem>
         </Menu>
     </Grid>
 </Controls:MetroWindow>

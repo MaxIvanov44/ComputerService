@@ -15,10 +15,9 @@ namespace Computer_Service
         {
             InitializeComponent();
         }
-      
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
             try
             {
                 if (accept.Text == "") accept.SelectedDate = DateTime.Now;
@@ -41,7 +40,6 @@ namespace Computer_Service
                     master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text)),
                     computer = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text)),
 
-
                     date_of_acceptance = accept.SelectedDate,
                     date_of_return = @return.SelectedDate,
                     repair_price = Convert.ToInt32(price.Text),
@@ -54,87 +52,86 @@ namespace Computer_Service
                 vo.Show();
                 Close();
             }
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
         }
 
-private void Label_Loaded(object sender, RoutedEventArgs e)
-{
-    status.ItemsSource = LogicStatus.GetStatus();
+        private void Label_Loaded(object sender, RoutedEventArgs e)
+        {
+            status.ItemsSource = LogicStatus.GetStatus();
 
-    client.Text = LogicOrders.c;
-    master.Text = LogicOrders.m;
-    pc.Text = LogicOrders.pc;
+            client.Text = LogicOrders.c;
+            master.Text = LogicOrders.m;
+            pc.Text = LogicOrders.pc;
 
-    description.Text = LogicOrders.des;
-    price.Text = LogicOrders.pr;
-}
+            description.Text = LogicOrders.des;
+            price.Text = LogicOrders.pr;
+        }
 
-private void viewClient_Click(object sender, RoutedEventArgs e)
-{
-    LogicOrders.st = status.Text;
+        private void viewClient_Click(object sender, RoutedEventArgs e)
+        {
+            LogicOrders.st = status.Text;
 
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-    ClientView cv = new ClientView();
-    cv.Show();
-    Close();
-}
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+            ClientView cv = new ClientView();
+            cv.Show();
+            Close();
+        }
 
-private void viewMaster_Click(object sender, RoutedEventArgs e)
-{
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-    MasterView mv = new MasterView();
-    mv.Show();
-    Close();
-}
+        private void viewMaster_Click(object sender, RoutedEventArgs e)
+        {
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+            MasterView mv = new MasterView();
+            mv.Show();
+            Close();
+        }
 
-private void viewCOMP_Click(object sender, RoutedEventArgs e)
-{
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-    ComputerView cv1 = new ComputerView();
-    cv1.Show();
-    Close();
-}
+        private void viewCOMP_Click(object sender, RoutedEventArgs e)
+        {
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+            ComputerView cv1 = new ComputerView();
+            cv1.Show();
+            Close();
+        }
 
-private void Button_Click_1(object sender, RoutedEventArgs e)
-{
-    MasterMain mm = new MasterMain();
-    mm.Show();
-    Close();
-}
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MasterMain mm = new MasterMain();
+            mm.Show();
+            Close();
+        }
 
-private void Button_Click_2(object sender, RoutedEventArgs e)
-{
-    accept.SelectedDate = DateTime.Now;
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            accept.SelectedDate = DateTime.Now;
 
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-}
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+        }
 
-private void Button_Click_3(object sender, RoutedEventArgs e)
-{
-    @return.SelectedDate = DateTime.Now;
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            @return.SelectedDate = DateTime.Now;
 
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-}
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+        }
 
-private void status_ContextMenuClosing(object sender, System.Windows.Controls.ContextMenuEventArgs e)
-{
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-}
+        private void status_ContextMenuClosing(object sender, System.Windows.Controls.ContextMenuEventArgs e)
+        {
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+        }
 
-private void status_ContextMenuOpening(object sender, System.Windows.Controls.ContextMenuEventArgs e)
-{
-    LogicOrders.pr = price.Text;
-    LogicOrders.des = description.Text;
-}
+        private void status_ContextMenuOpening(object sender, System.Windows.Controls.ContextMenuEventArgs e)
+        {
+            LogicOrders.pr = price.Text;
+            LogicOrders.des = description.Text;
+        }
     }
 }

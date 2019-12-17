@@ -60,22 +60,15 @@ namespace Computer_Service
 
                 Model1 db = new Model1();
 
-                var count = (from t in db.Orders
-                             where t.client == SaveCLID.CLID
-                             select t).Count();
                 var inprocess = (from t in db.Orders
                                  where t.client == SaveCLID.CLID && t.order_status == 2
                                  select t).Count();
                 var readyy = (from t in db.Orders
                               where t.client == SaveCLID.CLID && t.order_status == 4
                               select t).Count();
-                var okk = (from t in db.Orders
-                           where t.client == SaveCLID.CLID && t.order_status == 5
-                           select t).Count();
-                all.Content = count;
+
                 now.Content = inprocess;
                 ready.Content = readyy;
-                ok.Content = okk;
             }
             catch (Exception ex)
             {

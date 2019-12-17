@@ -73,6 +73,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AuthAdmin\Managers\AddManager.xaml.cs">
+      <DependentUpon>AddManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthAdmin\Managers\ManagerView.xaml.cs">
+      <DependentUpon>ManagerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthAdmin\Managers\UpdateManager.xaml.cs">
+      <DependentUpon>UpdateManager.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthClient\Orders\ViewNowOrders.xaml.cs">
       <DependentUpon>ViewNowOrders.xaml</DependentUpon>
     </Compile>
@@ -83,6 +92,18 @@
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
     <Page Include="AuthAdmin\AdminMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthAdmin\Managers\AddManager.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthAdmin\Managers\ManagerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthAdmin\Managers\UpdateManager.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -1,5 +1,4 @@
 ﻿using Database.EntityModels;
-using System;
 using System.Data;
 using System.Linq;
 
@@ -109,25 +108,21 @@ namespace Logic
             Model1 db = new Model1();
 
             MMM.mmm = id;
-
-
         }
 
-        public static IQueryable GetClientOrder1()
+        public static string GetClientOrder1()
         {
             Model1 db = new Model1();
+            var data = db.Clients.SqlQuery("SELECT first_name, last_name FROM dbo.Clients WHERE id_user = ", MMM.mmm).Single();
+            //var data = from Order in db.Orders
+            //           join Client in db.Clients on Order.client equals Client.id_user
+            //           where Order.client == MMM.mmm
+            //           select new
+            //           {
+            //               FIO = Client.first_name + Client.last_name
+            //           };
 
-            var data = from Order in db.Orders
-                       join Client in db.Clients on Order.client equals Client.id_user
-                       where Order.client == MMM.mmm
-                       select new
-                       {
-                           client = Order.client
-                       };
-            
-            return data;
+            return data.ToString();
         }
-
-
     }
 }

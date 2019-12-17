@@ -80,5 +80,10 @@ namespace Computer_Service
             About a = new About();
             a.ShowDialog();
         }
+
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

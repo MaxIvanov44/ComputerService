@@ -3,7 +3,7 @@
                                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Computer_Service"
-        Title="ViewNowOrders" Height="652.734" Width="999">
+        Title="Просмотр заказов" Height="652.734" Width="999">
     <Window.Background>
 
         <SolidColorBrush Color="#647382" />

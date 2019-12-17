@@ -73,7 +73,7 @@ namespace Computer_Service
             else
             {
                 Model1 db = new Model1();
-                
+
                 Computers cl = db.Computers
                     .Where(d => d.id_comp == delete)
                     .FirstOrDefault();

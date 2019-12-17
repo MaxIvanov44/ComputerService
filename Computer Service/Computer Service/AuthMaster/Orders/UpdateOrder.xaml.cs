@@ -19,10 +19,20 @@ namespace Computer_Service
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
+            Model1 db = new Model1();
+            Clients cl = new Clients();
+
             Orders orders = Logic.LogicOrders.GetCurrentOrder();
 
             idtxt.Text = orders.id_order.ToString();
-            client.ItemsSource = LogicClient.GetNameClientO(orders.client);
+            var a = Convert.ToInt32(idtxt.Text);
+            //var r = db.Clients.Find(a);
+            //var rr = r;
+            //var data = from r in db.Clients
+            //         .Where(t => t.id_user == a)
+            //         .Select(t => t.id_user + " " + t.first_name + " " + t.last_name)
+            //         .FirstOrDefault()
+            //client.Text = Convert.ToString(data);
             //master.Text = LogicMaster.GetNameMaster();
             //pc.Text = LogicComputers.GetMark();
             status.ItemsSource = LogicStatus.GetStatus();

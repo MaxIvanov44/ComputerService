@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LGS.cs" />
+    <Compile Include="LogicModels\LogicManagers.cs" />
     <Compile Include="LogicModels\LogicOrders.cs" />
     <Compile Include="LogicModels\LogicStatus.cs" />
     <Compile Include="LogicModels\LogicComputers.cs" />

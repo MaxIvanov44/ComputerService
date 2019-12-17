@@ -45,7 +45,6 @@ namespace Computer_Service
             cls.first_name = first.Text;
             cls.middle_name = middle.Text;
             cls.address = addr.Text;
-            
 
             cls.phone = phone.Text;
             cls.email = email.Text;

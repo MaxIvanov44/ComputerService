@@ -1,11 +1,7 @@
 ﻿using Database;
-using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
-using System.Data;
-using System.Linq;
 using System.Windows;
-using System.Windows.Media;
 
 namespace Computer_Service
 {
@@ -28,7 +24,6 @@ namespace Computer_Service
             mastersss.Visibility = Visibility.Visible;
         }
 
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (Auth.authM(username.Text, password.Password) == true)
@@ -39,7 +34,7 @@ namespace Computer_Service
             }
             else if (Auth.authA(username.Text, password.Password) == true)
             {
-                MasterMain ms = new MasterMain();
+                AdminMain ms = new AdminMain();
                 this.Close();
                 ms.Show();
             }

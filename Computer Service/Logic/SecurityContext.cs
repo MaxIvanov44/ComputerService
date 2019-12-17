@@ -20,8 +20,12 @@
 
     public class GETMASTERID
     {
-        public static int id_user;
         public static int CurrentMaster;
+    }
+
+    public class GETMANAGERID
+    {
+        public static int CurrentManager;
     }
 
     public class GETPCID
@@ -34,7 +38,6 @@
     {
         public static int CLID;
     }
-
 
     public class MMM
     {
