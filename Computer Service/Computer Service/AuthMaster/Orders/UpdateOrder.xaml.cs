@@ -26,13 +26,29 @@ namespace Computer_Service
 
             idtxt.Text = orders.id_order.ToString();
             var a = Convert.ToInt32(idtxt.Text);
-            //var r = db.Clients.Find(a);
-            //var rr = r;
-            //var data = from r in db.Clients
+            //var c = from r in db.Orders
+            //        .Where(t => t.id_order == a)
+            //        .Select(r => r.client)
+            //        .FirstOrDefault();
+            var data = (from r in db.Clients
+                        where r.id_user == a
+                        select new
+                        {
+                            id = r.id_user,
+                            f = r.first_name,
+                            l = r.last_name,
+                        }).ToList();
+            //var data = (from r in db.Clients
             //         .Where(t => t.id_user == a)
-            //         .Select(t => t.id_user + " " + t.first_name + " " + t.last_name)
-            //         .FirstOrDefault()
-            //client.Text = Convert.ToString(data);
+            //            select new
+            //            {
+            //                serverName = recordset.ServerName,
+            //                processId = recordset.ProcessID,
+            //                username = recordset.Username
+            //            }
+            //           .Select(t => t.id_user + " " + t.first_name + " " + t.last_name)
+            //         .FirstOrDefault()).ToList();
+            client.ItemsSource = data;
             //master.Text = LogicMaster.GetNameMaster();
             //pc.Text = LogicComputers.GetMark();
             status.ItemsSource = LogicStatus.GetStatus();

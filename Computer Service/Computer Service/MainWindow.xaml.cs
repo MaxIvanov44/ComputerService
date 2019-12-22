@@ -2,6 +2,7 @@
 using Logic;
 using MahApps.Metro.Controls;
 using System.Windows;
+using System.Windows.Input;
 
 namespace Computer_Service
 {
@@ -13,20 +14,21 @@ namespace Computer_Service
         public MainWindow()
         {
             InitializeComponent();
-            username.Visibility = Visibility.Hidden;
-            password.Visibility = Visibility.Hidden;
-            login1.Visibility = Visibility.Hidden;
-            clientsss.Visibility = Visibility.Visible;
 
-            username_Copy.Visibility = Visibility.Hidden;
-            password_Copy.Visibility = Visibility.Hidden;
-            login2.Visibility = Visibility.Hidden;
-            mastersss.Visibility = Visibility.Visible;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (Auth.authM(username.Text, password.Password) == true)
+            if (Auth.authC(username.Text, password.Password) == true)
+            {
+                LGS.CurrentID(username.Text, password.Password);
+
+                ClientMain ms = new ClientMain();
+                this.Close();
+                ms.Show();
+            }
+
+            else if (Auth.authM(username.Text, password.Password) == true)
             {
                 MasterMain ms = new MasterMain();
                 this.Close();
@@ -50,46 +52,20 @@ namespace Computer_Service
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+
+
+
+
+
+
+
+
+        private void Grid_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            if (Auth.authC(username_Copy.Text, password_Copy.Text) == true)
+            if (e.Key == Key.Enter)
             {
-                LGS.CurrentID(username_Copy.Text.Trim(), password_Copy.Text.Trim());
-
-                ClientMain ms = new ClientMain();
-                this.Close();
-                ms.Show();
+               
             }
-            else
-            {
-                MessageBox.Show("Логин или пароль неверны!");
-            }
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            username.Visibility = Visibility.Hidden;
-            password.Visibility = Visibility.Hidden;
-            login1.Visibility = Visibility.Hidden;
-            clientsss.Visibility = Visibility.Hidden;
-
-            username_Copy.Visibility = Visibility.Visible;
-            password_Copy.Visibility = Visibility.Visible;
-            login2.Visibility = Visibility.Visible;
-            mastersss.Visibility = Visibility.Visible;
-        }
-
-        private void mastersss_Click(object sender, RoutedEventArgs e)
-        {
-            username.Visibility = Visibility.Visible;
-            password.Visibility = Visibility.Visible;
-            login1.Visibility = Visibility.Visible;
-            clientsss.Visibility = Visibility.Visible;
-
-            username_Copy.Visibility = Visibility.Hidden;
-            password_Copy.Visibility = Visibility.Hidden;
-            login2.Visibility = Visibility.Hidden;
-            mastersss.Visibility = Visibility.Hidden;
         }
     }
 }

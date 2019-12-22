@@ -8,7 +8,7 @@
 
         <SolidColorBrush Color="#647382" />
     </Window.Background>
-    <Grid Loaded="Grid_Loaded" Height="419" VerticalAlignment="Bottom">
+    <Grid  Height="419" VerticalAlignment="Bottom">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>

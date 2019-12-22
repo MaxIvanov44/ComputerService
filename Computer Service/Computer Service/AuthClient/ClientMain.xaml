@@ -39,7 +39,6 @@
                 <Separator />
                 <MenuItem Header="Github" Click="MenuItem_Click_1" />
             </MenuItem>
-            <MenuItem Header="Выход из системы" Background="#FF2D333A" Click="MenuItem_Click_5" />
             <MenuItem Header="Выход из программы" Click="MenuItem_Click_3" />
         </Menu>
         <Label   Content="Готовых заказов:" HorizontalAlignment="Left" Margin="2,67,0,0" VerticalAlignment="Top" />

@@ -38,6 +38,7 @@ namespace Computer_Service
 
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
+
             Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
                 ));
             UpdateOrder upd = new UpdateOrder();
