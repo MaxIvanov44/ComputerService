@@ -1,6 +1,5 @@
 ﻿using Database.EntityModels;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
@@ -8,30 +7,6 @@ namespace Logic
 {
     public class LogicClient
     {
-        public static List<string> GetNameClient()
-        {
-            Model1 db = new Model1();
-            var ListQuery = db.Clients;
-            List<string> NameList = new List<string>();
-            foreach (var name in ListQuery)
-            {
-                NameList.Add(name.id_user + " " + name.first_name + " " + name.last_name.ToString());
-            }
-            return NameList;
-        }
-
-        public static List<string> GetNameClientO(int id)
-        {
-            Model1 db = new Model1();
-            var ListQuery = db.Orders.Where(t => t.client == id);
-            List<string> NameList = new List<string>();
-            foreach (var name in ListQuery)
-            {
-                NameList.Add(name.client.ToString());
-            }
-            return NameList;
-        }
-
         public static int GetIdClient(string ID)
         {
             Model1 db = new Model1();

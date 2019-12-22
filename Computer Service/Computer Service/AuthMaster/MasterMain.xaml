@@ -16,8 +16,7 @@
 
         <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
             <MenuItem Header="Просмотр заказов" Background="#FF2D333A" Click="MenuItem_Click_5" ></MenuItem>
-                <MenuItem Header="Мастера" Background="#FF2D333A" Click="MenuItem_Click" ></MenuItem>
-            <MenuItem Header="Клиенты" Background="#FF2D333A" Click="MenuItem_Click_2" ></MenuItem>
+            <MenuItem Header="Техника" Background="#FF2D333A" Click="MenuItem_Click" ></MenuItem>
             <MenuItem Header="Выход из аккаунта" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
             <MenuItem Header="Выход из программы" Background="#FF2D333A" Click="MenuItem_Click_8" ></MenuItem>
         </Menu>

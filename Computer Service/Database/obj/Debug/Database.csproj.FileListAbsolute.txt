@@ -20,7 +20,6 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Databas
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.csprojAssemblyReference.cache
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.csproj.CopyComplete
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.pdb

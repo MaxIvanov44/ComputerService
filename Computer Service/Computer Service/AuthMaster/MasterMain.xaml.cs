@@ -1,7 +1,5 @@
-﻿using Computer_Service.Resources;
-using Database.EntityModels;
+﻿using Database.EntityModels;
 using MahApps.Metro.Controls;
-using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 
@@ -23,32 +21,6 @@ namespace Computer_Service
                              select t).Count();
             all.Content = count;
             now.Content = inprocess;
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            MasterView mv = new MasterView();
-            mv.Show();
-            Close();
-        }
-
-        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
-        {
-            ClientView cv = new ClientView();
-            cv.Show();
-            Close();
-        }
-
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://github.com/MaxIvanov44");
-        }
-
-        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
-        {
-            AddOrder ao = new AddOrder();
-            ao.Show();
-            Close();
         }
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
@@ -75,14 +47,15 @@ namespace Computer_Service
             Close();
         }
 
-        private void MenuItem_Click_7(object sender, RoutedEventArgs e)
-        {
-            About a = new About();
-            a.ShowDialog();
-        }
-
         private void MenuItem_Click_8(object sender, RoutedEventArgs e)
         {
+            Close();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            ComputerViewMaster cv = new ComputerViewMaster();
+            cv.Show();
             Close();
         }
     }

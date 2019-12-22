@@ -23,7 +23,7 @@ namespace Computer_Service
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
-            ClientView cv = new ClientView();
+            ClientViewAdmin cv = new ClientViewAdmin();
             cv.Show();
             Close();
         }
@@ -46,7 +46,7 @@ namespace Computer_Service
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)
         {
-            ViewOrder vo = new ViewOrder();
+            ViewOrderAdmin vo = new ViewOrderAdmin();
             vo.Show();
             Close();
         }
@@ -60,6 +60,13 @@ namespace Computer_Service
 
         private void MenuItem_Click_7(object sender, RoutedEventArgs e)
         {
+            Close();
+        }
+
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
+            MasterViewAdmin mv = new MasterViewAdmin();
+            mv.Show();
             Close();
         }
     }

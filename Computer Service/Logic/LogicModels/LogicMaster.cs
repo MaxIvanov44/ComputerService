@@ -1,6 +1,5 @@
 ﻿using Database.EntityModels;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
@@ -8,18 +7,6 @@ namespace Logic
 {
     public class LogicMaster
     {
-        public static List<string> GetNameMaster()
-        {
-            Model1 db = new Model1();
-            var ListQuery = db.Masters;
-            List<string> NameList = new List<string>();
-            foreach (var name in ListQuery)
-            {
-                NameList.Add(name.id_master + " " + name.first_name + " " + name.last_name + " " + name.middle_name.ToString());
-            }
-            return NameList;
-        }
-
         public static int GetIdMaster(string ID)
         {
             Model1 db = new Model1();

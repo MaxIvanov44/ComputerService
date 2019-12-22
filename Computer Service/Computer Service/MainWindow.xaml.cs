@@ -14,7 +14,6 @@ namespace Computer_Service
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -27,7 +26,6 @@ namespace Computer_Service
                 this.Close();
                 ms.Show();
             }
-
             else if (Auth.authM(username.Text, password.Password) == true)
             {
                 MasterMain ms = new MasterMain();
@@ -52,19 +50,10 @@ namespace Computer_Service
             }
         }
 
-
-
-
-
-
-
-
-
         private void Grid_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
             if (e.Key == Key.Enter)
             {
-               
             }
         }
     }

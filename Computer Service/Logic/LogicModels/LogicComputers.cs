@@ -1,6 +1,5 @@
 ﻿using Database.EntityModels;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
@@ -8,17 +7,17 @@ namespace Logic
 {
     public class LogicComputers
     {
-        public static List<string> GetMark()
-        {
-            Model1 db = new Model1();
-            var ListQuery = db.Computers;
-            List<string> MarkList = new List<string>();
-            foreach (var mark in ListQuery)
-            {
-                MarkList.Add(mark.id_comp + " " + mark.name + " " + mark.brand + " " + mark.model.ToString());
-            }
-            return MarkList;
-        }
+        //public static List<string> GetMark()
+        //{
+        //    Model1 db = new Model1();
+        //    var ListQuery = db.Computers;
+        //    List<string> MarkList = new List<string>();
+        //    foreach (var mark in ListQuery)
+        //    {
+        //        MarkList.Add(mark.id_comp + " " + mark.name + " " + mark.brand + " " + mark.model.ToString());
+        //    }
+        //    return MarkList;
+        //}
 
         public static int GetIdMark(string ID)
         {
