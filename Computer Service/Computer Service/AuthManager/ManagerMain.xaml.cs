@@ -17,13 +17,15 @@ namespace Computer_Service
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             MasterView mv = new MasterView();
-            mv.ShowDialog();
+            mv.Show();
+            Close();
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
             ClientView cv = new ClientView();
-            cv.ShowDialog();
+            cv.Show();
+            Close();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)

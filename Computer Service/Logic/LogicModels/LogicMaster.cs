@@ -37,12 +37,11 @@ namespace Logic
             DataTable dtord = new DataTable();
             dtord.Columns.Add("ID");
 
-            dtord.Columns.Add("Ф");
-            dtord.Columns.Add("И");
-            dtord.Columns.Add("О");
+            dtord.Columns.Add("Фамилия");
+            dtord.Columns.Add("Имя");
+            dtord.Columns.Add("Отчество");
             dtord.Columns.Add("Телефон");
             dtord.Columns.Add("E-mail");
-            dtord.Columns.Add("Block");
             var data = from m in db.Masters
                        select new
                        {
@@ -51,14 +50,13 @@ namespace Logic
                            F = m.last_name,
                            I = m.first_name,
                            O = m.middle_name,
-                           addr = m.address,
                            Phone = m.phone,
                            email = m.email
                        };
 
-            foreach (var dt in db.Masters)
+            foreach (var dt in data)
             {
-                dtord.Rows.Add(dt.id_master, dt.first_name, dt.last_name, dt.middle_name, dt.address, dt.phone, dt.email);
+                dtord.Rows.Add(dt.ID, dt.F, dt.I, dt.O,  dt.Phone, dt.email);
             }
             return dtord;
         }

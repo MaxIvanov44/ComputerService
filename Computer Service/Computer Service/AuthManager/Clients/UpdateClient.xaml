@@ -26,7 +26,7 @@
         <TextBox x:Name="last" HorizontalAlignment="Left" Height="47" Margin="185,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" FontSize="24" />
         <TextBox x:Name="phone" HorizontalAlignment="Left" Height="47" Margin="185,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" FontSize="24" />
         <TextBox x:Name="email" HorizontalAlignment="Left" Height="47" Margin="185,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" FontSize="24" />
-        <CheckBox x:Name="chk" HorizontalAlignment="Left" Margin="111,430,0,0" VerticalAlignment="Top" Height="42" Width="63" />
+        <CheckBox IsEnabled="False" x:Name="chk" HorizontalAlignment="Left" Margin="111,430,0,0" VerticalAlignment="Top" Height="42" Width="63" />
         <Button Content="Назад" HorizontalAlignment="Left" Margin="420,528,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_1" FontSize="18" Height="43" />
     </Grid>
 </Controls:MetroWindow>

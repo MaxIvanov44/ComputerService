@@ -37,26 +37,25 @@ namespace Logic
             DataTable dtord = new DataTable();
             dtord.Columns.Add("ID");
 
-            dtord.Columns.Add("Ф");
-            dtord.Columns.Add("И");
+            dtord.Columns.Add("Фамилия");
+            dtord.Columns.Add("Имя");
             dtord.Columns.Add("Телефон");
             dtord.Columns.Add("E-mail");
-            dtord.Columns.Add("Block");
+            dtord.Columns.Add("Блокировка");
             var data = from Clients in db.Clients
                        select new
                        {
                            ID = Clients.id_user,
-
-                           F = Clients.last_name,
-                           I = Clients.first_name,
+                           L = Clients.last_name,
+                           F = Clients.first_name,
                            Phone = Clients.phone,
                            email = Clients.email,
                            block = Clients.block
                        };
 
-            foreach (var dt in db.Clients)
+            foreach (var dt in data)
             {
-                dtord.Rows.Add(dt.id_user, dt.first_name, dt.last_name, dt.phone, dt.email, dt.block);
+                dtord.Rows.Add(dt.ID, dt.L, dt.F, dt.Phone, dt.email, dt.block);
             }
             return dtord;
         }

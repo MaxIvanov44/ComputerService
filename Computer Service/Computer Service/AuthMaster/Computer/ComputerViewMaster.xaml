@@ -3,7 +3,7 @@
                                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Computer_Service"
-        Title="ComputerViewMaster" Height="450" Width="999">
+        Title="ComputerViewMaster" Height="455.294" Width="718.412">
     <Window.Background>
 
         <SolidColorBrush Color="#647382" />
@@ -12,10 +12,11 @@
         <Grid.RowDefinitions>
             <RowDefinition />
         </Grid.RowDefinitions>
-        <DataGrid   Loaded="viewdgr_Loaded"  x:Name="viewdgr" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="302" Margin="10,10,10,107"  Width="Auto" />
-        <Button x:Name="btncreate"  Content="Создать" HorizontalAlignment="Left" Margin="10,382,0,0" VerticalAlignment="Top" Width="75" Click="btncreate_Click" />
-        <Button x:Name="btnupdate" Content="Изменить" HorizontalAlignment="Left" Margin="712,382,0,0" VerticalAlignment="Top" Width="75" Click="btnupdate_Click" />
-        <Button x:Name="btndelete" Content="Удалить" HorizontalAlignment="Left" Margin="792,382,0,0" VerticalAlignment="Top" Width="75" Click="btndelete_Click" />
-        <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="906,382,0,0" VerticalAlignment="Top" Width="75" Click="back_Click" />
+        <DataGrid   Loaded="viewdgr_Loaded"  x:Name="viewdgr" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,77"  Width="Auto" />
+        <Button x:Name="btncreate"  Content="Создать" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Width="87" Click="btncreate_Click" FontSize="14" />
+        <Button x:Name="btnupdate" Content="Изменить" HorizontalAlignment="Left" Margin="413,387,0,0" VerticalAlignment="Top" Width="97" Click="btnupdate_Click" FontSize="14" />
+        <Button x:Name="btndelete" Content="Удалить" HorizontalAlignment="Left" Margin="515,385,0,0" VerticalAlignment="Top" Width="93" Click="btndelete_Click" FontSize="14" />
+        <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="613,385,0,0" VerticalAlignment="Top" Width="75" Click="back_Click" FontSize="14" />
+        <TextBox  Controls:TextBoxHelper.Watermark="Фильтр по названию комплектующих"  x:Name="sort" HorizontalAlignment="Left" Height="31" Margin="102,387,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="268" TextChanged="sort_TextChanged" FontSize="14"/>
     </Grid>
 </Controls:MetroWindow>

@@ -16,5 +16,18 @@ namespace Logic
             Model1 db = new Model1();
             return db.Clients.Find(GetIdClient.CurrentID);
         }
+
+
+        public static void MasterID(string log, string pas)
+        {
+            Model1 db = new Model1();
+            GetMasID.CurrentID = db.Masters.Where(tr => tr.username == log && tr.password == pas).FirstOrDefault().id_master;
+        }
+
+        public static Masters GetMasterID()
+        {
+            Model1 db = new Model1();
+            return db.Masters.Find(GetMasID.CurrentID);
+        }
     }
 }

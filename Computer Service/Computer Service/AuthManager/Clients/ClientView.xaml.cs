@@ -116,7 +116,7 @@ namespace Computer_Service
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            MasterMain mm = new MasterMain();
+            ManagerMain mm = new ManagerMain();
             mm.Show();
             Close();
         }

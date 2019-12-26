@@ -1,5 +1,4 @@
-﻿using Computer_Service.Resources;
-using Database.EntityModels;
+﻿using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
 using System;
@@ -17,6 +16,7 @@ namespace Computer_Service
         public ClientMain()
         {
             InitializeComponent();
+
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
@@ -54,9 +54,12 @@ namespace Computer_Service
             try
             {
                 Clients cl = LGS.GetCurrentID();
+                SaveCLID.CLID = cl.id_user;
+
+
+
 
                 id.Content = cl.id_user;
-                SaveCLID.CLID = cl.id_user;
 
                 Model1 db = new Model1();
 

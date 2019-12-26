@@ -60,7 +60,7 @@ namespace Computer_Service
 
         private void Label_Loaded(object sender, RoutedEventArgs e)
         {
-            status.ItemsSource = LogicStatus.GetStatusMaster();
+            status.ItemsSource = LogicStatus.GetStatusManager();
 
             client.Text = LogicOrders.c;
             master.Text = LogicOrders.m;

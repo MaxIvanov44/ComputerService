@@ -1,12 +1,12 @@
-﻿<Window x:Class="Computer_Service.Resources.About"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Computer_Service.Resources"
-        mc:Ignorable="d"
-        Title="About" Height="296.538" Width="366.154" ResizeMode="NoResize">
+﻿<Controls:MetroWindow x:Class="Computer_Service.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Computer_Service"
+        Title="О ПРОГРАММЕ" Height="348.95" Width="616.198">
+
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="275,231,0,0" VerticalAlignment="Top" Width="75" />
+
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click" FontSize="20" Height="46" />
     </Grid>
-</Window>
+</Controls:MetroWindow>

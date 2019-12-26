@@ -71,5 +71,37 @@ namespace Logic
             }
             return dtord;
         }
+
+
+
+        public static DataTable filter(string text)
+        {
+            Model1 db = new Model1();
+            DataTable dtord = new DataTable();
+            dtord.Columns.Add("ID");
+            dtord.Columns.Add("Наименование");
+            dtord.Columns.Add("Брэнд");
+            dtord.Columns.Add("Марка");
+            dtord.Columns.Add("Проблема");
+            dtord.Columns.Add("Описание");
+            string[] NameArray = text.Split(' ');
+            string filter = NameArray[0];
+            var sort = from PC in db.Computers
+                       where (PC.name.Contains(filter) || PC.brand.Contains(filter) || PC.model.Contains(filter))
+                       select new
+                       {
+                           ID = PC.id_comp,
+                           Name = PC.name,
+                           br = PC.brand,
+                           mark = PC.model,
+                           problem = PC.problem,
+                           des = PC.description
+                       };
+            foreach (var ins in sort)
+            {
+                dtord.Rows.Add(ins.ID, ins.Name, ins.br, ins.mark, ins.problem, ins.des);
+            }
+            return dtord;
+        }
     }
 }

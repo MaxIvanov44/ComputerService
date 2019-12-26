@@ -69,5 +69,11 @@ namespace Computer_Service
             mm.Show();
             Close();
         }
+        Model1 db = new Model1();
+        private void sort_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            dtord = Logic.LogicComputers.filter(sort.Text);
+            viewdgr.ItemsSource = dtord.DefaultView;
+        }
     }
 }

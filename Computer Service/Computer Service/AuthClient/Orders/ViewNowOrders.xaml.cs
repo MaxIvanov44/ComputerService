@@ -17,33 +17,33 @@ namespace Computer_Service
         public ViewNowOrders()
         {
             InitializeComponent();
-            var id = SaveCLID.CLID;
-            Model1 db = new Model1();
-            var data = from Order in db.Orders
-                       join Status in db.Status on Order.order_status equals Status.id_status
-                       join Client in db.Clients on Order.client equals Client.id_user
-                       join Master in db.Masters on Order.master equals Master.id_master
-                       join Computers in db.Computers on Order.computer equals Computers.id_comp
-                       where Order.client == id
-                       select new
-                       {
-                           ID = Order.id_order,
-                           Статус = Status.status1,
-                           Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
-                           Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
-                           Дата_принятия = Order.date_of_acceptance,
-                           Дата_возврата = Order.date_of_return,
-                           Стоимость = Order.repair_price,
-                           Описание = Order.description
-                       };
-            viewdgr.ItemsSource = data.ToList();
+          
+
+            //var data = from Order in db.Orders
+            //           join Status in db.Status on Order.order_status equals Status.id_status
+            //           join Client in db.Clients on Order.client equals Client.id_user
+            //           join Master in db.Masters on Order.master equals Master.id_master
+            //           join Computers in db.Computers on Order.computer equals Computers.id_comp
+            //           where Order.client == id
+            //           select new
+            //           {
+            //               ID = Order.id_order,
+            //               Статус = Status.status1,
+            //               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
+            //               Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
+            //               Дата_принятия = Order.date_of_acceptance,
+            //               Дата_возврата = Order.date_of_return,
+            //               Стоимость = Order.repair_price,
+            //               Описание = Order.description
+            //           };
+            //viewdgr.ItemsSource = data.ToList();
         }
 
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
                 ));
-            UpdateOrder upd = new UpdateOrder();
+            ViewClientOrder upd = new ViewClientOrder();
             upd.Show();
             Close();
         }
@@ -52,15 +52,15 @@ namespace Computer_Service
 
         private void viewdgr_Loaded(object sender, RoutedEventArgs e)
         {
-            //dtord = Logic.LogicOrders.AllClientOrders(SaveCLID.CLID);
-            //viewdgr.ItemsSource = dtord.DefaultView;
+            dtord = Logic.LogicOrders.AllClientOrders(SaveCLID.CLID);
+            viewdgr.ItemsSource = dtord.DefaultView;
         }
 
         private void btnupdate_Click(object sender, RoutedEventArgs e)
         {
             Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
                ));
-            UpdateOrder upd = new UpdateOrder();
+            ViewClientOrder upd = new ViewClientOrder();
             upd.Show();
             Close();
         }

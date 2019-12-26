@@ -45,8 +45,7 @@ namespace Computer_Service
             cls.first_name = first.Text;
             cls.phone = phone.Text;
             cls.email = email.Text;
-            if (chk.IsChecked == true) cls.block = 1;
-            else cls.block = 0;
+            
             db.SaveChanges();
 
             MessageBox.Show("Данные о клиенте изменены!");

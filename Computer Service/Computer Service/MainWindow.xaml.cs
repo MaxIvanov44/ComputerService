@@ -1,4 +1,5 @@
 ﻿using Database;
+using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
 using System.Windows;
@@ -21,13 +22,33 @@ namespace Computer_Service
             if (Auth.authC(username.Text, password.Password) == true)
             {
                 LGS.CurrentID(username.Text, password.Password);
+                Clients cl = LGS.GetCurrentID();
+                SaveCLID.CLID = cl.id_user;
+                if (cl.block == 1)
+                {
+                    if (MessageBox.Show("Хотите оставить заявку на разблокировку?", "ВНИМАНИЕ: Клиент заблокирован", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                    {
+                        this.Close();
+                    }
+                    else
+                    {
+                        UnlockRequest ur = new UnlockRequest();
+                        this.Close();
+                        ur.Show();
+                    }
 
-                ClientMain ms = new ClientMain();
-                this.Close();
-                ms.Show();
+                }
+                else if (cl.block == 0)
+                {
+                    ClientMain ms = new ClientMain();
+                    this.Close();
+                    ms.Show();
+                }
+
             }
             else if (Auth.authM(username.Text, password.Password) == true)
             {
+                LGS.MasterID(username.Text, password.Password);
                 MasterMain ms = new MasterMain();
                 this.Close();
                 ms.Show();
@@ -50,11 +71,6 @@ namespace Computer_Service
             }
         }
 
-        private void Grid_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
-        {
-            if (e.Key == Key.Enter)
-            {
-            }
-        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Database.EntityModels;
+using Logic;
 using MahApps.Metro.Controls;
 using System.Linq;
 using System.Windows;
@@ -12,15 +13,23 @@ namespace Computer_Service
     {
         public MasterMain()
         {
+            Masters mas = LGS.GetMasterID();
+            SaveMASID.MASID = mas.id_master;
+
             InitializeComponent();
             Model1 db = new Model1();
             var count = (from t in db.Orders
+                         where t.client == SaveMASID.MASID && t.order_status == 1
                          select t).Count();
             var inprocess = (from t in db.Orders
-                             where t.order_status == 2
+                             where t.order_status == 2 && t.client == SaveMASID.MASID
+                             select t).Count();
+            var readyy = (from t in db.Orders
+                             where t.order_status == 4 && t.client == SaveMASID.MASID
                              select t).Count();
             all.Content = count;
             now.Content = inprocess;
+            ready.Content = readyy;
         }
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
@@ -32,30 +41,24 @@ namespace Computer_Service
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)
         {
-            ViewOrder vo = new ViewOrder();
+            ViewOrderMaster vo = new ViewOrderMaster();
             vo.Show();
             Close();
         }
 
-        private void Grid_Loaded(object sender, RoutedEventArgs e)
-        {
-            Model1 db = new Model1();
-        }
 
-        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
 
-        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
+
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             ComputerViewMaster cv = new ComputerViewMaster();
             cv.Show();
+            Close();
+        }
+
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
             Close();
         }
     }

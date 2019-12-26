@@ -16,24 +16,7 @@ namespace Computer_Service
         {
             InitializeComponent();
             Model1 db = new Model1();
-            //var data = from Order in db.Orders
-            //           join Status in db.Status on Order.order_status equals Status.id_status
-            //           join Client in db.Clients on Order.client equals Client.id_user
-            //           join Master in db.Masters on Order.master equals Master.id_master
-            //           join Computers in db.Computers on Order.computer equals Computers.id_comp
-            //           select new
-            //           {
-            //               Id = Order.id_order,
-            //               Status = Status.status1,
-            //               Client = Client.first_name + " " + Client.last_name + " ",
-            //               PC = Computers.name + " " + Computers.brand + " " + Computers.model,
-            //               Master = Master.first_name + " "  + Master.last_name + " "  + Master.middle_name,
-            //               DateAccept = Order.date_of_acceptance,
-            //               DateRepair = Order.date_of_return,
-            //               Price = Order.repair_price,
-            //               Descpription = Order.description
-            //           };
-            //viewdgr.ItemsSource = data.ToList();
+
         }
 
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -64,9 +47,15 @@ namespace Computer_Service
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            MasterMain mm = new MasterMain();
+            ManagerMain mm = new ManagerMain();
             mm.Show();
             Close();
+        }
+
+        private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
+            
         }
     }
 }

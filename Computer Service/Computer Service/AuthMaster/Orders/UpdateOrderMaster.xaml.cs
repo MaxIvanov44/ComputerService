@@ -22,9 +22,10 @@ namespace Computer_Service
             Model1 db = new Model1();
             Clients cl = new Clients();
             Orders orders = Logic.LogicOrders.GetCurrentOrder();
+            idtxt.Text = orders.id_order.ToString();
             var a = Convert.ToInt32(idtxt.Text);
             var data = from Order in db.Orders
-                       join Status in db.StatusMaster on Order.order_status equals Status.id_status
+                       join Statusmas in db.Status on Order.order_status equals Statusmas.id_status
                        join Client in db.Clients on Order.client equals Client.id_user
                        join Master in db.Masters on Order.master equals Master.id_master
                        join Computers in db.Computers on Order.computer equals Computers.id_comp
@@ -32,7 +33,7 @@ namespace Computer_Service
                        select new
                        {
                            Id = Order.id_order,
-                           Status = Status.status,
+                           Status = Statusmas.status1,
                            Client = Client.id_user + " " + Client.first_name + " " + Client.last_name,
                            PC = Computers.id_comp + " " + Computers.name + " " + Computers.brand + " " + Computers.model,
                            Master = Master.id_master + " " + Master.first_name + " " + Master.last_name + " " + Master.middle_name,
@@ -42,10 +43,10 @@ namespace Computer_Service
                            Descpription = Order.description
                        };
 
-            idtxt.Text = orders.id_order.ToString();
+            
             client.Text = data.FirstOrDefault().Client;
             master.Text = data.FirstOrDefault().Master;
-            master.Text = data.FirstOrDefault().PC;
+            pc.Text = data.FirstOrDefault().PC;
             status.ItemsSource = LogicStatus.GetStatusMaster();
             status.Text = data.FirstOrDefault().Status;
             DateTime? date1 = orders.date_of_acceptance;

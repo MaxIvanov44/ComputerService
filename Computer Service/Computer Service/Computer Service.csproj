@@ -100,6 +100,9 @@
     <Compile Include="AuthAdmin\Orders\ViewOrderAdmin.xaml.cs">
       <DependentUpon>ViewOrderAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AuthClient\Orders\ViewClientOrder.xaml.cs">
+      <DependentUpon>ViewClientOrder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthClient\Orders\ViewNowOrders.xaml.cs">
       <DependentUpon>ViewNowOrders.xaml</DependentUpon>
     </Compile>
@@ -138,6 +141,9 @@
     </Compile>
     <Compile Include="AuthMaster\Orders\UpdateOrderMaster.xaml.cs">
       <DependentUpon>UpdateOrderMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\UnlockRequest.xaml.cs">
+      <DependentUpon>UnlockRequest.xaml</DependentUpon>
     </Compile>
     <Compile Include="Resources\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
@@ -183,6 +189,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AuthClient\ClientMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthClient\Orders\ViewClientOrder.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -285,9 +295,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\About.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\UnlockRequest.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Resources\XAMLClasses.xaml">
       <SubType>Designer</SubType>

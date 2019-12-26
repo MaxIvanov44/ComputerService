@@ -9,7 +9,7 @@
 
         <SolidColorBrush Color="#647382" />
     </Window.Background>
-    <Grid KeyUp="Grid_KeyUp">
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>

@@ -1,0 +1,19 @@
+﻿<Controls:MetroWindow x:Class="Computer_Service.UnlockRequest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Computer_Service"
+        Title="Запрос на разблокировку" Height="276.988" Width="616.198">
+    <Window.Background>
+
+        <SolidColorBrush Color="#647382" />
+    </Window.Background>
+    <Grid>
+        <Label Content="Ваш ID:" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" FontSize="20" Width="156" />
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" FontSize="20" Width="156" />
+        <TextBox IsEnabled="False" x:Name="id" HorizontalAlignment="Left" Height="37" Margin="171,4,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="427" FontSize="16" />
+        <TextBox  x:Name="sms" HorizontalAlignment="Left" Height="149" Margin="171,41,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="427" FontSize="16" Controls:TextBoxHelper.Watermark="Введите здесь ваше сообщение"/>
+        <Button Content="Отправить" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click" FontSize="20" Height="46" />
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="507,195,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_1" FontSize="16" Height="46" />
+    </Grid>
+</Controls:MetroWindow>

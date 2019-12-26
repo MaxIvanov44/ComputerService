@@ -1,4 +1,5 @@
 ﻿using Database.EntityModels;
+using Logic;
 using MahApps.Metro.Controls;
 using System;
 using System.Data;
@@ -31,7 +32,7 @@ namespace Computer_Service
 
         private void viewdgr_Loaded(object sender, RoutedEventArgs e)
         {
-            dtord = Logic.LogicOrders.GetAllOrders();
+            dtord = Logic.LogicOrders.GetAllOrdersbyID(SaveMASID.MASID);
             viewdgr.ItemsSource = dtord.DefaultView;
         }
 
