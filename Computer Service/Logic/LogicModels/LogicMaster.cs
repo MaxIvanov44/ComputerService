@@ -56,7 +56,7 @@ namespace Logic
 
             foreach (var dt in data)
             {
-                dtord.Rows.Add(dt.ID, dt.F, dt.I, dt.O,  dt.Phone, dt.email);
+                dtord.Rows.Add(dt.ID, dt.F, dt.I, dt.O, dt.Phone, dt.email);
             }
             return dtord;
         }

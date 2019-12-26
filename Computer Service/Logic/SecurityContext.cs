@@ -38,11 +38,11 @@
     {
         public static int CLID;
     }
+
     public class SaveMASID
     {
         public static int MASID;
     }
-
 
     public class GetMasID
     {

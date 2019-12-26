@@ -72,8 +72,6 @@ namespace Logic
             return dtord;
         }
 
-
-
         public static DataTable filter(string text)
         {
             Model1 db = new Model1();

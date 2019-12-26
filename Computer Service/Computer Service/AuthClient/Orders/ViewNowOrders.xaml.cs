@@ -17,7 +17,6 @@ namespace Computer_Service
         public ViewNowOrders()
         {
             InitializeComponent();
-          
 
             //var data = from Order in db.Orders
             //           join Status in db.Status on Order.order_status equals Status.id_status

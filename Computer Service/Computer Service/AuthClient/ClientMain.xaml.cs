@@ -16,7 +16,6 @@ namespace Computer_Service
         public ClientMain()
         {
             InitializeComponent();
-
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
@@ -55,9 +54,6 @@ namespace Computer_Service
             {
                 Clients cl = LGS.GetCurrentID();
                 SaveCLID.CLID = cl.id_user;
-
-
-
 
                 id.Content = cl.id_user;
 

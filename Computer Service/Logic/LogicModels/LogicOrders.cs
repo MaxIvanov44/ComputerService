@@ -50,7 +50,7 @@ namespace Logic
                            Id = Order.id_order,
                            Status = Status.status1,
                            Client = Client.last_name + " " + Client.first_name,
-                           PC = Computers.name + " " + Computers.brand + " " +  Computers.model,
+                           PC = Computers.name + " " + Computers.brand + " " + Computers.model,
                            Master = Master.last_name + " " + Master.first_name + " " + Master.middle_name,
                            DateAccept = Order.date_of_acceptance,
                            DateRepair = Order.date_of_return,
@@ -64,7 +64,6 @@ namespace Logic
             }
             return dtord;
         }
-
 
         public static DataTable GetAllOrders()
         {
@@ -105,6 +104,7 @@ namespace Logic
             }
             return dtord;
         }
+
         public static DataTable AllClientOrders(int id)
         {
             Model1 db = new Model1();
@@ -142,7 +142,6 @@ namespace Logic
             }
             return dtord;
         }
-
 
         public static DataTable Sort(string text)
         {

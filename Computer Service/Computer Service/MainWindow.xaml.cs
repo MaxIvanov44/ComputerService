@@ -3,7 +3,6 @@ using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
 using System.Windows;
-using System.Windows.Input;
 
 namespace Computer_Service
 {
@@ -36,7 +35,6 @@ namespace Computer_Service
                         this.Close();
                         ur.Show();
                     }
-
                 }
                 else if (cl.block == 0)
                 {
@@ -44,7 +42,6 @@ namespace Computer_Service
                     this.Close();
                     ms.Show();
                 }
-
             }
             else if (Auth.authM(username.Text, password.Password) == true)
             {
@@ -70,7 +67,5 @@ namespace Computer_Service
                 MessageBox.Show("Логин или пароль неверны!");
             }
         }
-
-
     }
 }

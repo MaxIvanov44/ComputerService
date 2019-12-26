@@ -43,7 +43,6 @@ namespace Computer_Service
                            Descpription = Order.description
                        };
 
-            
             client.Text = data.FirstOrDefault().Client;
             master.Text = data.FirstOrDefault().Master;
             pc.Text = data.FirstOrDefault().PC;

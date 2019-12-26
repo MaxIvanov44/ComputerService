@@ -16,7 +16,6 @@ namespace Computer_Service
         {
             InitializeComponent();
             Model1 db = new Model1();
-
         }
 
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -54,8 +53,6 @@ namespace Computer_Service
 
         private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-
-            
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Computer_Service
             cls.first_name = first.Text;
             cls.phone = phone.Text;
             cls.email = email.Text;
-            
+
             db.SaveChanges();
 
             MessageBox.Show("Данные о клиенте изменены!");

@@ -29,7 +29,7 @@ namespace Computer_Service
                        join Client in db.Clients on Order.client equals Client.id_user
                        join Master in db.Masters on Order.master equals Master.id_master
                        join Computers in db.Computers on Order.computer equals Computers.id_comp
-                       where Order.id_order ==a
+                       where Order.id_order == a
                        select new
                        {
                            Id = Order.id_order,
@@ -44,7 +44,7 @@ namespace Computer_Service
                        };
             master.Text = data.FirstOrDefault().Master;
             client.Text = data.FirstOrDefault().Client;
-           
+
             pc.Text = data.FirstOrDefault().PC;
             status.ItemsSource = LogicStatus.GetStatusMaster();
             status.Text = data.FirstOrDefault().Status;
@@ -55,8 +55,6 @@ namespace Computer_Service
             price.Text = orders.repair_price.Value.ToString();
             description.Text = orders.description;
         }
-
-
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

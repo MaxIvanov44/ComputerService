@@ -17,7 +17,6 @@ namespace Logic
             return db.Clients.Find(GetIdClient.CurrentID);
         }
 
-
         public static void MasterID(string log, string pas)
         {
             Model1 db = new Model1();

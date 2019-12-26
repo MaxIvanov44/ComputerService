@@ -1,7 +1,6 @@
 ﻿using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
-using System;
 using System.Windows;
 
 namespace Computer_Service
@@ -26,10 +25,8 @@ namespace Computer_Service
             //    MessageBox.Show("Not Block");
             //}
 
-
             SaveCLID.CLID = cl.id_user;
             id.Text = SaveCLID.CLID.ToString();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -71,7 +68,6 @@ namespace Computer_Service
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
             Close();
         }
     }

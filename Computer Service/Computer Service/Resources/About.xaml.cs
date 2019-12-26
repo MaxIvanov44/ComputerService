@@ -1,6 +1,4 @@
-﻿using Database.EntityModels;
-using MahApps.Metro.Controls;
-using System;
+﻿using MahApps.Metro.Controls;
 using System.Windows;
 
 namespace Computer_Service
@@ -19,7 +17,5 @@ namespace Computer_Service
         {
             Close();
         }
-
-
     }
 }

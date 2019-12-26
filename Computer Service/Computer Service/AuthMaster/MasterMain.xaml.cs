@@ -25,8 +25,8 @@ namespace Computer_Service
                              where t.order_status == 2 && t.client == SaveMASID.MASID
                              select t).Count();
             var readyy = (from t in db.Orders
-                             where t.order_status == 4 && t.client == SaveMASID.MASID
-                             select t).Count();
+                          where t.order_status == 4 && t.client == SaveMASID.MASID
+                          select t).Count();
             all.Content = count;
             now.Content = inprocess;
             ready.Content = readyy;
@@ -45,10 +45,6 @@ namespace Computer_Service
             vo.Show();
             Close();
         }
-
-
-
-
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
