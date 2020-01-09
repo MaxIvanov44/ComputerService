@@ -10,11 +10,11 @@ none
 false
 TRACE
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\App.xaml
-47725612119
+34-637782655
 
-50-1565766459
+372066408983
 21-524107010
-AuthAdmin\AdminMain.xaml;AuthAdmin\Clients\AddClient.xaml;AuthAdmin\Clients\ClientView.xaml;AuthAdmin\Clients\UpdateClient.xaml;AuthAdmin\Computer\AddComputer.xaml;AuthAdmin\Computer\ComputerView.xaml;AuthAdmin\Computer\UpdateComputer.xaml;AuthAdmin\Managers\AddManager.xaml;AuthAdmin\Managers\ManagerView.xaml;AuthAdmin\Managers\UpdateManager.xaml;AuthAdmin\Master\AddMaster.xaml;AuthAdmin\Master\MasterView.xaml;AuthAdmin\Master\UpdateMaster.xaml;AuthAdmin\Orders\AddOrder.xaml;AuthAdmin\Orders\UpdateOrder.xaml;AuthAdmin\Orders\ViewOrder.xaml;AuthClient\ClientMain.xaml;AuthClient\Orders\ViewNowOrders.xaml;AuthManager\Clients\AddClient.xaml;AuthManager\Clients\ClientView.xaml;AuthManager\Clients\UpdateClient.xaml;AuthManager\Computer\AddComputer.xaml;AuthManager\Computer\ComputerView.xaml;AuthManager\Computer\UpdateComputer.xaml;AuthManager\ManagerMain.xaml;AuthManager\Master\AddMaster.xaml;AuthManager\Master\MasterView.xaml;AuthManager\Master\UpdateMaster.xaml;AuthManager\Orders\AddOrder.xaml;AuthManager\Orders\UpdateOrder.xaml;AuthManager\Orders\ViewOrder.xaml;AuthMaster\Clients\AddClient.xaml;AuthMaster\Clients\ClientView.xaml;AuthMaster\Clients\UpdateClient.xaml;AuthMaster\Computer\AddComputer.xaml;AuthMaster\Computer\ComputerView.xaml;AuthMaster\Computer\UpdateComputer.xaml;AuthMaster\Master\UpdateMaster.xaml;MainWindow.xaml;AuthMaster\Master\AddMaster.xaml;AuthMaster\Master\MasterView.xaml;AuthMaster\MasterMain.xaml;AuthMaster\Orders\UpdateOrder.xaml;AuthMaster\Orders\AddOrder.xaml;AuthMaster\Orders\ViewOrder.xaml;Resources\About.xaml;Resources\XAMLClasses.xaml;
+AuthAdmin\AdminMain.xaml;AuthAdmin\Clients\ClientViewAdmin.xaml;AuthAdmin\Clients\UpdateClientAdmin.xaml;AuthAdmin\Managers\AddManager.xaml;AuthAdmin\Managers\ManagerView.xaml;AuthAdmin\Managers\UpdateManager.xaml;AuthAdmin\Master\AddMaster.xaml;AuthAdmin\Master\MasterViewAdmin.xaml;AuthAdmin\Master\UpdateMaster.xaml;AuthAdmin\Orders\ViewOrderAdmin.xaml;AuthClient\ClientMain.xaml;AuthClient\Orders\ViewClientOrder.xaml;AuthClient\Orders\ViewNowOrders.xaml;AuthManager\Clients\AddClient.xaml;AuthManager\Clients\ClientView.xaml;AuthManager\Clients\UpdateClient.xaml;AuthManager\Computer\AddComputer.xaml;AuthManager\Computer\ComputerView.xaml;AuthManager\Computer\UpdateComputer.xaml;AuthManager\ManagerMain.xaml;AuthManager\Master\MasterView.xaml;AuthManager\Orders\AddOrder.xaml;AuthManager\Orders\UpdateOrder.xaml;AuthManager\Orders\ViewOrder.xaml;AuthMaster\Computer\AddComputerMaster.xaml;AuthMaster\Computer\ComputerViewMaster.xaml;AuthMaster\Computer\UpdateComputerMaster.xaml;AuthMaster\Orders\UpdateOrderMaster.xaml;MainWindow.xaml;AuthMaster\MasterMain.xaml;AuthMaster\Orders\ViewOrderMaster.xaml;Resources\UnlockRequest.xaml;Resources\About.xaml;Resources\XAMLClasses.xaml;
 
 True
 

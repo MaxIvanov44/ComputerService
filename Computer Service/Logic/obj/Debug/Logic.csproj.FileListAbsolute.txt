@@ -30,3 +30,5 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\o
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\obj\Debug\Logic.csproj.CopyComplete
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\obj\Debug\Logic.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\obj\Debug\Logic.pdb
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\bin\Debug\Microsoft.Data.ConnectionUI.dll

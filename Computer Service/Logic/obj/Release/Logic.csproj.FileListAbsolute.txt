@@ -14,3 +14,4 @@ C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.csproj.CopyComplete
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.dll
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Logic\obj\Release\Logic.pdb
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Logic\obj\Release\Logic.csprojAssemblyReference.cache

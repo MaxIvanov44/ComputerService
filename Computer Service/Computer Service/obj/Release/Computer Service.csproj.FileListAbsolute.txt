@@ -57,3 +57,40 @@ C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Re
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Computer Service.pdb
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Page1.g.cs
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Computer Service\obj\Release\Page1.baml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\AdminMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Clients\ClientViewAdmin.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Clients\UpdateClientAdmin.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Managers\AddManager.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Managers\ManagerView.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Managers\UpdateManager.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Master\AddMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Master\MasterViewAdmin.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Master\UpdateMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthAdmin\Orders\ViewOrderAdmin.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthClient\ClientMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthClient\Orders\ViewClientOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthClient\Orders\ViewNowOrders.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Clients\AddClient.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Clients\ClientView.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Clients\UpdateClient.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Computer\AddComputer.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Computer\ComputerView.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Computer\UpdateComputer.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\ManagerMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Master\MasterView.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Orders\AddOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Orders\UpdateOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthManager\Orders\ViewOrder.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\AddComputerMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\ComputerViewMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthMaster\Computer\UpdateComputerMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\UpdateOrderMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\MainWindow.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthMaster\MasterMain.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\AuthMaster\Orders\ViewOrderMaster.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\Resources\UnlockRequest.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\Resources\About.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\App.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\Computer Service_MarkupCompile.cache
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\Computer Service_MarkupCompile.lref
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Release\Computer Service.csprojAssemblyReference.cache

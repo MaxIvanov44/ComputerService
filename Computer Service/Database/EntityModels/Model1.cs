@@ -1,6 +1,9 @@
 namespace Database.EntityModels
 {
+    using System;
     using System.Data.Entity;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Linq;
 
     public partial class Model1 : DbContext
     {
@@ -15,11 +18,12 @@ namespace Database.EntityModels
         public virtual DbSet<Managers> Managers { get; set; }
         public virtual DbSet<Masters> Masters { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
-        public virtual DbSet<PriceList> PriceList { get; set; }
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<StatusManager> StatusManager { get; set; }
         public virtual DbSet<StatusMaster> StatusMaster { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<UnlockRequest> UnlockRequest { get; set; }
+        public virtual DbSet<Details> Details { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -29,22 +33,10 @@ namespace Database.EntityModels
                 .HasForeignKey(e => e.client)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Computers>()
-                .HasMany(e => e.Orders)
-                .WithRequired(e => e.Computers)
-                .HasForeignKey(e => e.computer)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<Masters>()
                 .HasMany(e => e.Orders)
                 .WithRequired(e => e.Masters)
                 .HasForeignKey(e => e.master)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Status>()
-                .HasMany(e => e.Orders)
-                .WithRequired(e => e.Status)
-                .HasForeignKey(e => e.order_status)
                 .WillCascadeOnDelete(false);
         }
     }

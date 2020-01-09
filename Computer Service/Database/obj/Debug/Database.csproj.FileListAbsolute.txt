@@ -23,4 +23,6 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Databas
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.csproj.CopyComplete
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Debug\Microsoft.Data.ConnectionUI.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Debug\Database.csprojAssemblyReference.cache

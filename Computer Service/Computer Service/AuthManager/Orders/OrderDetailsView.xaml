@@ -1,0 +1,23 @@
+﻿<Controls:MetroWindow x:Class="Computer_Service.OrderDetailsView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                      xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:Computer_Service"
+        Title="Просмотр комплектующих" Height="482" Width="1013.834">
+    <Window.Background>
+
+        <SolidColorBrush Color="#647382" />
+    </Window.Background>
+    <Grid Loaded="Grid_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="920,401,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_1" FontSize="14" Height="40" />
+        <TextBox   x:Name="pc1" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="645" FontSize="24" />
+        <TextBox   x:Name="pc2" HorizontalAlignment="Left" Height="40" Margin="10,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="645" FontSize="24" />
+        <TextBox   x:Name="pc3" HorizontalAlignment="Left" Height="40" Margin="10,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="645" FontSize="24" />
+        <TextBox   x:Name="pc4" HorizontalAlignment="Left" Height="40" Margin="10,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="645" FontSize="24" />
+        <TextBox   x:Name="pc5" HorizontalAlignment="Left" Height="40" Margin="10,190,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="645" FontSize="24" />
+        <DataGrid x:Name="viewdgr"  HorizontalAlignment="Left" Height="380" Margin="660,10,0,0" VerticalAlignment="Top" Width="336"/>
+    </Grid>
+</Controls:MetroWindow>

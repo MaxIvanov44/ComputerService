@@ -168,3 +168,9 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthClient\Orders\ViewClientOrder.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\UnlockRequest.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\UnlockRequest.baml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\Orders\OrderDetails.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\Orders\OrderDetails.baml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\Microsoft.Data.ConnectionUI.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\Orders\OrderDetailsView.g.cs
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\Orders\OrderDetailsView.baml

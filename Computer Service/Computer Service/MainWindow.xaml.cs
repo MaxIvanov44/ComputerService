@@ -2,6 +2,7 @@
 using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
+using Microsoft.Data.ConnectionUI;
 using System.Windows;
 
 namespace Computer_Service
@@ -66,6 +67,20 @@ namespace Computer_Service
             {
                 MessageBox.Show("Логин или пароль неверны!");
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            DataSource sqlDataSource = new DataSource("MicrosoftSqlServer", "Microsoft SQL Server");
+            sqlDataSource.Providers.Add(DataProvider.SqlDataProvider);
+            DataConnectionDialog dcd = new DataConnectionDialog();
+            dcd.DataSources.Add(sqlDataSource);
+            dcd.SelectedDataProvider = DataProvider.SqlDataProvider;
+            dcd.SelectedDataSource = sqlDataSource;
+          
+                string connectionString = dcd.ConnectionString;
+           
         }
     }
 }

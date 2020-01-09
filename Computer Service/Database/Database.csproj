@@ -39,6 +39,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f4ca07f51760da93, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataConnectionDialog.1.2\Lib\Microsoft.Data.ConnectionUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.ConnectionUI.Dialog, Version=0.0.0.0, Culture=neutral, PublicKeyToken=f4ca07f51760da93, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataConnectionDialog.1.2\Lib\Microsoft.Data.ConnectionUI.Dialog.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -53,24 +59,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adding.cs" />
     <Compile Include="Auth.cs" />
     <Compile Include="EntityModels\Admin.cs" />
     <Compile Include="EntityModels\Clients.cs" />
     <Compile Include="EntityModels\Computers.cs" />
+    <Compile Include="EntityModels\Details.cs" />
     <Compile Include="EntityModels\Managers.cs" />
     <Compile Include="EntityModels\Masters.cs" />
     <Compile Include="EntityModels\Model1.cs" />
     <Compile Include="EntityModels\Orders.cs" />
-    <Compile Include="EntityModels\PriceList.cs" />
     <Compile Include="EntityModels\Status.cs" />
     <Compile Include="EntityModels\StatusManager.cs" />
     <Compile Include="EntityModels\StatusMaster.cs" />
     <Compile Include="EntityModels\sysdiagrams.cs" />
+    <Compile Include="EntityModels\UnlockRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

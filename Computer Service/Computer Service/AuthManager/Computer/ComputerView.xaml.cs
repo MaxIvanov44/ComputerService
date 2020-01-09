@@ -19,31 +19,7 @@ namespace Computer_Service
             InitializeComponent();
         }
 
-        private void btnselect_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                var pcid = dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString();
-                var a = dtord.Rows[viewdgr.SelectedIndex].ItemArray[1].ToString();
-                var b = dtord.Rows[viewdgr.SelectedIndex].ItemArray[2].ToString();
-                var d = dtord.Rows[viewdgr.SelectedIndex].ItemArray[3].ToString();
-                if (a == null || b == null) MessageBox.Show("Выберите ПК!");
-                else
-                {
-                    string cc = (pcid + " " + a + " " + b + " " + d).ToString();
-                    LogicOrders.pc = cc;
 
-                    AddOrder ao = new AddOrder();
-                    ao.Show();
-
-                    Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void btnupdate_Click(object sender, RoutedEventArgs e)
         {
@@ -120,6 +96,16 @@ namespace Computer_Service
         private void back_Click(object sender, RoutedEventArgs e)
         {
             ManagerMain mm = new ManagerMain();
+            mm.Show();
+            Close();
+        }
+
+
+
+
+        private void back_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            OrderDetails mm = new OrderDetails();
             mm.Show();
             Close();
         }

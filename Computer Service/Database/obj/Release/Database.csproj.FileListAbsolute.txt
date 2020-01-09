@@ -11,3 +11,17 @@ C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Release\Da
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Release\Database.csproj.CopyComplete
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Release\Database.dll
 C:\Users\ivano\Desktop\Курсовик\Computer Service\Database\obj\Release\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\Database.dll.config
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\Database.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\EntityFramework.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\EntityFramework.xml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Release\Database.csproj.CopyComplete
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Release\Database.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\obj\Release\Database.pdb
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\Database.dll.CodeAnalysisLog.xml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Database\bin\Release\Database.dll.lastcodeanalysissucceeded

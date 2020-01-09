@@ -17,34 +17,6 @@ namespace Computer_Service
         public ViewNowOrders()
         {
             InitializeComponent();
-
-            //var data = from Order in db.Orders
-            //           join Status in db.Status on Order.order_status equals Status.id_status
-            //           join Client in db.Clients on Order.client equals Client.id_user
-            //           join Master in db.Masters on Order.master equals Master.id_master
-            //           join Computers in db.Computers on Order.computer equals Computers.id_comp
-            //           where Order.client == id
-            //           select new
-            //           {
-            //               ID = Order.id_order,
-            //               Статус = Status.status1,
-            //               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
-            //               Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
-            //               Дата_принятия = Order.date_of_acceptance,
-            //               Дата_возврата = Order.date_of_return,
-            //               Стоимость = Order.repair_price,
-            //               Описание = Order.description
-            //           };
-            //viewdgr.ItemsSource = data.ToList();
-        }
-
-        private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
-                ));
-            ViewClientOrder upd = new ViewClientOrder();
-            upd.Show();
-            Close();
         }
 
         private DataTable dtord = new DataTable();
@@ -63,7 +35,14 @@ namespace Computer_Service
             upd.Show();
             Close();
         }
-
+        private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
+                ));
+            ViewClientOrder upd = new ViewClientOrder();
+            upd.Show();
+            Close();
+        }
         private void back_Click(object sender, RoutedEventArgs e)
         {
             ClientMain mm = new ClientMain();
@@ -81,17 +60,15 @@ namespace Computer_Service
                            join Status in db.Status on Order.order_status equals Status.id_status
                            join Client in db.Clients on Order.client equals Client.id_user
                            join Master in db.Masters on Order.master equals Master.id_master
-                           join Computers in db.Computers on Order.computer equals Computers.id_comp
                            where Order.client == id && Order.order_status == 1
                            select new
                            {
                                ID = Order.id_order,
                                Статус = Status.status1,
-                               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
                                Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
                                Дата_принятия = Order.date_of_acceptance,
                                Дата_возврата = Order.date_of_return,
-                               Стоимость = Order.repair_price,
+                               Стоимость = Order.cost,
                                Описание = Order.description
                            };
                 viewdgr.ItemsSource = data.ToList();
@@ -108,17 +85,15 @@ namespace Computer_Service
                            join Status in db.Status on Order.order_status equals Status.id_status
                            join Client in db.Clients on Order.client equals Client.id_user
                            join Master in db.Masters on Order.master equals Master.id_master
-                           join Computers in db.Computers on Order.computer equals Computers.id_comp
                            where Order.client == id && Order.order_status == 2
                            select new
                            {
                                ID = Order.id_order,
                                Статус = Status.status1,
-                               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
                                Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
                                Дата_принятия = Order.date_of_acceptance,
                                Дата_возврата = Order.date_of_return,
-                               Стоимость = Order.repair_price,
+                               Стоимость = Order.cost,
                                Описание = Order.description
                            };
                 viewdgr.ItemsSource = data.ToList();
@@ -135,17 +110,15 @@ namespace Computer_Service
                            join Status in db.Status on Order.order_status equals Status.id_status
                            join Client in db.Clients on Order.client equals Client.id_user
                            join Master in db.Masters on Order.master equals Master.id_master
-                           join Computers in db.Computers on Order.computer equals Computers.id_comp
                            where Order.client == id && Order.order_status == 3
                            select new
                            {
                                ID = Order.id_order,
                                Статус = Status.status1,
-                               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
                                Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
                                Дата_принятия = Order.date_of_acceptance,
                                Дата_возврата = Order.date_of_return,
-                               Стоимость = Order.repair_price,
+                               Стоимость = Order.cost,
                                Описание = Order.description
                            };
                 viewdgr.ItemsSource = data.ToList();
@@ -162,17 +135,15 @@ namespace Computer_Service
                            join Status in db.Status on Order.order_status equals Status.id_status
                            join Client in db.Clients on Order.client equals Client.id_user
                            join Master in db.Masters on Order.master equals Master.id_master
-                           join Computers in db.Computers on Order.computer equals Computers.id_comp
                            where Order.client == id && Order.order_status == 4
                            select new
                            {
                                ID = Order.id_order,
                                Статус = Status.status1,
-                               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
                                Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
                                Дата_принятия = Order.date_of_acceptance,
                                Дата_возврата = Order.date_of_return,
-                               Стоимость = Order.repair_price,
+                               Стоимость = Order.cost,
                                Описание = Order.description
                            };
                 viewdgr.ItemsSource = data.ToList();
@@ -189,17 +160,15 @@ namespace Computer_Service
                            join Status in db.Status on Order.order_status equals Status.id_status
                            join Client in db.Clients on Order.client equals Client.id_user
                            join Master in db.Masters on Order.master equals Master.id_master
-                           join Computers in db.Computers on Order.computer equals Computers.id_comp
                            where Order.client == id && Order.order_status == 5
                            select new
                            {
                                ID = Order.id_order,
                                Статус = Status.status1,
-                               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
                                Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
                                Дата_принятия = Order.date_of_acceptance,
                                Дата_возврата = Order.date_of_return,
-                               Стоимость = Order.repair_price,
+                               Стоимость = Order.cost,
                                Описание = Order.description
                            };
                 viewdgr.ItemsSource = data.ToList();
@@ -216,17 +185,15 @@ namespace Computer_Service
                            join Status in db.Status on Order.order_status equals Status.id_status
                            join Client in db.Clients on Order.client equals Client.id_user
                            join Master in db.Masters on Order.master equals Master.id_master
-                           join Computers in db.Computers on Order.computer equals Computers.id_comp
                            where Order.client == id
                            select new
                            {
                                ID = Order.id_order,
                                Статус = Status.status1,
-                               Техника = Computers.name + " - " + Computers.brand + " " + Computers.model,
                                Мастер = Master.first_name + " " + Master.last_name + " " + Master.middle_name,
                                Дата_принятия = Order.date_of_acceptance,
                                Дата_возврата = Order.date_of_return,
-                               Стоимость = Order.repair_price,
+                               Стоимость = Order.cost,
                                Описание = Order.description
                            };
                 viewdgr.ItemsSource = data.ToList();

@@ -2,6 +2,8 @@
 using Logic;
 using MahApps.Metro.Controls;
 using System;
+using System.Data.SqlClient;
+using System.Linq;
 using System.Windows;
 
 namespace Computer_Service
@@ -11,16 +13,39 @@ namespace Computer_Service
     /// </summary>
     public partial class AddOrder : MetroWindow
     {
+        int statusnew = 1;
+        object globalid = 0;
+       
         public AddOrder()
         {
             InitializeComponent();
+            accept.SelectedDate = DateTime.Now;
+
+
+
+            string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
+            string sqlExpression = "SELECT IDENT_CURRENT('dbo.Orders')+1";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlExpression, connection);
+                var ident_current = command.ExecuteScalar();
+                globalid = ident_current;
+                LogicOrders.globalidorder = Convert.ToInt32(globalid);
+                connection.Close();
+            }
+
+
+
+           
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                if (accept.Text == "") accept.SelectedDate = DateTime.Now;
+
 
                 if (@return.Text == "")
                 {
@@ -33,20 +58,41 @@ namespace Computer_Service
                 if (description.Text == "") description.Text = "Не указано";
 
                 Model1 db = new Model1();
+
                 Orders order = new Orders
                 {
-                    order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text)),
+                    order_status = statusnew,
+                    //order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text)),
                     client = Convert.ToInt32(LogicClient.GetIdClient(client.Text)),
                     master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text)),
-                    computer = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text)),
 
                     date_of_acceptance = accept.SelectedDate,
                     date_of_return = @return.SelectedDate,
-                    repair_price = Convert.ToInt32(price.Text),
+                    cost = Convert.ToInt32(price.Text),
                     description = description.Text
                 };
                 db.Orders.Add(order);
+
+                //string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
+                //string sqlExpression = "SELECT IDENT_CURRENT('dbo.Orders')+1";
+                //using (SqlConnection connection = new SqlConnection(connectionString))
+                //{
+                //    connection.Open();
+                //    SqlCommand command = new SqlCommand(sqlExpression, connection);
+                //    var ident_current = command.ExecuteScalar();
+                //    globalid = ident_current;
+                //    LogicOrders.globalidorder = Convert.ToInt32(globalid);
+                //}
+
+                //Details details = new Details
+                //{
+                //    Order = Convert.ToInt32(globalid),
+                //    Parts = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text)),
+
+                //};
+                //db.Details.Add(details);
                 db.SaveChanges();
+
                 MessageBox.Show("Заказ добавлен!");
                 ViewOrder vo = new ViewOrder();
                 vo.Show();
@@ -60,7 +106,7 @@ namespace Computer_Service
 
         private void Label_Loaded(object sender, RoutedEventArgs e)
         {
-            status.ItemsSource = LogicStatus.GetStatusManager();
+
 
             client.Text = LogicOrders.c;
             master.Text = LogicOrders.m;
@@ -72,7 +118,7 @@ namespace Computer_Service
 
         private void viewClient_Click(object sender, RoutedEventArgs e)
         {
-            LogicOrders.st = status.Text;
+
 
             LogicOrders.pr = price.Text;
             LogicOrders.des = description.Text;
@@ -92,10 +138,11 @@ namespace Computer_Service
 
         private void viewCOMP_Click(object sender, RoutedEventArgs e)
         {
+
             LogicOrders.pr = price.Text;
             LogicOrders.des = description.Text;
-            ComputerView cv1 = new ComputerView();
-            cv1.Show();
+            OrderDetails od = new OrderDetails();
+            od.Show();
             Close();
         }
 
@@ -122,16 +169,6 @@ namespace Computer_Service
             LogicOrders.des = description.Text;
         }
 
-        private void status_ContextMenuClosing(object sender, System.Windows.Controls.ContextMenuEventArgs e)
-        {
-            LogicOrders.pr = price.Text;
-            LogicOrders.des = description.Text;
-        }
 
-        private void status_ContextMenuOpening(object sender, System.Windows.Controls.ContextMenuEventArgs e)
-        {
-            LogicOrders.pr = price.Text;
-            LogicOrders.des = description.Text;
-        }
     }
 }
