@@ -2,6 +2,7 @@
 using Logic;
 using MahApps.Metro.Controls;
 using System;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows;
 
@@ -12,6 +13,8 @@ namespace Computer_Service
     /// </summary>
     public partial class UpdateOrderMaster : MetroWindow
     {
+        object countcompl = 0;
+        int globalid;
         public UpdateOrderMaster()
         {
             InitializeComponent();
@@ -23,6 +26,26 @@ namespace Computer_Service
             var orders = Logic.LogicOrders.GetCurrentOrder();
             idtxt.Text = orders.id_order.ToString();
             var a = Convert.ToInt32(idtxt.Text);
+
+            string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
+            string sqlExpression2 = "SELECT COUNT(*) FROM dbo.Details WHERE [Order] = " + a;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlExpression2, connection);
+                var ident_current = command.ExecuteScalar();
+                countcompl = ident_current;
+                LogicOrders.count = Convert.ToInt32(countcompl);
+                connection.Close();
+            }
+
+            pc.Text = "Количество: " + countcompl;
+
+
+
+
+
+            globalid = a;
             var data = from Order in db.Orders
                        join Statusmas in db.Status on Order.order_status equals Statusmas.id_status
                        join Client in db.Clients on Order.client equals Client.id_user
@@ -89,6 +112,12 @@ namespace Computer_Service
             ViewOrderMaster vo = new ViewOrderMaster();
             vo.Show();
             Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MasterOrderDetailsView modv = new MasterOrderDetailsView(globalid);
+            modv.ShowDialog();
         }
     }
 }

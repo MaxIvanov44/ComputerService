@@ -2,6 +2,7 @@
 using Logic;
 using MahApps.Metro.Controls;
 using System;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows;
 
@@ -12,6 +13,8 @@ namespace Computer_Service
     /// </summary>
     public partial class ViewClientOrder : MetroWindow
     {
+        object globalid;
+        object countcompl = 0;
         public ViewClientOrder()
         {
             InitializeComponent();
@@ -19,10 +22,32 @@ namespace Computer_Service
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
+
+
+
+
+
             Model1 db = new Model1();
             Orders orders = Logic.LogicOrders.GetCurrentOrder();
             idtxt.Text = orders.id_order.ToString();
+
             var a = Convert.ToInt32(idtxt.Text);
+            globalid = a;
+
+            string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
+            string sqlExpression2 = "SELECT COUNT(*) FROM dbo.Details WHERE [Order] = " + a;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(sqlExpression2, connection);
+                var ident_current = command.ExecuteScalar();
+                countcompl = ident_current;
+                LogicOrders.count = Convert.ToInt32(countcompl);
+                connection.Close();
+            }
+
+            pc.Text = "Количество: " + countcompl;
+
 
             var data = from Order in db.Orders
                        join Status in db.Status on Order.order_status equals Status.id_status
@@ -42,8 +67,6 @@ namespace Computer_Service
                        };
             master.Text = data.FirstOrDefault().Master;
             client.Text = data.FirstOrDefault().Client;
-
-            status.ItemsSource = LogicStatus.GetStatusMaster();
             status.Text = data.FirstOrDefault().Status;
             DateTime? date1 = orders.date_of_acceptance;
             DateTime? date2 = orders.date_of_return;
@@ -58,6 +81,12 @@ namespace Computer_Service
             ViewNowOrders vo = new ViewNowOrders();
             vo.Show();
             Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ClientOrderDetailsView odv = new ClientOrderDetailsView(Convert.ToInt32(globalid));
+            odv.ShowDialog();
         }
     }
 }

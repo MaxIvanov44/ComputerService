@@ -19,8 +19,6 @@
         <TextBox  x:Name="description" HorizontalAlignment="Left" Height="82" Margin="141,482,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="421" FontSize="24" />
         <TextBox  x:Name="price" HorizontalAlignment="Left" Height="40" Margin="193,422,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="369" FontSize="24" />
 
-        <ComboBox  x:Name="status"  HorizontalAlignment="Right" Margin="0,66,16,0" VerticalAlignment="Top" Width="369" FontSize="24" />
-
         <DatePicker  x:Name="accept"  HorizontalAlignment="Left" Margin="212,311,0,0" VerticalAlignment="Top" FontSize="18" Width="350" />
         <DatePicker  x:Name="return"  HorizontalAlignment="Left" Margin="212,367,0,0" VerticalAlignment="Top" FontSize="18" Width="350" />
         <Label Content="ПК
@@ -30,7 +28,9 @@
         <TextBox IsEnabled="False" x:Name="idtxt" HorizontalAlignment="Left" Height="47" Margin="193,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
         <Button Content="Назад" HorizontalAlignment="Left" Margin="428,600,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click_1" FontSize="18" Height="43" />
         <TextBox  x:Name="master" HorizontalAlignment="Left" Height="47" Margin="193,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
-        <TextBox  x:Name="pc" HorizontalAlignment="Left" Height="47" Margin="193,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <TextBox  x:Name="pc" HorizontalAlignment="Left" Height="47" Margin="193,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" FontSize="24" />
         <TextBox x:Name="client" HorizontalAlignment="Left" Height="47" Margin="193,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <TextBox x:Name="status" HorizontalAlignment="Left" Height="42" Margin="193,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="369" FontSize="24"/>
+        <Button Content="View" HorizontalAlignment="Left" Margin="470,246,0,0" VerticalAlignment="Top" Width="92" Height="47" FontSize="20" Click="Button_Click"/>
     </Grid>
 </Controls:MetroWindow>

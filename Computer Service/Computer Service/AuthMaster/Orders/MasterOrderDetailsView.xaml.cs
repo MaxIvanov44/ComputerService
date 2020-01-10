@@ -13,7 +13,7 @@ namespace Computer_Service
     /// <summary>
     /// Логика взаимодействия для MasterMain.xaml
     /// </summary>
-    public partial class OrderDetailsView : MetroWindow
+    public partial class MasterOrderDetailsView : MetroWindow
     {
 
         object globalid;
@@ -23,7 +23,7 @@ namespace Computer_Service
         DataTable dt3 = new DataTable();
         DataTable dt4 = new DataTable();
         DataTable dt5 = new DataTable();
-        public OrderDetailsView(int globalid)
+        public MasterOrderDetailsView(int globalid)
         {
             InitializeComponent();
             this.globalid = globalid;

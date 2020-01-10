@@ -107,6 +107,9 @@
     <Compile Include="AuthAdmin\Orders\ViewOrderAdmin.xaml.cs">
       <DependentUpon>ViewOrderAdmin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AuthClient\Orders\ClientOrderDetailsView.xaml.cs">
+      <DependentUpon>ClientOrderDetailsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AuthClient\Orders\ViewClientOrder.xaml.cs">
       <DependentUpon>ViewClientOrder.xaml</DependentUpon>
     </Compile>
@@ -151,6 +154,9 @@
     </Compile>
     <Compile Include="AuthMaster\Computer\UpdateComputerMaster.xaml.cs">
       <DependentUpon>UpdateComputerMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AuthMaster\Orders\MasterOrderDetailsView.xaml.cs">
+      <DependentUpon>MasterOrderDetailsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="AuthMaster\Orders\UpdateOrderMaster.xaml.cs">
       <DependentUpon>UpdateOrderMaster.xaml</DependentUpon>
@@ -202,6 +208,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AuthClient\ClientMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthClient\Orders\ClientOrderDetailsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -274,6 +284,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="AuthMaster\Computer\UpdateComputerMaster.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AuthMaster\Orders\MasterOrderDetailsView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

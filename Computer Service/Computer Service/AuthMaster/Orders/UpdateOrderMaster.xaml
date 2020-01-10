@@ -31,7 +31,8 @@
         <TextBox IsEnabled="False" x:Name="idtxt" HorizontalAlignment="Left" Height="47" Margin="193,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
         <Button Content="Назад" HorizontalAlignment="Left" Margin="428,600,0,0" VerticalAlignment="Top" Width="140" Click="Button_Click_1" FontSize="18" Height="43" />
         <TextBox  x:Name="master" HorizontalAlignment="Left" Height="47" Margin="193,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
-        <TextBox  x:Name="pc" HorizontalAlignment="Left" Height="47" Margin="193,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <TextBox  x:Name="pc" HorizontalAlignment="Left" Height="47" Margin="193,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontSize="24" />
         <TextBox x:Name="client" HorizontalAlignment="Left" Height="47" Margin="193,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
+        <Button Content="View" HorizontalAlignment="Left" Margin="460,246,0,0" VerticalAlignment="Top" Width="102" Height="47" FontSize="20" Click="Button_Click_2"/>
     </Grid>
 </Controls:MetroWindow>

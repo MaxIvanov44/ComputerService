@@ -85,7 +85,7 @@ namespace Logic
             }
             return dtord;
         }
-        public static IList GetCompl(string id)
+        public static IList GetCompl(String id)
         {
             Model1 db = new Model1();
             int idd = Convert.ToInt32(id);
@@ -94,13 +94,11 @@ namespace Logic
                        where PC.id_comp == idd
                        select new
                        {
-                           id = PC.id_comp ,
-                           name =  PC.name ,
-                           brand =  PC.brand ,
-                           model =  PC.model,
+                           id = PC.id_comp + " ;" + PC.name + " " + PC.brand + " " + PC.model
+
 
                        };
-
+            var dataa = data.FirstOrDefault();
 
             return data.ToList();
         }
@@ -133,6 +131,26 @@ namespace Logic
                 dtord.Rows.Add(ins.ID, ins.Name, ins.br, ins.mark, ins.problem, ins.des);
             }
             return dtord;
+        }
+
+        public static DataTable peka(int id)
+        {
+            Model1 db = new Model1();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID");
+
+            var peka = from PC in db.Computers
+                       where PC.id_comp == id
+                       select new
+                       {
+                           idd = PC.id_comp + " " + PC.name + " " + PC.brand + " " + PC.model,
+
+                       };
+            foreach (var count in peka)
+            {
+                dt.Rows.Add(count.idd);
+            }
+            return dt;
         }
     }
 }

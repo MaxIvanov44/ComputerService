@@ -1,4 +1,4 @@
-﻿<Controls:MetroWindow x:Class="Computer_Service.OrderDetailsView"
+﻿<Controls:MetroWindow x:Class="Computer_Service.MasterOrderDetailsView"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
