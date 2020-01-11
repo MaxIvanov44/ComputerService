@@ -1,0 +1,13 @@
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.Dialog.csprojAssemblyReference.cache
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.AccessConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.AddPropertyDialog.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.DataConnectionAdvancedDialog.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.DataConnectionDialog.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.DataConnectionSourceDialog.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.OdbcConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.OleDBConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.OracleConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.SqlConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.SqlFileConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.Strings.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\ConnectionUIDialog\obj\Debug\Microsoft.Data.ConnectionUI.Dialog.csproj.GenerateResource.cache

@@ -1,0 +1,3 @@
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\Sample.VB\obj\Debug\Microsoft.Data.ConnectionUI.Sample.VB.vbprojAssemblyReference.cache
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\Sample.VB\obj\Debug\Microsoft.Data.ConnectionUI.Sample.VB.Resources.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\Sample.VB\obj\Debug\Microsoft.Data.ConnectionUI.Sample.VB.vbproj.GenerateResource.cache

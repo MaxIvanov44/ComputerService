@@ -1,0 +1,4 @@
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\SqlCeDataProvider\obj\Debug\Microsoft.Data.ConnectionUI.SqlCeDataProvider.csprojAssemblyReference.cache
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\SqlCeDataProvider\obj\Debug\Microsoft.Data.ConnectionUI.Resources.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\SqlCeDataProvider\obj\Debug\Microsoft.Data.ConnectionUI.SqlCeConnectionUIControl.resources
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\SqlCeDataProvider\obj\Debug\Microsoft.Data.ConnectionUI.SqlCeDataProvider.csproj.GenerateResource.cache

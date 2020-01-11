@@ -68,5 +68,13 @@ namespace Computer_Service
             mm.Show();
             Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Analyz a = new Analyz();
+            a.ShowDialog();
+//            use ComputerService
+//SELECT SUM(cost) FROM dbo.Orders where master = 2
+        }
     }
 }

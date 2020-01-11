@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <AssemblyAttributeClsCompliant>true</AssemblyAttributeClsCompliant>
+    <AssemblyName>Microsoft.Data.ConnectionUI</AssemblyName>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ProjectGuid>{139729CD-0F06-48E8-9F4A-08E78BB6575F}</ProjectGuid>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>Microsoft.Data.ConnectionUI</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <IntermediateOutputPath>C:\Users\ivano\AppData\Local\Temp\vs148D.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\ConnectionDialog.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <!--Leaf Project Items-->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDataConnectionProperties.cs" />
+    <Compile Include="IDataConnectionUIControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ConnectionDialog.snk">
+      <Link>ConnectionDialog.snk</Link>
+    </None>
+  </ItemGroup>
+  <!--Import the targets-->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

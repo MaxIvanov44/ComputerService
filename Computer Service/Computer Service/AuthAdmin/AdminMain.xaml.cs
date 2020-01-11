@@ -69,5 +69,11 @@ namespace Computer_Service
             mv.Show();
             Close();
         }
+
+        private void MenuItem_Click_9(object sender, RoutedEventArgs e)
+        {
+            Analyz a = new Analyz();
+            a.ShowDialog();
+        }
     }
 }

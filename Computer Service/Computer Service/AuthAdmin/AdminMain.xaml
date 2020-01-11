@@ -15,6 +15,7 @@
             <MenuItem Header="Мастера" Background="#FF2D333A" Click="MenuItem_Click_8" ></MenuItem>
             <MenuItem Header="Менеджеры" Background="#FF2D333A" Click="MenuItem_Click" ></MenuItem>
             <MenuItem Header="Клиенты" Background="#FF2D333A" Click="MenuItem_Click_2" ></MenuItem>
+            <MenuItem Header="Статистика" Background="#FF2D333A" Click="MenuItem_Click_9" ></MenuItem>
 
             <MenuItem Header="Выход из аккаунта" Background="#FF2D333A" Click="MenuItem_Click_6" ></MenuItem>
             <MenuItem Header="Выход из программы" Click="MenuItem_Click_7" ></MenuItem>

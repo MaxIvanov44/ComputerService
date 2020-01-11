@@ -1,0 +1,1 @@
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\packages\DataConnectionDialog.1.2\Tools\Sample\obj\Debug\Microsoft.Data.ConnectionUI.Sample.csprojAssemblyReference.cache
