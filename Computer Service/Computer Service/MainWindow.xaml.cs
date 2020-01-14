@@ -26,16 +26,7 @@ namespace Computer_Service
                 SaveCLID.CLID = cl.id_user;
                 if (cl.block == 1)
                 {
-                    if (MessageBox.Show("Хотите оставить заявку на разблокировку?", "ВНИМАНИЕ: Клиент заблокирован", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
-                    {
-                        this.Close();
-                    }
-                    else
-                    {
-                        UnlockRequest ur = new UnlockRequest();
-                        this.Close();
-                        ur.Show();
-                    }
+                    MessageBox.Show("Клиент заблокирован!");
                 }
                 else if (cl.block == 0)
                 {

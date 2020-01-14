@@ -4,9 +4,18 @@
                                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Computer_Service"
         Title="О ПРОГРАММЕ" Height="348.95" Width="616.198">
+    <Window.Background>
 
+        <SolidColorBrush Color="#FFFFFF" />
+    </Window.Background>
     <Grid>
 
         <Button Content="Назад" HorizontalAlignment="Left" Margin="432,262,0,0" VerticalAlignment="Top" Width="166" Click="Button_Click" FontSize="20" Height="46" />
+        <Image HorizontalAlignment="Left" Height="68" Margin="10,240,0,0" VerticalAlignment="Top" Width="68" Source="vkontakte_PNG19.png" MouseDown="Image_MouseDown"/>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="105,56,0,0" TextWrapping="Wrap" Text="Lvanovmaksim200033@gmail.com" VerticalAlignment="Top" Width="415" FontSize="24" Background="White" Foreground="Black"/>
+        <Label Content="Автор: Максим Иванов" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="45" Width="285" Foreground="Black" FontSize="24"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Height="45" Width="90" Foreground="Black" FontSize="24"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="105,241,0,0" VerticalAlignment="Top" Width="68" Source="1024px-Facebook_F_icon.svg.png" MouseDown="Image_MouseDown_1"/>
+        <Image HorizontalAlignment="Left" Height="69" Margin="206,240,0,0" VerticalAlignment="Top" Width="179" Source="github_PNG15.png" MouseDown="Image_MouseDown_2"/>
     </Grid>
 </Controls:MetroWindow>

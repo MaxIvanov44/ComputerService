@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.Controls;
+using System.Diagnostics;
 using System.Windows;
 
 namespace Computer_Service
@@ -17,5 +18,21 @@ namespace Computer_Service
         {
             Close();
         }
+
+        private void Image_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Process.Start("https://vk.com/maks_ivanofff");
+        }
+
+        private void Image_MouseDown_1(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Process.Start("https://www.facebook.com/profile.php?id=100008449293113");
+        }
+
+        private void Image_MouseDown_2(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Process.Start("https://github.com/MaxIvanov44/ComputerService");
+        }
     }
 }
+

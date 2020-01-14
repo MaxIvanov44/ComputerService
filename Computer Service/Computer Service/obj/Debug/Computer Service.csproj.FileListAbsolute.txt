@@ -107,7 +107,6 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\ManagerMain.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\MainWindow.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\About.baml
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\XAMLClasses.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Computer Service.g.resources
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Computer_Service.Properties.Resources.resources
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Computer Service.csproj.GenerateResource.cache
@@ -166,8 +165,6 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthMaster\Orders\ViewOrderMaster.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthClient\Orders\ViewClientOrder.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthClient\Orders\ViewClientOrder.baml
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\UnlockRequest.g.cs
-C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\UnlockRequest.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\Orders\OrderDetails.g.cs
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\AuthManager\Orders\OrderDetails.baml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\Microsoft.Data.ConnectionUI.Dialog.dll
@@ -188,3 +185,4 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\LiveCharts.Wpf.xml
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\GemBox.Spreadsheet.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\GemBox.Spreadsheet.xml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\obj\Debug\Resources\XAMLClasses.baml

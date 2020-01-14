@@ -34,11 +34,7 @@
         <Label  Content="Ваш ИД" HorizontalAlignment="Left" Margin="2,98,0,0" VerticalAlignment="Top" Height="133" />
         <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
             <MenuItem Header="Просмотр заказов" Background="#FF2D333A" Click="MenuItem_Click" />
-            <MenuItem Header="О программе" Background="#FF2D333A">
-                <MenuItem Header="О авторе" Click="MenuItem_Click_4" />
-                <Separator />
-                <MenuItem Header="Github" Click="MenuItem_Click_1" />
-            </MenuItem>
+            <MenuItem Header="О программе" Background="#FF2D333A" Click="MenuItem_Click_2"/>
             <MenuItem Header="Выход из программы" Click="MenuItem_Click_3" />
         </Menu>
         <Label   Content="Готовых заказов:" HorizontalAlignment="Left" Margin="2,67,0,0" VerticalAlignment="Top" />

@@ -173,9 +173,6 @@
     <Compile Include="AuthMaster\Orders\UpdateOrderMaster.xaml.cs">
       <DependentUpon>UpdateOrderMaster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Resources\UnlockRequest.xaml.cs">
-      <DependentUpon>UnlockRequest.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Resources\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
@@ -346,10 +343,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Resources\UnlockRequest.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Resources\About.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -410,6 +403,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\1043px-Microsoft_Excel_2013_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\vkontakte_PNG19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1024px-Facebook_F_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\github_PNG15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

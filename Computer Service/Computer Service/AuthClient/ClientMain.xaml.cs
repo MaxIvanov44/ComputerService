@@ -20,7 +20,7 @@ namespace Computer_Service
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://github.com/MaxIvanov44/ComputerService");
+            
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -37,8 +37,7 @@ namespace Computer_Service
 
         private void MenuItem_Click_4(object sender, RoutedEventArgs e)
         {
-            About a = new About();
-            a.ShowDialog();
+           
         }
 
         private void MenuItem_Click_5(object sender, RoutedEventArgs e)
@@ -73,6 +72,12 @@ namespace Computer_Service
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            About a = new About();
+            a.ShowDialog();
         }
     }
 }
