@@ -1,12 +1,8 @@
-﻿using Database;
-using Database.EntityModels;
-using Logic;
-using MahApps.Metro.Controls;
+﻿using MahApps.Metro.Controls;
 using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace Computer_Service
 {
@@ -15,25 +11,21 @@ namespace Computer_Service
     /// </summary>
     public partial class OrderDetailsView : MetroWindow
     {
-
-        object globalid;
+        private object globalid;
         private DataTable dtord = new DataTable();
-        DataTable dt1 = new DataTable();
-        DataTable dt2 = new DataTable();
-        DataTable dt3 = new DataTable();
-        DataTable dt4 = new DataTable();
-        DataTable dt5 = new DataTable();
+        private DataTable dt1 = new DataTable();
+        private DataTable dt2 = new DataTable();
+        private DataTable dt3 = new DataTable();
+        private DataTable dt4 = new DataTable();
+        private DataTable dt5 = new DataTable();
+
         public OrderDetailsView(int globalid)
         {
             InitializeComponent();
             this.globalid = globalid;
         }
 
-
-
-        string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
-
-
+        private string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
@@ -57,7 +49,6 @@ namespace Computer_Service
                     pc1.Visibility = Visibility.Hidden;
                 }
             }
-
 
             string comp2 = "SELECT Parts FROM dbo.Details WHERE [Order] = " + globalid + " AND [Number] = 2 ";
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -143,17 +134,13 @@ namespace Computer_Service
                 }
             }
 
-
             dtord = Logic.LogicComputers.GetAllPC();
             viewdgr.ItemsSource = dtord.DefaultView;
         }
-
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
-
     }
 }

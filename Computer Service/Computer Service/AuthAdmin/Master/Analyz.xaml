@@ -14,23 +14,24 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <lvc:PieChart x:Name="myPieChart" LegendLocation="Bottom" DataClick="Chart_OnDataClick" Hoverable="False" DataTooltip="{x:Null}" HorizontalAlignment="Left" Width="670" Height="651" VerticalAlignment="Top" FontSize="20">
             <lvc:PieChart.Background>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
+                <SolidColorBrush Color="Black" Opacity="0.7" />
             </lvc:PieChart.Background>
-
         </lvc:PieChart>
 
-        <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Bottom" Margin="670,0,0,0">
+        <lvc:CartesianChart Series="{Binding SeriesCollection}"  LegendLocation="Bottom" Margin="670,0,0,0" FontSize="20">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis  Labels="{Binding Labels}"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
             <lvc:CartesianChart.Background>
-                <SolidColorBrush Color="Black" Opacity="0.7"/>
+                <SolidColorBrush Color="Black" Opacity="0.7" />
             </lvc:CartesianChart.Background>
         </lvc:CartesianChart>
 
-
-        <Button Content="Back" FontSize="36px" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Click="Button_Click" Height="71"/>
+        <Button Content="Back" FontSize="36px" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Click="Button_Click" Height="71" />
     </Grid>
 </Controls:MetroWindow>

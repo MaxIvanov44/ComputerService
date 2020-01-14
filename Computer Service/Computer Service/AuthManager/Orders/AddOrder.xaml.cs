@@ -3,7 +3,6 @@ using Logic;
 using MahApps.Metro.Controls;
 using System;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Windows;
 
 namespace Computer_Service
@@ -13,15 +12,13 @@ namespace Computer_Service
     /// </summary>
     public partial class AddOrder : MetroWindow
     {
-        int statusnew = 1;
-        object globalid = 0;
-       
+        private int statusnew = 1;
+        private object globalid = 0;
+
         public AddOrder()
         {
             InitializeComponent();
             accept.SelectedDate = DateTime.Now;
-
-
 
             string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
             string sqlExpression = "SELECT IDENT_CURRENT('dbo.Orders')+1";
@@ -34,19 +31,12 @@ namespace Computer_Service
                 LogicOrders.globalidorder = Convert.ToInt32(globalid);
                 connection.Close();
             }
-
-
-
-           
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-
-
                 if (@return.Text == "")
                 {
                     var dt = DateTime.Now;
@@ -106,11 +96,8 @@ namespace Computer_Service
 
         private void Label_Loaded(object sender, RoutedEventArgs e)
         {
-
-
             client.Text = LogicOrders.c;
             master.Text = LogicOrders.m;
-           
 
             description.Text = LogicOrders.des;
             price.Text = LogicOrders.pr;
@@ -118,8 +105,6 @@ namespace Computer_Service
 
         private void viewClient_Click(object sender, RoutedEventArgs e)
         {
-
-
             LogicOrders.pr = price.Text;
             LogicOrders.des = description.Text;
             ClientView cv = new ClientView();
@@ -138,7 +123,6 @@ namespace Computer_Service
 
         private void viewCOMP_Click(object sender, RoutedEventArgs e)
         {
-
             LogicOrders.pr = price.Text;
             LogicOrders.des = description.Text;
             OrderDetails od = new OrderDetails();
@@ -168,7 +152,5 @@ namespace Computer_Service
             LogicOrders.pr = price.Text;
             LogicOrders.des = description.Text;
         }
-
-
     }
 }

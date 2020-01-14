@@ -44,7 +44,6 @@ namespace Computer_Service
             }
             else if (Auth.authA(username.Text, password.Password) == true)
             {
-
                 AdminMain ms = new AdminMain();
                 this.Close();
                 ms.Show();
@@ -63,7 +62,6 @@ namespace Computer_Service
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
             DataSource sqlDataSource = new DataSource("MicrosoftSqlServer", "Microsoft SQL Server");
             sqlDataSource.Providers.Add(DataProvider.SqlDataProvider);
             DataConnectionDialog dcd = new DataConnectionDialog();
@@ -71,8 +69,7 @@ namespace Computer_Service
             dcd.SelectedDataProvider = DataProvider.SqlDataProvider;
             dcd.SelectedDataSource = sqlDataSource;
 
-                string connectionString = dcd.ConnectionString;
-
+            string connectionString = dcd.ConnectionString;
         }
     }
 }

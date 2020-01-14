@@ -13,8 +13,9 @@ namespace Computer_Service
     /// </summary>
     public partial class UpdateOrderMaster : MetroWindow
     {
-        object countcompl = 0;
-        int globalid;
+        private object countcompl = 0;
+        private int globalid;
+
         public UpdateOrderMaster()
         {
             InitializeComponent();
@@ -40,10 +41,6 @@ namespace Computer_Service
             }
 
             pc.Text = "Количество: " + countcompl;
-
-
-
-
 
             globalid = a;
             var data = from Order in db.Orders

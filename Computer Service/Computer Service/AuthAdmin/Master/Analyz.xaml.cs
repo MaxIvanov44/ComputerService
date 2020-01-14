@@ -13,46 +13,22 @@ namespace Computer_Service
     /// </summary>
     public partial class Analyz : MetroWindow
     {
-        string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
+        private string connectionString = @"data source=MAX-PC\SQLEXPRESS;initial catalog=ComputerService;integrated security=True;";
         public SeriesCollection SeriesCollection { get; set; }
         public string[] Labels { get; set; }
         public Func<double, string> Formatter { get; set; }
 
-        int summa1;
-        int summa2;
-        int summa3;
+        private int summa1;
+        private int summa2;
+        private int summa3;
+
         public Analyz()
         {
             InitializeComponent();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             string master1 = "SELECT SUM(cost) FROM dbo.Orders WHERE [master] = 1 AND [order_status]=5";
             string master2 = "SELECT SUM(cost) FROM dbo.Orders WHERE [master] = 2 AND [order_status]=5";
             string master3 = "SELECT SUM(cost) FROM dbo.Orders WHERE [master] = 3 AND [order_status]=5";
-
-
-
-
-
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -60,7 +36,7 @@ namespace Computer_Service
                 SqlCommand command = new SqlCommand(master1, connection);
                 var m1 = command.ExecuteScalar();
 
-                if (m1 != null)
+                if (command.ExecuteScalar() != DBNull.Value)
                 {
                     int sum1 = Convert.ToInt32(m1);
                     summa1 = sum1;
@@ -71,7 +47,6 @@ namespace Computer_Service
                         StrokeThickness = 0,
                         Values = new ChartValues<double> { sum1
 }
-
                     });
                     connection.Close();
                 }
@@ -86,7 +61,7 @@ namespace Computer_Service
                 SqlCommand command = new SqlCommand(master2, connection);
                 var m1 = command.ExecuteScalar();
 
-                if (m1 != null)
+                if (command.ExecuteScalar() != DBNull.Value)
                 {
                     int sum2 = Convert.ToInt32(m1);
                     summa2 = sum2;
@@ -111,7 +86,7 @@ namespace Computer_Service
                 SqlCommand command = new SqlCommand(master3, connection);
                 var m1 = command.ExecuteScalar();
 
-                if (m1 != null)
+                if (command.ExecuteScalar() != DBNull.Value)
                 {
                     int sum3 = Convert.ToInt32(m1);
                     summa3 = sum3;
@@ -129,12 +104,10 @@ namespace Computer_Service
                 {
                     connection.Close();
                 }
-
-
             }
 
-
-
+            Labels = new[] { "Александр", "Максим", "Владислав" };
+            Formatter = value => value.ToString("N");
 
             SeriesCollection = new SeriesCollection
             {
@@ -145,32 +118,8 @@ namespace Computer_Service
                 }
             };
 
-            //adding series will update and animate the chart automatically
-
-
-            //also adding values updates and animates the chart automatically
-
-            Labels = new[] { "Александр", "Максим", "Владислав", };
-            Formatter = value => value.ToString("N");
-
             DataContext = this;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         public Func<ChartPoint, string> PointLabel { get; set; }
 
@@ -186,11 +135,8 @@ namespace Computer_Service
             selectedSeries.PushOut = 30;
         }
 
-
-
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-
             DataContext = this;
         }
 

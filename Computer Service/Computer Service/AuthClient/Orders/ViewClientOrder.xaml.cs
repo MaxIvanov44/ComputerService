@@ -13,8 +13,9 @@ namespace Computer_Service
     /// </summary>
     public partial class ViewClientOrder : MetroWindow
     {
-        object globalid;
-        object countcompl = 0;
+        private object globalid;
+        private object countcompl = 0;
+
         public ViewClientOrder()
         {
             InitializeComponent();
@@ -22,11 +23,6 @@ namespace Computer_Service
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-
-
-
-
-
             Model1 db = new Model1();
             Orders orders = Logic.LogicOrders.GetCurrentOrder();
             idtxt.Text = orders.id_order.ToString();
@@ -47,7 +43,6 @@ namespace Computer_Service
             }
 
             pc.Text = "Количество: " + countcompl;
-
 
             var data = from Order in db.Orders
                        join Status in db.Status on Order.order_status equals Status.id_status

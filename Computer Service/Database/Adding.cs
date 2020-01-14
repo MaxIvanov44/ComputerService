@@ -16,14 +16,12 @@ namespace Database
                 {
                     Order = Convert.ToInt32(globalid),
                     Parts = Convert.ToInt32(pc + i),
-
                 };
                 db.Details.Add(details);
             }
             db.SaveChanges();
 
             MessageBox.Show("Комплектующие заказа сохранены!");
-
         }
     }
 }

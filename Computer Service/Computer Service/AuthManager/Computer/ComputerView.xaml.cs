@@ -19,8 +19,6 @@ namespace Computer_Service
             InitializeComponent();
         }
 
-
-
         private void btnupdate_Click(object sender, RoutedEventArgs e)
         {
             Logic.LogicComputers.CurrentPC(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
@@ -99,9 +97,6 @@ namespace Computer_Service
             mm.Show();
             Close();
         }
-
-
-
 
         private void back_Copy_Click(object sender, RoutedEventArgs e)
         {

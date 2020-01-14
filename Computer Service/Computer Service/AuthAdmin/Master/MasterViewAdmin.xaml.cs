@@ -73,8 +73,8 @@ namespace Computer_Service
         {
             Analyz a = new Analyz();
             a.ShowDialog();
-//            use ComputerService
-//SELECT SUM(cost) FROM dbo.Orders where master = 2
+            //            use ComputerService
+            //SELECT SUM(cost) FROM dbo.Orders where master = 2
         }
     }
 }

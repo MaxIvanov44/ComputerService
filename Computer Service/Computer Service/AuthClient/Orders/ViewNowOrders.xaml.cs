@@ -38,6 +38,7 @@ namespace Computer_Service
             upd.Show();
             Close();
         }
+
         private void viewdgr_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Logic.LogicOrders.CurrentOrder(Convert.ToInt32(dtord.Rows[viewdgr.SelectedIndex].ItemArray[0].ToString()
@@ -46,6 +47,7 @@ namespace Computer_Service
             upd.Show();
             Close();
         }
+
         private void back_Click(object sender, RoutedEventArgs e)
         {
             ClientMain mm = new ClientMain();
@@ -209,14 +211,11 @@ namespace Computer_Service
             var workbook = new ExcelFile();
             var worksheet = workbook.Worksheets.Add("dtord");
 
-
             // Insert DataTable to an Excel worksheet.
             worksheet.InsertDataTable(dtord,
                 new InsertDataTableOptions()
                 {
                     ColumnHeaders = true,
-
-
                 });
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -229,9 +228,7 @@ namespace Computer_Service
             }
             else
             {
-
             }
-
         }
     }
 }

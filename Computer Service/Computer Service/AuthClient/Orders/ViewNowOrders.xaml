@@ -21,6 +21,6 @@
         <RadioButton x:Name="ready"  Content="Готов" HorizontalAlignment="Left" Margin="477,0,0,10" VerticalAlignment="Bottom" FontSize="16" Width="91" Checked="ready_Checked" />
         <RadioButton x:Name="complete"  Content="Завершен" HorizontalAlignment="Left" Margin="573,0,0,10" VerticalAlignment="Bottom" FontSize="16" Width="112" Checked="complete_Checked" />
         <RadioButton x:Name="all"  Content="Все заказы" HorizontalAlignment="Left" Margin="690,0,0,10" VerticalAlignment="Bottom" FontSize="16" Width="110" Checked="all_Checked" />
-        <Image  HorizontalAlignment="Left" Height="43" Margin="840,283,0,0" VerticalAlignment="Top" Width="41" Source="/Computer Service;component/Resources/1043px-Microsoft_Excel_2013_logo.svg.png" MouseDown="Image_MouseDown"/>
+        <Image  HorizontalAlignment="Left" Height="43" Margin="840,283,0,0" VerticalAlignment="Top" Width="41" Source="/Computer Service;component/Resources/1043px-Microsoft_Excel_2013_logo.svg.png" MouseDown="Image_MouseDown" />
     </Grid>
 </Controls:MetroWindow>

@@ -22,9 +22,9 @@
             <MenuItem Header="Выход из аккаунта" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
             <MenuItem Header="Выход из программы"  Click="MenuItem_Click_6" ></MenuItem>
         </Menu>
-        <Label x:Name="ok" HorizontalAlignment="Left" Margin="143,271,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label x:Name="inprocess" HorizontalAlignment="Left" Margin="143,209,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label Content="Готовых:" HorizontalAlignment="Left" Margin="41,271,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Label Content="В процессе:" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label x:Name="ok" HorizontalAlignment="Left" Margin="143,271,0,0" VerticalAlignment="Top" FontSize="22" />
+        <Label x:Name="inprocess" HorizontalAlignment="Left" Margin="143,209,0,0" VerticalAlignment="Top" FontSize="22" />
+        <Label Content="Готовых:" HorizontalAlignment="Left" Margin="41,271,0,0" VerticalAlignment="Top" FontSize="22" />
+        <Label Content="В процессе:" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" FontSize="22" />
     </Grid>
 </Controls:MetroWindow>

@@ -19,8 +19,8 @@
         <TextBox   x:Name="pc3" HorizontalAlignment="Left" Height="40" Margin="10,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" FontSize="24" />
         <TextBox   x:Name="pc4" HorizontalAlignment="Left" Height="40" Margin="10,178,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" FontSize="24" />
         <TextBox   x:Name="pc5" HorizontalAlignment="Left" Height="40" Margin="10,223,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="130" FontSize="24" />
-        <DataGrid x:Name="viewdgr"  HorizontalAlignment="Left" Height="380" Margin="245,10,0,0" VerticalAlignment="Top" Width="751"/>
-        <Button Content="+деталь" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click_3" FontSize="16" Height="35"  x:Name="addcompl"/>
+        <DataGrid x:Name="viewdgr"  HorizontalAlignment="Left" Height="380" Margin="245,10,0,0" VerticalAlignment="Top" Width="751" />
+        <Button Content="+деталь" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click_3" FontSize="16" Height="35"  x:Name="addcompl" />
         <Button Content="добавить/изменить" HorizontalAlignment="Left" Margin="585,401,0,0" VerticalAlignment="Top" Width="235" Click="Button_Click_2" FontSize="18" Height="40" />
     </Grid>
 </Controls:MetroWindow>

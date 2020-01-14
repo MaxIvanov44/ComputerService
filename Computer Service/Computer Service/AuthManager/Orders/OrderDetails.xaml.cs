@@ -1,11 +1,9 @@
-﻿using Database;
-using Database.EntityModels;
+﻿using Database.EntityModels;
 using Logic;
 using MahApps.Metro.Controls;
 using System;
 using System.Data;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace Computer_Service
 {
@@ -14,9 +12,9 @@ namespace Computer_Service
     /// </summary>
     public partial class OrderDetails : MetroWindow
     {
+        private object globalid = LogicOrders.globalidorder;
+        private int count = 1;
 
-        object globalid = LogicOrders.globalidorder;
-        int count = 1;
         public OrderDetails()
         {
             InitializeComponent();
@@ -35,7 +33,6 @@ namespace Computer_Service
         {
             try
             {
-
                 Model1 db = new Model1();
                 //Adding.AddCompl(
                 //    Convert.ToInt32(globalid),
@@ -59,17 +56,16 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 1,
                             Parts = Convert.ToInt32((pc1.Text)),
-
                         };
                         db.Details.Add(details1);
                         break;
+
                     case 2:
                         Details details21 = new Details
                         {
                             Order = Convert.ToInt32(globalid),
                             Number = 1,
                             Parts = Convert.ToInt32((pc1.Text)),
-
                         };
                         db.Details.Add(details21);
                         Details details22 = new Details
@@ -77,17 +73,16 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 2,
                             Parts = Convert.ToInt32((pc2.Text)),
-
                         };
                         db.Details.Add(details22);
                         break;
+
                     case 3:
                         Details details31 = new Details
                         {
                             Order = Convert.ToInt32(globalid),
                             Number = 1,
                             Parts = Convert.ToInt32((pc1.Text)),
-
                         };
                         db.Details.Add(details31);
                         Details details32 = new Details
@@ -95,7 +90,6 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 2,
                             Parts = Convert.ToInt32((pc2.Text)),
-
                         };
                         db.Details.Add(details32);
                         Details details33 = new Details
@@ -103,17 +97,16 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 3,
                             Parts = Convert.ToInt32((pc3.Text)),
-
                         };
                         db.Details.Add(details33);
                         break;
+
                     case 4:
                         Details details41 = new Details
                         {
                             Order = Convert.ToInt32(globalid),
                             Number = 1,
                             Parts = Convert.ToInt32((pc1.Text)),
-
                         };
                         db.Details.Add(details41);
                         Details details42 = new Details
@@ -121,7 +114,6 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 2,
                             Parts = Convert.ToInt32((pc2.Text)),
-
                         };
                         db.Details.Add(details42);
                         Details details43 = new Details
@@ -129,7 +121,6 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 3,
                             Parts = Convert.ToInt32((pc3.Text)),
-
                         };
                         db.Details.Add(details43);
                         Details details44 = new Details
@@ -137,17 +128,16 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 4,
                             Parts = Convert.ToInt32((pc4.Text)),
-
                         };
                         db.Details.Add(details44);
                         break;
+
                     case 5:
                         Details details51 = new Details
                         {
                             Order = Convert.ToInt32(globalid),
                             Number = 1,
                             Parts = Convert.ToInt32((pc1.Text)),
-
                         };
                         db.Details.Add(details51);
                         Details details52 = new Details
@@ -155,7 +145,6 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 2,
                             Parts = Convert.ToInt32((pc2.Text)),
-
                         };
                         db.Details.Add(details52);
                         Details details53 = new Details
@@ -163,7 +152,6 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 3,
                             Parts = Convert.ToInt32((pc3.Text)),
-
                         };
                         db.Details.Add(details53);
                         Details details54 = new Details
@@ -171,7 +159,6 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 4,
                             Parts = Convert.ToInt32((pc4.Text)),
-
                         };
                         db.Details.Add(details54);
                         Details details55 = new Details
@@ -179,12 +166,10 @@ namespace Computer_Service
                             Order = Convert.ToInt32(globalid),
                             Number = 5,
                             Parts = Convert.ToInt32((pc5.Text)),
-
                         };
                         db.Details.Add(details55);
                         break;
                 }
-
 
                 //switch (count)
                 //{
@@ -359,7 +344,6 @@ namespace Computer_Service
                 //};
                 //db.Details.Add(details3);
 
-
                 //db.SaveChanges();
 
                 //MessageBox.Show("Комплектующие заказа сохранены!");
@@ -382,12 +366,13 @@ namespace Computer_Service
 
         private void viewCOMP_Click(object sender, RoutedEventArgs e)
         {
-
             ComputerView cv1 = new ComputerView();
             cv1.Show();
             Close();
         }
+
         private DataTable dtord = new DataTable();
+
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             dtord = Logic.LogicComputers.GetAllPC();
@@ -438,7 +423,6 @@ namespace Computer_Service
             //    pc9.Visibility = Visibility.Visible;
 
             //}
-
         }
     }
 }

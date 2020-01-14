@@ -10,7 +10,7 @@
     </Window.Background>
     <Grid Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <Label Content="Статус заказа" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" FontSize="24" Height="56" Width="164" />
@@ -36,6 +36,6 @@
         <TextBox  x:Name="master" HorizontalAlignment="Left" Height="47" Margin="193,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
         <TextBox  x:Name="peka" HorizontalAlignment="Left" Height="47" Margin="193,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" FontSize="24" />
         <TextBox x:Name="client" HorizontalAlignment="Left" Height="47" Margin="193,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="369" FontSize="24" />
-        <Button Content="View" HorizontalAlignment="Left" Margin="485,246,0,0" VerticalAlignment="Top" Width="77" Height="47" FontSize="18" Click="Button_Click_2"/>
+        <Button Content="View" HorizontalAlignment="Left" Margin="485,246,0,0" VerticalAlignment="Top" Width="77" Height="47" FontSize="18" Click="Button_Click_2" />
     </Grid>
 </Controls:MetroWindow>

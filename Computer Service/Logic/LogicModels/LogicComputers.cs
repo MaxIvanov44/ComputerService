@@ -1,7 +1,6 @@
 ﻿using Database.EntityModels;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
@@ -9,7 +8,6 @@ namespace Logic
 {
     public class LogicComputers
     {
-
         public static string _1;
         public static string _2;
         public static string _3;
@@ -85,6 +83,7 @@ namespace Logic
             }
             return dtord;
         }
+
         public static IList GetCompl(String id)
         {
             Model1 db = new Model1();
@@ -95,8 +94,6 @@ namespace Logic
                        select new
                        {
                            id = PC.id_comp + " ;" + PC.name + " " + PC.brand + " " + PC.model
-
-
                        };
             var dataa = data.FirstOrDefault();
 
@@ -144,7 +141,6 @@ namespace Logic
                        select new
                        {
                            idd = PC.id_comp + " " + PC.name + " " + PC.brand + " " + PC.model,
-
                        };
             foreach (var count in peka)
             {
