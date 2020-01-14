@@ -186,3 +186,5 @@ C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Compute
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\LiveCharts.Wpf.dll
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\GemBox.Spreadsheet.dll
+C:\Users\ivano\Desktop\Курсовик\ComputerService\Computer Service\Computer Service\bin\Debug\GemBox.Spreadsheet.xml

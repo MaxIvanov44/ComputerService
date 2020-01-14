@@ -1,8 +1,11 @@
 ﻿using Database.EntityModels;
+using GemBox.Spreadsheet;
 using Logic;
 using MahApps.Metro.Controls;
+using Microsoft.Win32;
 using System;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
@@ -198,6 +201,37 @@ namespace Computer_Service
                            };
                 viewdgr.ItemsSource = data.ToList();
             }
+        }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+            var workbook = new ExcelFile();
+            var worksheet = workbook.Worksheets.Add("dtord");
+
+
+            // Insert DataTable to an Excel worksheet.
+            worksheet.InsertDataTable(dtord,
+                new InsertDataTableOptions()
+                {
+                    ColumnHeaders = true,
+
+
+                });
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Excel files (*.xls)|*.xls|Excel files (*.csv)|*.csv|HTML files (*.html)|*.html|PDF files (*.pdf)|*.pdf|JPEG files (*.jpeg)|*.jpeg|GIF files (*.gif)|*.gif";
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                File.WriteAllText(saveFileDialog.FileName, viewdgr.Background.ToString());
+                workbook.Save(saveFileDialog.FileName);
+                MessageBox.Show("Отчет сохранен в  " + saveFileDialog.FileName);
+            }
+            else
+            {
+
+            }
+
         }
     }
 }

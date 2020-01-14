@@ -110,7 +110,7 @@ namespace Computer_Service
 
             client.Text = LogicOrders.c;
             master.Text = LogicOrders.m;
-            pc.Text = LogicOrders.pc;
+           
 
             description.Text = LogicOrders.des;
             price.Text = LogicOrders.pr;

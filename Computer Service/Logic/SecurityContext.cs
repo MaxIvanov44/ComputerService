@@ -43,8 +43,16 @@
     {
         public static int MASID;
     }
+    public class SaveMANID
+    {
+        public static int MANID;
+    }
 
     public class GetMasID
+    {
+        public static int CurrentID;
+    }
+    public class GetManID
     {
         public static int CurrentID;
     }

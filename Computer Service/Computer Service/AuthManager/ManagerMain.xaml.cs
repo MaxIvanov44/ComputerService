@@ -1,6 +1,9 @@
-﻿using MahApps.Metro.Controls;
+﻿using Database.EntityModels;
+using Logic;
+using MahApps.Metro.Controls;
 using System.Diagnostics;
 using System.Windows;
+using System.Linq;
 
 namespace Computer_Service
 {
@@ -12,6 +15,17 @@ namespace Computer_Service
         public ManagerMain()
         {
             InitializeComponent();
+            Model1 db = new Model1();
+
+            var inprocesss = (from t in db.Orders
+                         where t.order_status == 2
+                         select t).Count();
+            var okk = (from t in db.Orders
+                             where t.order_status == 4
+                             select t).Count();
+
+            ok.Content = okk;
+            inprocess.Content = inprocesss;
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

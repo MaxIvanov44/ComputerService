@@ -28,5 +28,7 @@ namespace Logic
             Model1 db = new Model1();
             return db.Masters.Find(GetMasID.CurrentID);
         }
+
+
     }
 }

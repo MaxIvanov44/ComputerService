@@ -53,6 +53,7 @@ namespace Computer_Service
             }
             else if (Auth.authA(username.Text, password.Password) == true)
             {
+
                 AdminMain ms = new AdminMain();
                 this.Close();
                 ms.Show();
@@ -78,9 +79,9 @@ namespace Computer_Service
             dcd.DataSources.Add(sqlDataSource);
             dcd.SelectedDataProvider = DataProvider.SqlDataProvider;
             dcd.SelectedDataSource = sqlDataSource;
-          
+
                 string connectionString = dcd.ConnectionString;
-           
+
         }
     }
 }

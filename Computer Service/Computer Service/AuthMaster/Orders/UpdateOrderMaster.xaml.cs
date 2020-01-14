@@ -65,6 +65,7 @@ namespace Computer_Service
 
             client.Text = data.FirstOrDefault().Client;
             master.Text = data.FirstOrDefault().Master;
+
             status.ItemsSource = LogicStatus.GetStatusMaster();
             status.Text = data.FirstOrDefault().Status;
             DateTime? date1 = orders.date_of_acceptance;

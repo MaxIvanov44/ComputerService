@@ -46,10 +46,10 @@ namespace Computer_Service
                 connection.Close();
             }
 
-            pc.Text = "Количество: " +  countcompl;
+            peka.Text = "Количество: " +  countcompl;
 
             var data = from Order in db.Orders
-                       join Status in db.Status on Order.order_status equals Status.id_status
+                       join Statusman in db.Status on Order.order_status equals Statusman.id_status
                        join Client in db.Clients on Order.client equals Client.id_user
                        join Master in db.Masters on Order.master equals Master.id_master
                        //join Computers in db.Computers on Order.computer equals Computers.id_comp
@@ -57,7 +57,7 @@ namespace Computer_Service
                        select new
                        {
                            Id = Order.id_order,
-                           Status = Status.status1,
+                           Status = Statusman.status1,
                            Client = Client.id_user + " " + Client.first_name + " " + Client.last_name,
                            //PC = Computers.id_comp + " " + Computers.name + " " + Computers.brand + " " + Computers.model,
                            Master = Master.id_master + " " + Master.first_name + " " + Master.last_name + " " + Master.middle_name,
@@ -93,7 +93,6 @@ namespace Computer_Service
                 orderr.order_status = Convert.ToInt32(LogicStatus.GetIdStatus(status.Text));
                 orderr.client = Convert.ToInt32(LogicClient.GetIdClient(client.Text));
                 orderr.master = Convert.ToInt32(LogicMaster.GetIdMaster(master.Text));
-                //orderr.computer = Convert.ToInt32(LogicComputers.GetIdMark(pc.Text));
 
                 orderr.date_of_acceptance = accept.DisplayDate;
                 orderr.date_of_return = @return.DisplayDate;

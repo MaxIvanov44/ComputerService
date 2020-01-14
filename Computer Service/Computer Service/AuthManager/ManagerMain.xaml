@@ -3,7 +3,7 @@
                                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                                       xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:Computer_Service"
-        Title="ManagerMain" Height="450" Width="800">
+        Title="ManagerMain" Height="300" Width="750">
     <Window.Background>
 
         <SolidColorBrush Color="#647382" />
@@ -13,7 +13,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <Menu Height="29" VerticalAlignment="Top" Background="#FF454E59">
+        <Menu Background="#FF454E59" Margin="0,150,0,240">
             <MenuItem Header="Создать заказ" Background="#FF2D333A" Click="MenuItem_Click_3"></MenuItem>
             <MenuItem Header="Изменить заказ"  Background="#FF2D333A" Click="MenuItem_Click_5" ></MenuItem>
 
@@ -22,5 +22,9 @@
             <MenuItem Header="Выход из аккаунта" Background="#FF2D333A" Click="MenuItem_Click_4" ></MenuItem>
             <MenuItem Header="Выход из программы"  Click="MenuItem_Click_6" ></MenuItem>
         </Menu>
+        <Label x:Name="ok" HorizontalAlignment="Left" Margin="143,271,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label x:Name="inprocess" HorizontalAlignment="Left" Margin="143,209,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Готовых:" HorizontalAlignment="Left" Margin="41,271,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="В процессе:" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" FontSize="22"/>
     </Grid>
 </Controls:MetroWindow>
